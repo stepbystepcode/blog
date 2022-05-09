@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://www.stepbystep.cf/'
+languageCode = 'zh-cn'
+title = '一步一个脚印'
 theme = "stack"
