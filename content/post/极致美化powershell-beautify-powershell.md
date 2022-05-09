@@ -25,9 +25,8 @@ Windows 应用商店搜索Windows Terminal Preview，并安装。
 # 六、安装oh-my-posh
 [点击下载oh-my-posh](https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/download/v7.16.2/install-amd64.exe)
 # 七、设置字体
-![mmexport1647324034441.png](/upload/2022/03/mmexport1647324034441-985a48ff6f734d5ab2db21d2551e7a12.png)
-
-![mmexport1647324033227.png](/upload/2022/03/mmexport1647324033227-6a1097b3b5d34af68861be41167b25ef.png)
+![1a03655068e1df483525e55ea3bb8e2e.webp](https://img.gejiba.com/images/1a03655068e1df483525e55ea3bb8e2e.webp)
+![55ba23a7faf29579ce8cd60f95ebf61a.webp](https://img.gejiba.com/images/55ba23a7faf29579ce8cd60f95ebf61a.webp)
 # 八、修改终端配置
 下载主题：
 下载地址：
@@ -45,5 +44,5 @@ oh-my-posh --init --shell pwsh --config D:/oh-my-posh/ys.omp.json | Invoke-Expre
 ```
 
 主题预览：
-![ohmyposh.dev_docs_themes (2)](/upload/2022/03/ohmyposh.dev_docs_themes%20(2)-166011c9d4104ad081f4e5231bdb7abc.png)
-![ohmyposh.dev_docs_themes (4)](/upload/2022/03/ohmyposh.dev_docs_themes%20(4)-2b5d198de96a4d569896099a4b1e552e.png)
+![b64b31060fdd99e11c08962d785fd887.webp](https://img.gejiba.com/images/b64b31060fdd99e11c08962d785fd887.webp)
+![0fccd6fb610e9fe59572c17be2fdc8ec.webp](https://img.gejiba.com/images/0fccd6fb610e9fe59572c17be2fdc8ec.webp)
