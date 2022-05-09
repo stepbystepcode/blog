@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>python on My New Hugo Site</title>
+        <link>http://example.org/tags/python/</link>
+        <description>Recent content in python on My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 21 Feb 2022 13:06:31 +0000</lastBuildDate><atom:link href="http://example.org/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>让你的二次元美图更清晰</title>
+        <link>http://example.org/archives/real-cugan/</link>
+        <pubDate>Mon, 21 Feb 2022 13:06:31 +0000</pubDate>
+        
+        <guid>http://example.org/archives/real-cugan/</guid>
+        <description>&lt;p&gt;我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道&lt;a class=&#34;link&#34; href=&#34;http://waifu2x.udp.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;waifu2x&lt;/a&gt;这个工具，但今天在这里给大家介绍一个比waifu2x好用很多倍的神器——Real-CUGAN。
+GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
+&lt;h1 id=&#34;效果对比&#34;&gt;效果对比&lt;/h1&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;原始图片&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;waifu2x&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Real-CUGAN&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h1 id=&#34;一安装python&#34;&gt;一、安装Python&lt;/h1&gt;
+&lt;h1 id=&#34;二安装lib组件库&#34;&gt;二、安装lib组件库&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pip3 install torch
+pip3 install numpy
+pip3 install  opencv-python
+pip3 install  moviepy
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;三建立工作目录并命名文件&#34;&gt;三、建立工作目录并命名文件&lt;/h1&gt;
+&lt;p&gt;建立文件夹及文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://hub.fastgit.xyz/fumiama/Real-CUGAN-Server.git
+cd Real-CUGAN-Server
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;替换input_dir1文件夹里的输入图片文件。&lt;/p&gt;
+&lt;h1 id=&#34;四调用命令处理图片&#34;&gt;四、调用命令处理图片&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 upcunet_v3&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出图片在opt-dir-all-test文件夹中。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

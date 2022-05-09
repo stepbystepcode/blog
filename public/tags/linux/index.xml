@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>linux on My New Hugo Site</title>
+        <link>http://example.org/tags/linux/</link>
+        <description>Recent content in linux on My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 13 Mar 2022 17:53:05 +0000</lastBuildDate><atom:link href="http://example.org/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Archlinux安装指南</title>
+        <link>http://example.org/archives/archlinux/</link>
+        <pubDate>Sun, 13 Mar 2022 17:53:05 +0000</pubDate>
+        
+        <guid>http://example.org/archives/archlinux/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;一下载iso镜像与工具&#34;&gt;一、下载ISO镜像与工具&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;rufus下载(rufus-x.xp.exe)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://disk.stepbystep.cf/d/ihasher.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ihasher下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8fc41ece91af084081f268d62dfd12b2.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;L4o0YqrTRt.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;二制作安装u盘&#34;&gt;二、制作安装U盘&lt;/h1&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;注意：制作的安装U盘将被格式化，即删除里面所有内容!&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;如果询问是否允许更新、确认格式化U盘，点击yes即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8a878ecbbd55c09df96f11e7d1237f99.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;GUdAxCxxop.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;三预留分区&#34;&gt;三、预留分区&lt;/h1&gt;
+&lt;p&gt;Windows+R输入diskmgmt.msc
+&lt;img src=&#34;https://img.gejiba.com/images/f24c1f55af9dec72f26fb9ff1e488f2b.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;mmexport1647324031181.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/5eaae631dd6a6d922728cea1582945c4.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;mmexport1647324029962.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四选择uefi模式并进入u盘安装系统&#34;&gt;四、选择UEFI模式并进入u盘安装系统&lt;/h1&gt;
+&lt;p&gt;选择UEFI模式启动，不同电脑不太一样，请按照电脑说明书或上网搜索进行该步骤。&lt;/p&gt;
+&lt;h2 id=&#34;更新系统时间&#34;&gt;更新系统时间&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;分区&#34;&gt;分区&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。&lt;/p&gt;
+&lt;p&gt;对于一个选定的设备，以下分区是必须要有的：&lt;/p&gt;
+&lt;p&gt;一个根分区（挂载在 根目录）/&lt;/p&gt;
+&lt;p&gt;一个 EFI 系统分区&lt;/p&gt;
+&lt;p&gt;请使用 fdisk 或 parted 修改分区表。例如：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;格式化分区&#34;&gt;格式化分区&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;挂载分区&#34;&gt;挂载分区&lt;/h2&gt;
+&lt;p&gt;将根磁盘卷 挂载 到 /mnt，将efi系统卷挂载到/mnt/boot&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;设置镜像源&#34;&gt;设置镜像源&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;安装必需的软件包&#34;&gt;安装必需的软件包&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;配置系统&#34;&gt;配置系统&lt;/h2&gt;
+&lt;p&gt;Fstab
+用以下命令生成 fstab 文件 (用 -U 或 -L 选项设置UUID 或卷标)：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;强烈建议在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。&lt;/p&gt;
+&lt;h2 id=&#34;chroot&#34;&gt;Chroot&lt;/h2&gt;
+&lt;p&gt;Change root 到新安装的系统：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;时区&#34;&gt;时区&lt;/h2&gt;
+&lt;p&gt;要设置时区：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;本地化&#34;&gt;本地化&lt;/h2&gt;
+&lt;p&gt;编辑 /etc/locale.gen，然后取消掉 en_US.UTF-8 UTF-8 和其他需要的 地区 前的注释（#）。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;网络配置&#34;&gt;网络配置&lt;/h2&gt;
+&lt;p&gt;创建 hostname 文件:&lt;/p&gt;
+&lt;p&gt;/etc/hostname&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;添加对应的信息到 hosts:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;设置root密码&#34;&gt;设置root密码&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;安装引导内核联网相关软件包&#34;&gt;安装引导、内核、联网相关软件包&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;配置grub引导&#34;&gt;配置grub引导&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;退出chroot&#34;&gt;退出chroot&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[1]ArchWiki. Installation guide[EB/OL]. [2022-3-16]. &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wiki.archlinux.org/title/Installation_guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
