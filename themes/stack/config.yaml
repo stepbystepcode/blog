@@ -25,7 +25,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src: https://img.gejiba.com/images/c8107a862046b88c1845d333fd61bf67.webp
+            src: img/avatar.webp
 
     article:
         math: false
