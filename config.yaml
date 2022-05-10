@@ -4,6 +4,7 @@ theme: stack
 paginate: 5
 title: 一步一个脚印
 
+
 languages:
     en:
         languageName: English
@@ -78,10 +79,6 @@ params:
             issueTerm: pathname
             label:
 
-        remark42:
-            host:
-            site:
-            locale:
 
         vssue:
             platform:
@@ -216,7 +213,7 @@ markup:
     goldmark:
         renderer:
             ## Set to true if you have HTML content inside Markdown
-            unsafe: false
+            unsafe: true
     tableOfContents:
         endLevel: 4
         ordered: true
