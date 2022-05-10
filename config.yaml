@@ -98,9 +98,7 @@ params:
                 - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
             requiredMeta:
                 - name
-                - email
-                - url
-            placeholder:
+            placeholder: 有不明白的地方或者建议欢迎评论告诉我
             locale:
               admin: Admin
 
