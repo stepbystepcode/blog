@@ -1,6 +1,19 @@
 baseURL = 'https://www.stepbystep.cf/'
 languageCode = 'zh-cn'
-title = '一步一个脚印'
 theme = "stack"
 [markup.goldmark.renderer]
 unsafe = true
+
+disqusShortname = "hugo-theme-stack"
+DefaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+
+[languages.en]
+languageName = "English"
+title = "Step by step"
+weight = 1
+
+[languages.zh-cn]
+languageName = "中文"
+title = "一步一个脚印"
+weight = 2
