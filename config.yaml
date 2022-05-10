@@ -192,11 +192,11 @@ menu:
           params:
             icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+       - identifier: wechat
+          name: Wechat
+          url: https://img.gejiba.com/images/52dd5e880d8f941577f3f09a594dab1d.webp
           params:
-              icon: brand-twitter
+              icon: brand-messenger
 
 related:
     includeNewer: true
