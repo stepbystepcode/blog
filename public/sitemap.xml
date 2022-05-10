@@ -1,56 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://www.stepbystep.cf/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/tags/office/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/post/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/tags/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/archives/remove-chinese-character/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/archives/archlinux/</loc>
-    <lastmod>2022-03-13T17:53:05+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/tags/linux/</loc>
-    <lastmod>2022-03-13T17:53:05+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/tags/windows/</loc>
-    <lastmod>2022-03-06T06:28:31+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/archives/computer-tutorial/</loc>
-    <lastmod>2022-03-06T06:28:31+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/archives/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/tags/python/</loc>
-    <lastmod>2022-02-21T13:06:31+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/archives/real-cugan/</loc>
-    <lastmod>2022-02-21T13:06:31+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/archives/beautify-powershell/</loc>
-    <lastmod>2022-02-21T12:14:24+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/tags/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2022-02-21T12:14:24+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/about/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.stepbystep.cf/categories/</loc>
-  </url><url>
-    <loc>https://www.stepbystep.cf/links/</loc>
-  </url><url>
-    <loc>https://www.stepbystep.cf/search/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://www.stepbystep.cf/zh-cn/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://www.stepbystep.cf/en/sitemap.xml</loc>
+    
+      <lastmod>2022-03-22T17:20:12+00:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>
