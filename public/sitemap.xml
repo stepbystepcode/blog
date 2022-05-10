@@ -29,6 +29,9 @@
     <loc>https://www.stepbystep.cf/archives/computer-tutorial/</loc>
     <lastmod>2022-03-06T06:28:31+00:00</lastmod>
   </url><url>
+    <loc>https://www.stepbystep.cf/archives/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.stepbystep.cf/tags/python/</loc>
     <lastmod>2022-02-21T13:06:31+00:00</lastmod>
   </url><url>
@@ -42,5 +45,9 @@
     <lastmod>2022-02-21T12:14:24+00:00</lastmod>
   </url><url>
     <loc>https://www.stepbystep.cf/categories/</loc>
+  </url><url>
+    <loc>https://www.stepbystep.cf/links/</loc>
+  </url><url>
+    <loc>https://www.stepbystep.cf/search/</loc>
   </url>
 </urlset>

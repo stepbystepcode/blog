@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='@font-face { font-family: tty; src: url(&#39;../font/437.ttf&#39;) } pre{ background:black; color:#ccc; padding:10px; white-space:break-spaces; font-family:tty } pre span{ color:red; }  一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)
 rufus下载(rufus-x.xp.exe)
 ihasher下载
-二、制作安装U盘 注意：制作的安装U盘将被格式化，即删除里面所有内容!如果询问是否允许更新、确认格式化U盘，点击yes即可
+二、制作安装U盘 注意：制作的安装U盘将被格式化，即删除里面所有内容!
+如果询问是否允许更新、确认格式化U盘，点击yes即可
 三、预留分区 Windows&#43;R输入diskmgmt.msc 四、选择UEFI模式并进入u盘安装系统 选择UEFI模式启动，不同电脑不太一样，请按照电脑说明书或上网搜索进行该步骤。
-更新系统时间 分区 结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。
+更新系统时间 root@archiso ~ # timedatectl set-ntp true 分区 root@archiso ~ # fdisk -l 结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。
 对于一个选定的设备，以下分区是必须要有的：
 一个根分区（挂载在 根目录）/
 一个 EFI 系统分区
 请使用 fdisk 或 parted 修改分区表。例如：
-格式化分区 挂载分区 将根磁盘卷 挂载 到 /mnt，将efi系统卷挂载到/mnt/boot
-设置镜像源 安装必需的软件包 配置系统 Fstab 用以下命令生成 fstab 文件 (用 -U 或 -L 选项设置UUID 或卷标)：
-强烈建议在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。
-Chroot Change root 到新安装的系统：
-时区 要设置时区：
-本地化 编辑 /etc/locale.gen，然后取消掉 en_US.UTF-8 UTF-8 和其他需要的 地区 前的注释（#）。
-网络配置 创建 hostname 文件:
-/etc/hostname
-添加对应的信息到 hosts:'><title>Archlinux安装指南</title>
+root@archiso ~ # fdisk /dev/the_disk_to_be_partitioned（要被分区的磁盘）   挂载点  分区  分区类型  建议大小   /mnt/boot  /dev/efi_system_partition（efi 系统分区）  EFI 系统分区  至少 260 MiB   /mnt  /dev/root_partition（根分区）  Linux x86-64 根目录 (/)  剩余空间  格式化分区 root@archiso ~ # mkfs.'><title>Archlinux安装指南</title>
 
 <link rel='canonical' href='https://www.stepbystep.cf/archives/archlinux/'>
 
 <link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='Archlinux安装指南'>
-<meta property='og:description' content='一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)
+<meta property='og:description' content='@font-face { font-family: tty; src: url(&#39;../font/437.ttf&#39;) } pre{ background:black; color:#ccc; padding:10px; white-space:break-spaces; font-family:tty } pre span{ color:red; }  一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)
 rufus下载(rufus-x.xp.exe)
 ihasher下载
-二、制作安装U盘 注意：制作的安装U盘将被格式化，即删除里面所有内容!如果询问是否允许更新、确认格式化U盘，点击yes即可
+二、制作安装U盘 注意：制作的安装U盘将被格式化，即删除里面所有内容!
+如果询问是否允许更新、确认格式化U盘，点击yes即可
 三、预留分区 Windows&#43;R输入diskmgmt.msc 四、选择UEFI模式并进入u盘安装系统 选择UEFI模式启动，不同电脑不太一样，请按照电脑说明书或上网搜索进行该步骤。
-更新系统时间 分区 结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。
+更新系统时间 root@archiso ~ # timedatectl set-ntp true 分区 root@archiso ~ # fdisk -l 结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。
 对于一个选定的设备，以下分区是必须要有的：
 一个根分区（挂载在 根目录）/
 一个 EFI 系统分区
 请使用 fdisk 或 parted 修改分区表。例如：
-格式化分区 挂载分区 将根磁盘卷 挂载 到 /mnt，将efi系统卷挂载到/mnt/boot
-设置镜像源 安装必需的软件包 配置系统 Fstab 用以下命令生成 fstab 文件 (用 -U 或 -L 选项设置UUID 或卷标)：
-强烈建议在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。
-Chroot Change root 到新安装的系统：
-时区 要设置时区：
-本地化 编辑 /etc/locale.gen，然后取消掉 en_US.UTF-8 UTF-8 和其他需要的 地区 前的注释（#）。
-网络配置 创建 hostname 文件:
-/etc/hostname
-添加对应的信息到 hosts:'>
+root@archiso ~ # fdisk /dev/the_disk_to_be_partitioned（要被分区的磁盘）   挂载点  分区  分区类型  建议大小   /mnt/boot  /dev/efi_system_partition（efi 系统分区）  EFI 系统分区  至少 260 MiB   /mnt  /dev/root_partition（根分区）  Linux x86-64 根目录 (/)  剩余空间  格式化分区 root@archiso ~ # mkfs.'>
 <meta property='og:url' content='https://www.stepbystep.cf/archives/archlinux/'>
 <meta property='og:site_name' content='一步一个脚印'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='linux' /><meta property='article:published_time' content='2022-03-13T17:53:05&#43;00:00'/><meta property='article:modified_time' content='2022-03-13T17:53:05&#43;00:00'/><meta property='og:image' content='https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp' />
 <meta name="twitter:title" content="Archlinux安装指南">
-<meta name="twitter:description" content="一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)
+<meta name="twitter:description" content="@font-face { font-family: tty; src: url(&#39;../font/437.ttf&#39;) } pre{ background:black; color:#ccc; padding:10px; white-space:break-spaces; font-family:tty } pre span{ color:red; }  一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)
 rufus下载(rufus-x.xp.exe)
 ihasher下载
-二、制作安装U盘 注意：制作的安装U盘将被格式化，即删除里面所有内容!如果询问是否允许更新、确认格式化U盘，点击yes即可
+二、制作安装U盘 注意：制作的安装U盘将被格式化，即删除里面所有内容!
+如果询问是否允许更新、确认格式化U盘，点击yes即可
 三、预留分区 Windows&#43;R输入diskmgmt.msc 四、选择UEFI模式并进入u盘安装系统 选择UEFI模式启动，不同电脑不太一样，请按照电脑说明书或上网搜索进行该步骤。
-更新系统时间 分区 结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。
+更新系统时间 root@archiso ~ # timedatectl set-ntp true 分区 root@archiso ~ # fdisk -l 结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。
 对于一个选定的设备，以下分区是必须要有的：
 一个根分区（挂载在 根目录）/
 一个 EFI 系统分区
 请使用 fdisk 或 parted 修改分区表。例如：
-格式化分区 挂载分区 将根磁盘卷 挂载 到 /mnt，将efi系统卷挂载到/mnt/boot
-设置镜像源 安装必需的软件包 配置系统 Fstab 用以下命令生成 fstab 文件 (用 -U 或 -L 选项设置UUID 或卷标)：
-强烈建议在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。
-Chroot Change root 到新安装的系统：
-时区 要设置时区：
-本地化 编辑 /etc/locale.gen，然后取消掉 en_US.UTF-8 UTF-8 和其他需要的 地区 前的注释（#）。
-网络配置 创建 hostname 文件:
-/etc/hostname
-添加对应的信息到 hosts:"><meta name="twitter:card" content="summary_large_image">
+root@archiso ~ # fdisk /dev/the_disk_to_be_partitioned（要被分区的磁盘）   挂载点  分区  分区类型  建议大小   /mnt/boot  /dev/efi_system_partition（efi 系统分区）  EFI 系统分区  至少 260 MiB   /mnt  /dev/root_partition（根分区）  Linux x86-64 根目录 (/)  剩余空间  格式化分区 root@archiso ~ # mkfs."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp' />
     </head>
     <body class="
@@ -93,7 +72,7 @@ Chroot Change root 到新安装的系统：
         }
     })();
 </script>
-<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -116,16 +95,119 @@ Chroot Change root 到新安装的系统：
                 
                 </a>
                 
+                    <span class="emoji">👣</span>
+                
             </figure>
             
         
         
         <div class="site-meta">
             <h1 class="site-name"><a href="/">一步一个脚印</a></h1>
-            <h2 class="site-description"></h2>
+            <h2 class="site-description">一步一个脚印，到达成功的彼岸！</h2>
         </div>
-    </header><ol class="menu" id="main-menu">
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/stepbystepcode'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
         
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
         
 
         <div class="menu-bottom-section">
@@ -205,7 +287,7 @@ Chroot Change root 到新安装的系统：
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    2 minute read
                 </time>
             </div>
         
@@ -219,8 +301,23 @@ Chroot Change root 到新安装的系统：
     <section class="article-content">
     
     
-    <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+    <style>
+@font-face
+{
+	font-family: tty;
+	src: url('../font/437.ttf')
+}
+pre{
+background:black;
+color:#ccc;
+padding:10px;
+white-space:break-spaces;
+font-family:tty
+}
+pre span{
+color:red;
+}
+</style>
 <h1 id="一下载iso镜像与工具">一、下载ISO镜像与工具</h1>
 <p><a class="link" href="https://mirrors.aliyun.com/archlinux/iso/latest/"  target="_blank" rel="noopener"
     >ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)</a></p>
@@ -239,7 +336,7 @@ Chroot Change root 到新安装的系统：
 	
 ></p>
 <h1 id="二制作安装u盘">二、制作安装U盘</h1>
-<p><!-- raw HTML omitted -->注意：制作的安装U盘将被格式化，即删除里面所有内容!<!-- raw HTML omitted --></p>
+<p><span style="color:red;font-size:20px;font-weight:700">注意：制作的安装U盘将被格式化，即删除里面所有内容!</span></p>
 <p>如果询问是否允许更新、确认格式化U盘，点击yes即可</p>
 <p><img src="https://img.gejiba.com/images/8a878ecbbd55c09df96f11e7d1237f99.webp"
 	
@@ -276,66 +373,105 @@ Chroot Change root 到新安装的系统：
 <h1 id="四选择uefi模式并进入u盘安装系统">四、选择UEFI模式并进入u盘安装系统</h1>
 <p>选择UEFI模式启动，不同电脑不太一样，请按照电脑说明书或上网搜索进行该步骤。</p>
 <h2 id="更新系统时间">更新系统时间</h2>
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # timedatectl set-ntp true</pre>
 <h2 id="分区">分区</h2>
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # fdisk -l</pre>
 <p>结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。</p>
 <p>对于一个选定的设备，以下分区是必须要有的：</p>
 <p>一个根分区（挂载在 根目录）/</p>
 <p>一个 EFI 系统分区</p>
 <p>请使用 fdisk 或 parted 修改分区表。例如：</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # fdisk /dev/the_disk_to_be_partitioned（要被分区的磁盘）</pre>
+<div class="table-wrapper"><table>
+<tbody><tr>
+<th>挂载点
+</th>
+<th>分区
+</th>
+<th>分区类型
+</th>
+<th>建议大小
+</th></tr>
+<tr>
+<td>/mnt/boot
+</td>
+<td>/dev/<i>efi_system_partition（efi 系统分区）</i>
+</td>
+<td>EFI 系统分区
+</td>
+<td>至少 260 MiB
+</td></tr>
+<tr>
+<td>/mnt
+</td>
+<td>/dev/<i>root_partition（根分区）</i>
+</td>
+<td>Linux x86-64 根目录 (/)
+</td>
+<td>剩余空间
+</td></tr></tbody></table></div>
 <h2 id="格式化分区">格式化分区</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # mkfs.ext4 /dev/root_partition（根分区）
+<span>root</span>@archiso ~ # mkfs.fat -F 32 /dev/efi_system_partition</pre>
 <h2 id="挂载分区">挂载分区</h2>
 <p>将根磁盘卷 挂载 到 /mnt，将efi系统卷挂载到/mnt/boot</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # mkdir /mnt/boot
+<span>root</span>@archiso ~ # mount /dev/root_partition（根分区） /mnt
+<span>root</span>@archiso ~ # mount /dev/（efi系统分区） /mnt/boot</pre>
 <h2 id="设置镜像源">设置镜像源</h2>
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # reflector --country China --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist</pre>
 <h2 id="安装必需的软件包">安装必需的软件包</h2>
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # pacstrap /mnt base linux linux-firmware</pre>
 <h2 id="配置系统">配置系统</h2>
 <p>Fstab
 用以下命令生成 fstab 文件 (用 -U 或 -L 选项设置UUID 或卷标)：</p>
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # genfstab -U /mnt >> /mnt/etc/fstab</pre>
 <p>强烈建议在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。</p>
 <h2 id="chroot">Chroot</h2>
 <p>Change root 到新安装的系统：</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre><span>root</span>@archiso ~ # arch-chroot /mnt
+[root@archiso /]#</pre>
 <h2 id="时区">时区</h2>
 <p>要设置时区：</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>[root@archiso /]# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+[root@archiso /]# hwclock --systohc</pre>
 <h2 id="本地化">本地化</h2>
 <p>编辑 /etc/locale.gen，然后取消掉 en_US.UTF-8 UTF-8 和其他需要的 地区 前的注释（#）。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>[root@archiso /]# vim /etc/locale.gen
+[root@archiso /]# locale-gen
+[root@archiso /]# vim /etc/locale.conf</pre>
+<pre>
+LANG=en_US.UTF-8
+</pre>
 <h2 id="网络配置">网络配置</h2>
 <p>创建 hostname 文件:</p>
 <p>/etc/hostname</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>
+myhostname（主机名）
+</pre>
 <p>添加对应的信息到 hosts:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>[root@archiso /]# vim /etc/hosts</pre>
+<pre>
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	myhostname.localdomain	myhostname # 主机名.本地域名 主机名
+</pre>
 <h2 id="设置root密码">设置root密码</h2>
-<!-- raw HTML omitted -->
+<pre>[root@archiso /]# passwd</pre>
 <h2 id="安装引导内核联网相关软件包">安装引导、内核、联网相关软件包</h2>
-<!-- raw HTML omitted -->
+<pre>[root@archiso /]# pacman -S grub efibootmgr intel-ucode os-prober wpa_supplicant dhcpcd</pre>
 <h2 id="配置grub引导">配置grub引导</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>[root@archiso /]# mkdir /boot/grub
+[root@archiso /]# grub-mkconfig > /boot/grub/grub.cfg
+[root@archiso /]# grub-install --target=x86_64-efi --efi-directory=/boot
+[root@archiso /]# 
+[root@archiso /]# 
+</pre>
 <h2 id="退出chroot">退出chroot</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>[root@archiso /]# exit
+<span>root</span>@archiso ~ # umount -R /mnt
+</pre>
+<pre><span>root</span>@archiso ~ # reboot</pre>
 <blockquote>
 <p>[1]ArchWiki. Installation guide[EB/OL]. [2022-3-16]. <a class="link" href="https://wiki.archlinux.org/title/Installation_guide"  target="_blank" rel="noopener"
     >https://wiki.archlinux.org/title/Installation_guide</a>.</p>
@@ -353,6 +489,18 @@ Chroot Change root 到新安装的系统：
     </section>
 
 
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
     </footer>
 
 
@@ -366,11 +514,36 @@ Chroot Change root 到新安装的系统：
      
     
         
+    <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
     
 
     <footer class="site-footer">
     <section class="copyright">
         &copy; 
+        
+            2020 - 
         
         2022 一步一个脚印
     </section>
@@ -461,7 +634,52 @@ Chroot Change root 到新安装的系统：
             >
 
             </main>
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#更新系统时间">更新系统时间</a></li>
+    <li><a href="#分区">分区</a></li>
+    <li><a href="#格式化分区">格式化分区</a></li>
+    <li><a href="#挂载分区">挂载分区</a></li>
+    <li><a href="#设置镜像源">设置镜像源</a></li>
+    <li><a href="#安装必需的软件包">安装必需的软件包</a></li>
+    <li><a href="#配置系统">配置系统</a></li>
+    <li><a href="#chroot">Chroot</a></li>
+    <li><a href="#时区">时区</a></li>
+    <li><a href="#本地化">本地化</a></li>
+    <li><a href="#网络配置">网络配置</a></li>
+    <li><a href="#设置root密码">设置root密码</a></li>
+    <li><a href="#安装引导内核联网相关软件包">安装引导、内核、联网相关软件包</a></li>
+    <li><a href="#配置grub引导">配置grub引导</a></li>
+    <li><a href="#退出chroot">退出chroot</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
         </div>
         <script 
