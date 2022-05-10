@@ -6,6 +6,7 @@ url: /archives/computer-tutorial
 categories: 
 tags: 
 - windows
+image: https://img.gejiba.com/images/dc28dd597dffccfbf3d871509da52d31.webp
 ---
 
 如果你已经学会了电脑的基本操作（如开关机，点击鼠标键盘...）下一步，你应该学习的是电脑使用原则。

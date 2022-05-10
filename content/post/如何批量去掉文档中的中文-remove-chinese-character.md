@@ -6,6 +6,7 @@ url: /archives/remove-chinese-character
 categories: 
 tags: 
 - office
+image: https://img.gejiba.com/images/24573291207ff1f08c2a9a343cfe7925.webp
 ---
 
 1. 用word打开要处理的文档

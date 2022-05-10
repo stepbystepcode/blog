@@ -2,45 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://www.stepbystep.cf/tags/office/</loc>
     <lastmod>2022-03-22T17:20:12+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/office/</loc>
+    <loc>https://www.stepbystep.cf/post/</loc>
     <lastmod>2022-03-22T17:20:12+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/</loc>
+    <loc>https://www.stepbystep.cf/tags/</loc>
     <lastmod>2022-03-22T17:20:12+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://www.stepbystep.cf/</loc>
     <lastmod>2022-03-22T17:20:12+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/archives/remove-chinese-character/</loc>
+    <loc>https://www.stepbystep.cf/archives/remove-chinese-character/</loc>
     <lastmod>2022-03-22T17:20:12+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/archives/archlinux/</loc>
+    <loc>https://www.stepbystep.cf/archives/archlinux/</loc>
     <lastmod>2022-03-13T17:53:05+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/linux/</loc>
+    <loc>https://www.stepbystep.cf/tags/linux/</loc>
     <lastmod>2022-03-13T17:53:05+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/windows/</loc>
+    <loc>https://www.stepbystep.cf/tags/windows/</loc>
     <lastmod>2022-03-06T06:28:31+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/archives/computer-tutorial/</loc>
+    <loc>https://www.stepbystep.cf/archives/computer-tutorial/</loc>
     <lastmod>2022-03-06T06:28:31+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/python/</loc>
+    <loc>https://www.stepbystep.cf/tags/python/</loc>
     <lastmod>2022-02-21T13:06:31+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/archives/real-cugan/</loc>
+    <loc>https://www.stepbystep.cf/archives/real-cugan/</loc>
     <lastmod>2022-02-21T13:06:31+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/archives/beautify-powershell/</loc>
+    <loc>https://www.stepbystep.cf/archives/beautify-powershell/</loc>
     <lastmod>2022-02-21T12:14:24+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://www.stepbystep.cf/tags/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2022-02-21T12:14:24+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://www.stepbystep.cf/categories/</loc>
   </url>
 </urlset>

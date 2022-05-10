@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>linux on My New Hugo Site</title>
-        <link>http://example.org/tags/linux/</link>
-        <description>Recent content in linux on My New Hugo Site</description>
+        <title>linux on 一步一个脚印</title>
+        <link>https://www.stepbystep.cf/tags/linux/</link>
+        <description>Recent content in linux on 一步一个脚印</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Sun, 13 Mar 2022 17:53:05 +0000</lastBuildDate><atom:link href="http://example.org/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 13 Mar 2022 17:53:05 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archlinux安装指南</title>
-        <link>http://example.org/archives/archlinux/</link>
+        <link>https://www.stepbystep.cf/archives/archlinux/</link>
         <pubDate>Sun, 13 Mar 2022 17:53:05 +0000</pubDate>
         
-        <guid>http://example.org/archives/archlinux/</guid>
-        <description>&lt;!-- raw HTML omitted --&gt;
+        <guid>https://www.stepbystep.cf/archives/archlinux/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp" alt="Featured image of post Archlinux安装指南" /&gt;&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;一下载iso镜像与工具&#34;&gt;一、下载ISO镜像与工具&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

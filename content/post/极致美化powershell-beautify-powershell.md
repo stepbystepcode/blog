@@ -7,6 +7,7 @@ categories:
 tags: 
 - windows
 - 软件
+image: https://img.gejiba.com/images/24573291207ff1f08c2a9a343cfe7925.webp
 ---
 
 # 一、下载文件并校验文件完整性
@@ -25,8 +26,8 @@ Windows 应用商店搜索Windows Terminal Preview，并安装。
 # 六、安装oh-my-posh
 [点击下载oh-my-posh](https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/download/v7.16.2/install-amd64.exe)
 # 七、设置字体
-![1a03655068e1df483525e55ea3bb8e2e.webp](https://img.gejiba.com/images/1a03655068e1df483525e55ea3bb8e2e.webp)
-![55ba23a7faf29579ce8cd60f95ebf61a.webp](https://img.gejiba.com/images/55ba23a7faf29579ce8cd60f95ebf61a.webp)
+![字体设置1](https://img.gejiba.com/images/1a03655068e1df483525e55ea3bb8e2e.webp)
+![设置字体2](https://img.gejiba.com/images/55ba23a7faf29579ce8cd60f95ebf61a.webp)
 # 八、修改终端配置
 下载主题：
 下载地址：
@@ -44,5 +45,5 @@ oh-my-posh --init --shell pwsh --config D:/oh-my-posh/ys.omp.json | Invoke-Expre
 ```
 
 主题预览：
-![b64b31060fdd99e11c08962d785fd887.webp](https://img.gejiba.com/images/b64b31060fdd99e11c08962d785fd887.webp)
-![0fccd6fb610e9fe59572c17be2fdc8ec.webp](https://img.gejiba.com/images/0fccd6fb610e9fe59572c17be2fdc8ec.webp)
+![主题预览1](https://img.gejiba.com/images/b64b31060fdd99e11c08962d785fd887.webp)
+![主题预览2](https://img.gejiba.com/images/0fccd6fb610e9fe59572c17be2fdc8ec.webp)

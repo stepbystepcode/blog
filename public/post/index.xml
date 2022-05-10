@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on My New Hugo Site</title>
-        <link>http://example.org/post/</link>
-        <description>Recent content in Posts on My New Hugo Site</description>
+        <title>Posts on 一步一个脚印</title>
+        <link>https://www.stepbystep.cf/post/</link>
+        <description>Recent content in Posts on 一步一个脚印</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Tue, 22 Mar 2022 17:20:12 +0000</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 22 Mar 2022 17:20:12 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>如何批量去掉文档中的中文</title>
-        <link>http://example.org/archives/remove-chinese-character/</link>
+        <link>https://www.stepbystep.cf/archives/remove-chinese-character/</link>
         <pubDate>Tue, 22 Mar 2022 17:20:12 +0000</pubDate>
         
-        <guid>http://example.org/archives/remove-chinese-character/</guid>
+        <guid>https://www.stepbystep.cf/archives/remove-chinese-character/</guid>
         <description>&lt;ol&gt;
 &lt;li&gt;用word打开要处理的文档&lt;/li&gt;
 &lt;li&gt;Ctrl+A 全选文档&lt;/li&gt;
@@ -36,11 +36,11 @@
         </item>
         <item>
         <title>Archlinux安装指南</title>
-        <link>http://example.org/archives/archlinux/</link>
+        <link>https://www.stepbystep.cf/archives/archlinux/</link>
         <pubDate>Sun, 13 Mar 2022 17:53:05 +0000</pubDate>
         
-        <guid>http://example.org/archives/archlinux/</guid>
-        <description>&lt;!-- raw HTML omitted --&gt;
+        <guid>https://www.stepbystep.cf/archives/archlinux/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp" alt="Featured image of post Archlinux安装指南" /&gt;&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;一下载iso镜像与工具&#34;&gt;一、下载ISO镜像与工具&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -165,10 +165,10 @@
         </item>
         <item>
         <title>电脑小白入门手册📔</title>
-        <link>http://example.org/archives/computer-tutorial/</link>
+        <link>https://www.stepbystep.cf/archives/computer-tutorial/</link>
         <pubDate>Sun, 06 Mar 2022 06:28:31 +0000</pubDate>
         
-        <guid>http://example.org/archives/computer-tutorial/</guid>
+        <guid>https://www.stepbystep.cf/archives/computer-tutorial/</guid>
         <description>&lt;p&gt;如果你已经学会了电脑的基本操作（如开关机，点击鼠标键盘&amp;hellip;）下一步，你应该学习的是电脑使用原则。&lt;/p&gt;
 &lt;h1 id=&#34;总则&#34;&gt;总则&lt;/h1&gt;
 &lt;h2 id=&#34;一勇&#34;&gt;一、勇&lt;/h2&gt;
@@ -204,10 +204,10 @@
         </item>
         <item>
         <title>让你的二次元美图更清晰</title>
-        <link>http://example.org/archives/real-cugan/</link>
+        <link>https://www.stepbystep.cf/archives/real-cugan/</link>
         <pubDate>Mon, 21 Feb 2022 13:06:31 +0000</pubDate>
         
-        <guid>http://example.org/archives/real-cugan/</guid>
+        <guid>https://www.stepbystep.cf/archives/real-cugan/</guid>
         <description>&lt;p&gt;我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道&lt;a class=&#34;link&#34; href=&#34;http://waifu2x.udp.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;waifu2x&lt;/a&gt;这个工具，但今天在这里给大家介绍一个比waifu2x好用很多倍的神器——Real-CUGAN。
 GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
@@ -232,10 +232,10 @@ cd Real-CUGAN-Server
         </item>
         <item>
         <title>极致美化powershell</title>
-        <link>http://example.org/archives/beautify-powershell/</link>
+        <link>https://www.stepbystep.cf/archives/beautify-powershell/</link>
         <pubDate>Mon, 21 Feb 2022 12:14:24 +0000</pubDate>
         
-        <guid>http://example.org/archives/beautify-powershell/</guid>
+        <guid>https://www.stepbystep.cf/archives/beautify-powershell/</guid>
         <description>&lt;h1 id=&#34;一下载文件并校验文件完整性&#34;&gt;一、下载文件并校验文件完整性&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/PowerShell/PowerShell/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载新版Powershell&lt;/a&gt;&lt;/p&gt;

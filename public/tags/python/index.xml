@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>python on My New Hugo Site</title>
-        <link>http://example.org/tags/python/</link>
-        <description>Recent content in python on My New Hugo Site</description>
+        <title>python on 一步一个脚印</title>
+        <link>https://www.stepbystep.cf/tags/python/</link>
+        <description>Recent content in python on 一步一个脚印</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Mon, 21 Feb 2022 13:06:31 +0000</lastBuildDate><atom:link href="http://example.org/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 21 Feb 2022 13:06:31 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>让你的二次元美图更清晰</title>
-        <link>http://example.org/archives/real-cugan/</link>
+        <link>https://www.stepbystep.cf/archives/real-cugan/</link>
         <pubDate>Mon, 21 Feb 2022 13:06:31 +0000</pubDate>
         
-        <guid>http://example.org/archives/real-cugan/</guid>
+        <guid>https://www.stepbystep.cf/archives/real-cugan/</guid>
         <description>&lt;p&gt;我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道&lt;a class=&#34;link&#34; href=&#34;http://waifu2x.udp.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;waifu2x&lt;/a&gt;这个工具，但今天在这里给大家介绍一个比waifu2x好用很多倍的神器——Real-CUGAN。
 GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
