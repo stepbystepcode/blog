@@ -65,7 +65,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: waline
 
         disqusjs:
             shortname:
@@ -90,7 +90,7 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL:
+            serverURL: https://hugo-comment-seven.vercel.app
             lang:
             visitor:
             avatar:
@@ -102,7 +102,7 @@ params:
                 - url
             placeholder:
             locale:
-                admin: Admin
+              admin: Admin
 
         twikoo:
             envId:
