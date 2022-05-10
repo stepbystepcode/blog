@@ -190,9 +190,8 @@ menu:
           name: GitHub
           url: https://github.com/stepbystepcode
           params:
-            icon: brand-github
-
-       - identifier: wechat
+              icon: brand-github
+        - identifier: wechat
           name: Wechat
           url: https://img.gejiba.com/images/52dd5e880d8f941577f3f09a594dab1d.webp
           params:
