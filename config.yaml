@@ -95,7 +95,7 @@ params:
             visitor:
             avatar:
             emoji:
-                - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+              - https://npm.elemecdn.com/stepbystep-comment@1.0.1/
             requiredMeta:
                 - name
             placeholder: 有不明白的地方或者建议欢迎评论告诉我
