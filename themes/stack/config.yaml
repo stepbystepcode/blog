@@ -71,7 +71,8 @@ params:
             visitor:
             avatar:
             emoji:
-              - https://npm.elemecdn.com/halo-comment-yu@1.5.2/cdn/img/emoji
+              #- https://npm.elemecdn.com/halo-comment-yu@1.5.2/cdn/img/emoji
+              - https://npm.elemecdn.com/stepbystep-comment@1.0.1/
             requiredMeta:
                 - name
                 - email
