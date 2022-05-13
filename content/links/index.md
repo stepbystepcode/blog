@@ -43,4 +43,4 @@ For Example：
 
 ★ URL: www.stepbystep.cf
 
-★ Avatar: https://www.stepbtstep.cf/upload/2022/03/avatar-9e8763e55d5a408bacf4994698b5a0a5.png`)
+★ Avatar: https://img.gejiba.com/images/c8107a862046b88c1845d333fd61bf67.webp)
