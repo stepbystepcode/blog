@@ -13,5 +13,4 @@ menu:
 <script src="https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/vue.min.js"></script>
 <div id="my-botui-app"></div>
 <script>window.onload=function(){
-document.body.innerHTML+="<script src='https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/botui.min.js' ></script><script src='https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/own-bot.js' ></script>";
-}</script>
+document.body.innerHTML+="<script src='https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/botui.min.js'></script><script src='https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/own-bot.js' ></script>";}</script>
