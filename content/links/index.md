@@ -25,13 +25,22 @@ comments: true
 欢迎交换友链 ꉂ(ˊᗜ`)
 
 请留言告诉我你的：
+
 1、名字
+
 2、一句话介绍
+
 3、主页地址
+
 4、头像
 
+
 For Example：
+
 ★ Name: 一步一个脚印
+
 ★ Bio: 一个爱编程的高中生
+
 ★ URL: www.stepbystep.cf
+
 ★ Avatar: https://www.stepbtstep.cf/upload/2022/03/avatar-9e8763e55d5a408bacf4994698b5a0a5.png`)
