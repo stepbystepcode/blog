@@ -200,7 +200,7 @@ menu:
           params:
               icon: search
         - identifier: language
-          name: Language
+          name: Search
           url: https://www.stepbystep.cf/search/
           params:
               icon: language
