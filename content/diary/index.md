@@ -5,4 +5,6 @@ menu:
         weight: 5
         params: 
             icon: diary
+layout: diary
+
 ---
