@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="{{ default `ltr` .Language.LanguageDirection }}">
+    <head>
+        {{- partial "head/head.html" . -}}
+        <link rel="stylesheet" href="https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/botui.min.css" /> <link rel="stylesheet" href="https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/botui-theme-default.css" /><script src="https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/own-bot.js"></script>
+
+
+        {{- block "head" . -}}{{ end }}
+    </head>
+    <body class="{{ block `body-class` . }}{{ end }}">
+        {{- partial "head/colorScheme" . -}}
+
+        {{/* The container is wider when there's any activated widget */}}
+        {{- $hasWidget := false -}}
+        {{- range .Site.Params.widgets -}}
+            {{- if gt (len .) 0 -}}
+                {{- $hasWidget = true -}}
+            {{- end -}}
+        {{- end -}}
+        <div class="container main-container flex on-phone--column {{ if $hasWidget }}extended{{ else }}compact{{ end }}">
+
+            {{- block "left-sidebar" . -}}
+                {{ partial "sidebar/left.html" . }}
+            {{- end -}}
+            <main class="main full-width">
+                {{- block "main" . }}
+
+        <div id="my-botui-app">
+
+          <bot-ui></botui>
+
+        </div>
+                {{- end }}
+            </main>
+            {{- block "right-sidebar" . -}}{{ end }}
+        </div>
+        {{ partial "footer/include.html" . }}
+
+        <script src="https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/vue.min.js"></script>
+            <script src="https://npm.elemecdn.com/sakura-halo@1.3.8/1.3.4/source/lib/botui/botui.min.js"></script>
+    </body>
+</html>
