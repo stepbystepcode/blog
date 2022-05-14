@@ -26,7 +26,7 @@ DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 permalinks:
     post: /p/:slug/
@@ -98,7 +98,7 @@ params:
               - https://npm.elemecdn.com/stepbystep-comment@1.0.1/
             requiredMeta:
                 - name
-            placeholder: 有不明白的地方或者建议欢迎评论告诉我
+            placeholder: 有不明白的地方或建议，欢迎评论告诉我
             locale:
               admin: Admin
 
