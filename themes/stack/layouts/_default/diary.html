@@ -83,7 +83,7 @@ margin-top:1rem;font-size:.8rem;color:#acacac
     <main>
         <div class="article-list--compact">{{ range $article := .Params.article }}
             <div class="month">
-                {{$article.month}} {{ htmlUnescape "&#40;" }}{{len($article)}} entries {{ htmlUnescape "&#41;"}}
+                {{$article.month}}{{len($article)}} entries
             </div>
             <div class="warp">
                 <div class="date">
