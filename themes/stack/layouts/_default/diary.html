@@ -83,7 +83,7 @@ margin-top:1rem;font-size:.8rem;color:#acacac
     <main>
 
         {{ range $article := .Params.article }}
-        $title:={{$article.month}} {{$article.year}} ({{ (len (where $.Params.article "month" "==" $article.month ))}} entries );
+        {{ range $title:={{$article.month}} {{$article.year}} ({{ (len (where $.Params.article "month" "==" $article.month ))}} entries )}}
         
         <div class="month">{{$title}}</div>
             <div class="warp">
@@ -96,7 +96,7 @@ margin-top:1rem;font-size:.8rem;color:#acacac
                 </div>
             </div>
 
-{{ end }}        </div>
+{{ end }} {{end}}       </div>
     </main>
 </body>
 </html>
