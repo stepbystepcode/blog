@@ -7,10 +7,14 @@ menu:
             icon: diary
 layout: diary
 article:
-    - content: "test!"
-      time: "10：54"
+    - content: "test1"
+      time: "10:54"
       month: "2020/Jan"
       date: 18
-      
+    - content: "test2"
+      time: "11:57"
+      month: "2021/May"
+      date: 15
+     
 
 ---
