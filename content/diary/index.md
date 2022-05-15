@@ -9,11 +9,23 @@ layout: diary
 article:
     - content: "test1"
       time: "10:54"
-      month: "2020/Jan"
+      month: "Jan"
+      year: 2020
       date: 18
     - content: "test2"
       time: "11:57"
-      month: "2021/May"
+      month: "May"
+      year: 2021
+      date: 15
+    - content: "test3"
+      time: "11:57"
+      month: "May"
+      year: 2021
+      date: 15
+    - content: "test4"
+      time: "11:57"
+      month: "May"
+      year: 2021
       date: 15
      
 

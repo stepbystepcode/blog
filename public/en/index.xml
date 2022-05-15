@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Step by step</title>
+        <link>https://www.stepbystep.cf/en/</link>
+        <description>Recent content on Step by step</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 22 Mar 2022 17:20:12 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>如何批量去掉文档中的中文</title>
+        <link>https://www.stepbystep.cf/archives/remove-chinese-character/</link>
+        <pubDate>Tue, 22 Mar 2022 17:20:12 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/remove-chinese-character/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/24573291207ff1f08c2a9a343cfe7925.webp" alt="Featured image of post 如何批量去掉文档中的中文" /&gt;&lt;ol&gt;
+&lt;li&gt;用word打开要处理的文档&lt;/li&gt;
+&lt;li&gt;Ctrl+A 全选文档&lt;/li&gt;
+&lt;li&gt;Ctrl+H 打开替换窗口
+&lt;img src=&#34;https://img.gejiba.com/images/4d9859f12162c00796d4c436ff3a802d.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_20220322_172443.png&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;点击左下角更多&lt;/li&gt;
+&lt;li&gt;确保“使用通配符”为勾选状态&lt;/li&gt;
+&lt;li&gt;查找框中输入&lt;code&gt;[!^1-^127]&lt;/code&gt; (英文状态输入)&lt;/li&gt;
+&lt;li&gt;替换框为空白&lt;/li&gt;
+&lt;li&gt;点击“替换全部”&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>Archlinux安装指南</title>
+        <link>https://www.stepbystep.cf/archives/archlinux/</link>
+        <pubDate>Sun, 13 Mar 2022 17:53:05 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/archlinux/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp" alt="Featured image of post Archlinux安装指南" /&gt;&lt;style&gt;
+@font-face
+{
+	font-family: tty;
+	src: url(&#39;../font/437.ttf&#39;)
+}
+pre{
+background:black;
+color:#ccc;
+padding:10px;
+white-space:break-spaces;
+font-family:tty
+}
+pre span{
+color:red;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;一下载iso镜像与工具&#34;&gt;一、下载ISO镜像与工具&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;rufus下载(rufus-x.xp.exe)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://disk.stepbystep.cf/d/ihasher.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ihasher下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8fc41ece91af084081f268d62dfd12b2.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;L4o0YqrTRt.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;二制作安装u盘&#34;&gt;二、制作安装U盘&lt;/h1&gt;
+&lt;p&gt;&lt;span style=&#34;color:red;font-size:20px;font-weight:700&#34;&gt;注意：制作的安装U盘将被格式化，即删除里面所有内容!&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;如果询问是否允许更新、确认格式化U盘，点击yes即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8a878ecbbd55c09df96f11e7d1237f99.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;GUdAxCxxop.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;三预留分区&#34;&gt;三、预留分区&lt;/h1&gt;
+&lt;p&gt;Windows+R输入diskmgmt.msc
+&lt;img src=&#34;https://img.gejiba.com/images/f24c1f55af9dec72f26fb9ff1e488f2b.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;mmexport1647324031181.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/5eaae631dd6a6d922728cea1582945c4.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;mmexport1647324029962.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四选择uefi模式并进入u盘安装系统&#34;&gt;四、选择UEFI模式并进入u盘安装系统&lt;/h1&gt;
+&lt;p&gt;选择UEFI模式启动，不同电脑不太一样，请按照电脑说明书或上网搜索进行该步骤。&lt;/p&gt;
+&lt;h2 id=&#34;更新系统时间&#34;&gt;更新系统时间&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # timedatectl set-ntp true&lt;/pre&gt;
+&lt;h2 id=&#34;分区&#34;&gt;分区&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # fdisk -l&lt;/pre&gt;
+&lt;p&gt;结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。&lt;/p&gt;
+&lt;p&gt;对于一个选定的设备，以下分区是必须要有的：&lt;/p&gt;
+&lt;p&gt;一个根分区（挂载在 根目录）/&lt;/p&gt;
+&lt;p&gt;一个 EFI 系统分区&lt;/p&gt;
+&lt;p&gt;请使用 fdisk 或 parted 修改分区表。例如：&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # fdisk /dev/the_disk_to_be_partitioned（要被分区的磁盘）&lt;/pre&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th&gt;挂载点
+&lt;/th&gt;
+&lt;th&gt;分区
+&lt;/th&gt;
+&lt;th&gt;分区类型
+&lt;/th&gt;
+&lt;th&gt;建议大小
+&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/mnt/boot
+&lt;/td&gt;
+&lt;td&gt;/dev/&lt;i&gt;efi_system_partition（efi 系统分区）&lt;/i&gt;
+&lt;/td&gt;
+&lt;td&gt;EFI 系统分区
+&lt;/td&gt;
+&lt;td&gt;至少 260 MiB
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/mnt
+&lt;/td&gt;
+&lt;td&gt;/dev/&lt;i&gt;root_partition（根分区）&lt;/i&gt;
+&lt;/td&gt;
+&lt;td&gt;Linux x86-64 根目录 (/)
+&lt;/td&gt;
+&lt;td&gt;剩余空间
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;格式化分区&#34;&gt;格式化分区&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkfs.ext4 /dev/root_partition（根分区）
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkfs.fat -F 32 /dev/efi_system_partition&lt;/pre&gt;
+&lt;h2 id=&#34;挂载分区&#34;&gt;挂载分区&lt;/h2&gt;
+&lt;p&gt;将根磁盘卷 挂载 到 /mnt，将efi系统卷挂载到/mnt/boot&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkdir /mnt/boot
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # mount /dev/root_partition（根分区） /mnt
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # mount /dev/（efi系统分区） /mnt/boot&lt;/pre&gt;
+&lt;h2 id=&#34;设置镜像源&#34;&gt;设置镜像源&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # reflector --country China --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist&lt;/pre&gt;
+&lt;h2 id=&#34;安装必需的软件包&#34;&gt;安装必需的软件包&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # pacstrap /mnt base linux linux-firmware&lt;/pre&gt;
+&lt;h2 id=&#34;配置系统&#34;&gt;配置系统&lt;/h2&gt;
+&lt;p&gt;Fstab
+用以下命令生成 fstab 文件 (用 -U 或 -L 选项设置UUID 或卷标)：&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # genfstab -U /mnt &gt;&gt; /mnt/etc/fstab&lt;/pre&gt;
+&lt;p&gt;强烈建议在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。&lt;/p&gt;
+&lt;h2 id=&#34;chroot&#34;&gt;Chroot&lt;/h2&gt;
+&lt;p&gt;Change root 到新安装的系统：&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # arch-chroot /mnt
+[root@archiso /]#&lt;/pre&gt;
+&lt;h2 id=&#34;时区&#34;&gt;时区&lt;/h2&gt;
+&lt;p&gt;要设置时区：&lt;/p&gt;
+&lt;pre&gt;[root@archiso /]# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+[root@archiso /]# hwclock --systohc&lt;/pre&gt;
+&lt;h2 id=&#34;本地化&#34;&gt;本地化&lt;/h2&gt;
+&lt;p&gt;编辑 /etc/locale.gen，然后取消掉 en_US.UTF-8 UTF-8 和其他需要的 地区 前的注释（#）。&lt;/p&gt;
+&lt;pre&gt;[root@archiso /]# vim /etc/locale.gen
+[root@archiso /]# locale-gen
+[root@archiso /]# vim /etc/locale.conf&lt;/pre&gt;
+&lt;pre&gt;
+LANG=en_US.UTF-8
+&lt;/pre&gt;
+&lt;h2 id=&#34;网络配置&#34;&gt;网络配置&lt;/h2&gt;
+&lt;p&gt;创建 hostname 文件:&lt;/p&gt;
+&lt;p&gt;/etc/hostname&lt;/p&gt;
+&lt;pre&gt;
+myhostname（主机名）
+&lt;/pre&gt;
+&lt;p&gt;添加对应的信息到 hosts:&lt;/p&gt;
+&lt;pre&gt;[root@archiso /]# vim /etc/hosts&lt;/pre&gt;
+&lt;pre&gt;
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	myhostname.localdomain	myhostname # 主机名.本地域名 主机名
+&lt;/pre&gt;
+&lt;h2 id=&#34;设置root密码&#34;&gt;设置root密码&lt;/h2&gt;
+&lt;pre&gt;[root@archiso /]# passwd&lt;/pre&gt;
+&lt;h2 id=&#34;安装引导内核联网相关软件包&#34;&gt;安装引导、内核、联网相关软件包&lt;/h2&gt;
+&lt;pre&gt;[root@archiso /]# pacman -S grub efibootmgr intel-ucode os-prober wpa_supplicant dhcpcd&lt;/pre&gt;
+&lt;h2 id=&#34;配置grub引导&#34;&gt;配置grub引导&lt;/h2&gt;
+&lt;pre&gt;[root@archiso /]# mkdir /boot/grub
+[root@archiso /]# grub-mkconfig &gt; /boot/grub/grub.cfg
+[root@archiso /]# grub-install --target=x86_64-efi --efi-directory=/boot
+[root@archiso /]# 
+[root@archiso /]# 
+&lt;/pre&gt;
+&lt;h2 id=&#34;退出chroot&#34;&gt;退出chroot&lt;/h2&gt;
+&lt;pre&gt;[root@archiso /]# exit
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # umount -R /mnt
+&lt;/pre&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # reboot&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[1]ArchWiki. Installation guide[EB/OL]. [2022-3-16]. &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wiki.archlinux.org/title/Installation_guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>电脑小白入门手册📔</title>
+        <link>https://www.stepbystep.cf/archives/computer-tutorial/</link>
+        <pubDate>Sun, 06 Mar 2022 06:28:31 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/computer-tutorial/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/dc28dd597dffccfbf3d871509da52d31.webp" alt="Featured image of post 电脑小白入门手册📔" /&gt;&lt;p&gt;如果你已经学会了电脑的基本操作（如开关机，点击鼠标键盘&amp;hellip;）下一步，你应该学习的是电脑使用原则。&lt;/p&gt;
+&lt;h1 id=&#34;总则&#34;&gt;总则&lt;/h1&gt;
+&lt;h2 id=&#34;一勇&#34;&gt;一、勇&lt;/h2&gt;
+&lt;p&gt;有人说我天生会电脑，其实这是不对的。能会使用电脑，关键在于你对待电脑的态度。你需要把电脑当做一个玩具，而不是一个工具，你需要把系统和软件当做游戏。只要你不去乱动系统设置等危险地带，一般不会弄坏电脑。所以说：一定要勇！勇敢地去尝试，积累经验。不要怕这怕那。你畏缩不前，就永远不能看到胜利的彼岸。&lt;/p&gt;
+&lt;h2 id=&#34;二查&#34;&gt;二、查&lt;/h2&gt;
+&lt;p&gt;有不会的问题，上&lt;a class=&#34;link&#34; href=&#34;https://www.bing.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;必应&lt;/a&gt;搜一搜。不要再用百度了，都是广告和无用的杂牌信息。记住，先查再问。&lt;/p&gt;
+&lt;h2 id=&#34;三记&#34;&gt;三、记&lt;/h2&gt;
+&lt;p&gt;当你学会了一个技能，要记住它。&lt;/p&gt;
+&lt;h2 id=&#34;四练&#34;&gt;四、练&lt;/h2&gt;
+&lt;p&gt;勤加练习，多尝试，多总结&lt;/p&gt;
+&lt;h2 id=&#34;五悟&#34;&gt;五、悟&lt;/h2&gt;
+&lt;p&gt;永远不要指望最详细的教程，你需要自己去领悟，去探索未知世界。&lt;/p&gt;
+&lt;h1 id=&#34;大忌&#34;&gt;大忌&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;把文件放到桌面上&lt;/li&gt;
+&lt;li&gt;把软件安装到C盘&lt;/li&gt;
+&lt;li&gt;不加分辨地从网上下载软件&lt;/li&gt;
+&lt;li&gt;用中文命名软件安装目录和系统用户名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;安装软件&#34;&gt;安装软件&lt;/h1&gt;
+&lt;p&gt;困扰很多电脑初学者的第一个问题就是安装软件。
+打开&lt;a class=&#34;link&#34; href=&#34;pc.qq.com&#34; &gt;pc.qq.com&lt;/a&gt;，在右上方搜索栏搜索软件名称，然后在结果里找到你想要的软件，点击右侧绿色按钮的&lt;span style=&#34;color:red&#34;&gt;小箭头&lt;/span&gt;然后点击&lt;span style=&#34;color:red&#34;&gt;普通下载&lt;/span&gt;。打开下载后的安装包，95%的软件都在安装时可以自定义安装位置。在D盘新建一个文件夹，命名与软件名称相同（英文，首字母大写），如果软件名称为中文，请用首字母大写的拼音全拼，无空格（如暴风影音：Baofeng），不要添加任何标点符号。选择该目录安装。安装时要注意细节选项。&lt;/p&gt;
+&lt;h2 id=&#34;卸载软件&#34;&gt;卸载软件&lt;/h2&gt;
+&lt;h3 id=&#34;第一次准备工作&#34;&gt;第一次准备工作&lt;/h3&gt;
+&lt;p&gt;点击下面链接下载Geek Uninstaller
+&lt;a class=&#34;link&#34; href=&#34;https://disk.stepbystep.cf/d/geek.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点我下载&lt;/a&gt;
+保存在D盘新建文件夹（命名为Geek）&lt;/p&gt;
+&lt;h2 id=&#34;卸载方法&#34;&gt;卸载方法&lt;/h2&gt;
+&lt;p&gt;打开geek，找到要卸载的软件，右键点击卸载。在弹出的卸载窗口按照提示卸载。然后返回geek窗口点击删除。然后进度条完成后关闭geek即可。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://www.stepbystep.cf/en/archives/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/en/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>让你的二次元美图更清晰</title>
+        <link>https://www.stepbystep.cf/archives/real-cugan/</link>
+        <pubDate>Mon, 21 Feb 2022 13:06:31 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/real-cugan/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp" alt="Featured image of post 让你的二次元美图更清晰" /&gt;&lt;p&gt;我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道&lt;a class=&#34;link&#34; href=&#34;http://waifu2x.udp.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;waifu2x&lt;/a&gt;这个工具，但今天在这里给大家介绍一个比waifu2x好用很多倍的神器——Real-CUGAN。
+GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
+&lt;h1 id=&#34;效果对比&#34;&gt;效果对比&lt;/h1&gt;
+&lt;p&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg&#39;&#34;&gt;原始图片&lt;/button&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/3f2dfbcbdafd20ba77699c1c2d95d520.jpg&#39;&#34;&gt;waifu2x&lt;/button&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/8f76fd4c566a873a669b3fe445bcf490.jpg&#39;&#34;&gt;Real-CUGAN&lt;/button&gt;
+&lt;img id=&#34;pic&#34; style=&#34;width:300px&#34; src=&#34;https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;一安装python&#34;&gt;一、安装Python&lt;/h1&gt;
+&lt;h1 id=&#34;二安装lib组件库&#34;&gt;二、安装lib组件库&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install torch
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install numpy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install  opencv-python
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install  moviepy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;三建立工作目录并命名文件&#34;&gt;三、建立工作目录并命名文件&lt;/h1&gt;
+&lt;p&gt;建立文件夹及文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://hub.fastgit.xyz/fumiama/Real-CUGAN-Server.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd Real-CUGAN-Server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;替换input_dir1文件夹里的输入图片文件。&lt;/p&gt;
+&lt;h1 id=&#34;四调用命令处理图片&#34;&gt;四、调用命令处理图片&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;python3&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;upcunet_v3&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;py&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;输出图片在opt-dir-all-test文件夹中。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>极致美化powershell</title>
+        <link>https://www.stepbystep.cf/archives/beautify-powershell/</link>
+        <pubDate>Mon, 21 Feb 2022 12:14:24 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/beautify-powershell/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp" alt="Featured image of post 极致美化powershell" /&gt;&lt;h1 id=&#34;一下载文件并校验文件完整性&#34;&gt;一、下载文件并校验文件完整性&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/PowerShell/PowerShell/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点击下载新版Powershell&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/git-for-windows/git/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点击下载Git&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;二安装git&#34;&gt;二、安装Git&lt;/h1&gt;
+&lt;h1 id=&#34;三安装nerd-font字体&#34;&gt;三、安装Nerd Font字体&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;推荐JetBrainsMono&lt;/em&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/ryanoasis/nerd-fonts/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点击下载&lt;/a&gt;
+下载解压后选中全部ttf文件，右键，安装&lt;/p&gt;
+&lt;h1 id=&#34;四安装windows-terminal-preview&#34;&gt;四、安装Windows Terminal Preview&lt;/h1&gt;
+&lt;p&gt;Windows 应用商店搜索Windows Terminal Preview，并安装。&lt;/p&gt;
+&lt;h1 id=&#34;五安装新版powershell&#34;&gt;五、安装新版PowerShell&lt;/h1&gt;
+&lt;p&gt;一路下一步即可，建议安装到D盘的Powershell文件夹。&lt;/p&gt;
+&lt;h1 id=&#34;六安装oh-my-posh&#34;&gt;六、安装oh-my-posh&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/download/v7.16.2/install-amd64.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点击下载oh-my-posh&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;七设置字体&#34;&gt;七、设置字体&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/1a03655068e1df483525e55ea3bb8e2e.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;字体设置1&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.gejiba.com/images/55ba23a7faf29579ce8cd60f95ebf61a.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;设置字体2&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;八修改终端配置&#34;&gt;八、修改终端配置&lt;/h1&gt;
+&lt;p&gt;下载主题：
+下载地址：
+&lt;span style=&#34;color:red&#34;&gt;注意：请先替换地址中的主题名称&lt;/span&gt;，然后在浏览器里打开，Ctrl+S保存，注意后缀名应以json结尾
+&lt;a class=&#34;link&#34; href=&#34;https://raw.fastgit.org/JanDeDobbeleer/oh-my-posh/main/themes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://raw.fastgit.org/JanDeDobbeleer/oh-my-posh/main/themes/&lt;/a&gt;此处改为你喜欢的主题名称.omp.json
+在D盘新建目录oh-my-posh，将下载的主题文件放在里面&lt;/p&gt;
+&lt;h1 id=&#34;八设置-powershell-的初始化文件&#34;&gt;八、设置 PowerShell 的初始化文件&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(!(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Test-Path&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Path&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$PROFILE&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;New-Item&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Type&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;File&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Path&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$PROFILE&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Force&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;notepad&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$PROFILE&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;粘贴以下内容进 profile 文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;oh-my&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-posh&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-init&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-shell&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pwsh&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-config&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;oh-my&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-posh&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;omp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;json&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Invoke-Expression&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;主题预览：
+&lt;img src=&#34;https://img.gejiba.com/images/b64b31060fdd99e11c08962d785fd887.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;主题预览1&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.gejiba.com/images/0fccd6fb610e9fe59572c17be2fdc8ec.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;主题预览2&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://www.stepbystep.cf/en/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/en/links/</guid>
+        <description>&lt;p&gt;欢迎交换友链 ꉂ(ˊᗜ`)&lt;/p&gt;
+&lt;p&gt;请留言告诉我你的：&lt;/p&gt;
+&lt;p&gt;1、名字&lt;/p&gt;
+&lt;p&gt;2、一句话介绍&lt;/p&gt;
+&lt;p&gt;3、主页地址&lt;/p&gt;
+&lt;p&gt;4、头像&lt;/p&gt;
+&lt;p&gt;For Example：&lt;/p&gt;
+&lt;p&gt;★ Name: 一步一个脚印&lt;/p&gt;
+&lt;p&gt;★ Bio: 一个爱编程的高中生&lt;/p&gt;
+&lt;p&gt;★ URL: &lt;a class=&#34;link&#34; href=&#34;https://www.stepbystep.cf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;www.stepbystep.cf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;★ Avatar: &lt;a class=&#34;link&#34; href=&#34;https://img.gejiba.com/images/c8107a862046b88c1845d333fd61bf67.webp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://img.gejiba.com/images/c8107a862046b88c1845d333fd61bf67.webp&lt;/a&gt;)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://www.stepbystep.cf/en/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/en/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

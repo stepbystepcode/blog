@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="zh-cn">
 	<head>    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+ 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -63,7 +63,7 @@ table {
 	.month {
   text-align: center;margin: 1rem 0;color:#acacac
 }.warp{
-width:100%;margin-top: 1rem;
+width:100%
 }.date{
 text-align:center;width:4rem;height:3rem;margin:0.5rem;display:inline-block;font-size:0.7rem;color:#acacac
 }
@@ -81,19 +81,38 @@ margin-top:1rem;font-size:.8rem;color:#acacac
         我的心情日记
     </header>
     <main>
-        {{ range $i,$article := $.Params.article }}
-        <div class="month">{{$article.month}} {{$article.year}} ({{ (len (where $.Params.article "month" "==" $article.month ))}} entries )</div>
+        <div class="article-list--compact">
+            <div class="month">
+                2020/Jan (4 entries )
+            </div>
             <div class="warp">
                 <div class="date">
-                    <span>{{$article.date}}</span>{{$article.month}}
+                    <span>18</span>2020/Jan
                 </div>
-                <div class="card">{{$article.content}}
-                    <div class="time">{{$article.time}}
+                <div class="card">test1
+                    <div class="time">10:54
                     </div>
                 </div>
             </div>
+            
+map[content:test1 date:18 month:2020/Jan time:10:54]
 
-{{ end }}        </div>
+            <div class="month">
+                2021/May (4 entries )
+            </div>
+            <div class="warp">
+                <div class="date">
+                    <span>15</span>2021/May
+                </div>
+                <div class="card">test2
+                    <div class="time">11:57
+                    </div>
+                </div>
+            </div>
+            
+map[content:test2 date:15 month:2021/May time:11:57]
+
+        </div>
     </main>
 </body>
 </html>
