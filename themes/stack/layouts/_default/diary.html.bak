@@ -53,7 +53,7 @@ table {
 	font-face
 {
     @font-family: number;
-    src: url(https://npm.elemecdn.com/stepbystep-blog@1.0.5/diary/fonts/HelveticaNeueLTPro-ThEx.otf);
+    src: url(https://npm.elemecdn.com/stepbystep-blog@1.0.4/diary/fonts/HelveticaNeueLTPro-ThEx.woff);
 }
  
 	body{background:#ececec}
