@@ -80,7 +80,7 @@ margin-top:1rem;font-size:.8rem;color:#acacac
 		<header>我的心情日记</header>
 		<main><div class="month">Jan 2020 (1 entries)</div>
 		<div class="warp">
-		<div class="date"><span>{{T "article.date"}}</span>{{ T "article.month"}}</div><div class="card">{{T "article.content"}}<div class="time">{{T "article.time"}}</div></div>
+		<div class="date"><span>{{T "article.date"}}</span>{{ T "article.month"}}</div><div class="card">{{T "article.content"}}<div class="time">14:18</div></div>
 		</div></main>
 	</body>
 </html>
