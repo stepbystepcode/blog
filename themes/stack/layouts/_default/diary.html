@@ -83,9 +83,9 @@ margin-top:1rem;font-size:.8rem;color:#acacac
     <main>
 
         {{ range $article := .Params.article }}
-        {{if (index (where $.Params.article "month" "==" $article.month) 1 )}}
-        {{else}}
-        <div class="month">{{$article.month}} {{$article.year}} ({{ (len (where $.Params.article "month" "==" $article.month ))}} entries )</div>{{end}}
+        $title:={{$article.month}} {{$article.year}} ({{ (len (where $.Params.article "month" "==" $article.month ))}} entries );
+        
+        <div class="month">{{$title}}</div>
             <div class="warp">
                 <div class="date">
                   <span>{{$article.date}}</span>{{$article.year}}/{{$article.month}}
