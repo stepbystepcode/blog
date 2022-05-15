@@ -81,8 +81,11 @@ margin-top:1rem;font-size:.8rem;color:#acacac
         我的心情日记
     </header>
     <main>
-        {{ range $i,$article := $.Params.article }}
-        <div class="month">{{$article.month}} {{$article.year}} ({{ (len (where $.Params.article "month" "==" $article.month ))}} entries )</div>
+
+        {{ range $article := .Params.article }}
+        {{if (index (where $.Params.article "month" "==" $article.month) 1 )}}
+        {{else}}
+        <div class="month">{{$article.month}} {{$article.year}} ({{ (len (where $.Params.article "month" "==" $article.month ))}} entries )</div>{{end}}
             <div class="warp">
                 <div class="date">
                   <span>{{$article.date}}</span>{{$article.year}}/{{$article.month}}
