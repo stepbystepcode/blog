@@ -85,7 +85,7 @@ margin-top:1rem;font-size:.8rem;color:#acacac
         <div class="month">{{$article.month}} {{$article.year}} ({{ (len (where $.Params.article "month" "==" $article.month ))}} entries )</div>
             <div class="warp">
                 <div class="date">
-                    <span>{{$article.date}}</span>{{$article.month}}
+                  <span>{{$article.date}}</span>{{$article.year}}/{{$article.month}}
                 </div>
                 <div class="card">{{$article.content}}
                     <div class="time">{{$article.time}}
