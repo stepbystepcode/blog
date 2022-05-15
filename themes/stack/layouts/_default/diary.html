@@ -81,13 +81,10 @@ margin-top:1rem;font-size:.8rem;color:#acacac
 		<main>
 		
 		<div class="article-list--compact">
-    {{ range $i, $article := .Params.article }}
-  
-
-
+    {{ range $i, .Params.article := .Params.article }}
 <div class="month">Jan 2020 (1 entries)</div>
 		<div class="warp">
-		<div class="date"><span>{{$ article.date}}</span>{{ $article.month}}</div><div class="card">{{$article.content}}<div class="time">{{$article.time}}</div></div>
+		<div class="date"><span>{{$ article.date}}</span>{{ .Params.article.month}}</div><div class="card">{{.Params.article.content}}<div class="time">{{.Params.article.time}}</div></div>
 		</div>
 		  {{ end }}</div>
 		</main>

@@ -78,9 +78,15 @@ margin-top:1rem;font-size:.8rem;color:#acacac
 	</head>
 	<body>
 		<header>我的心情日记</header>
-		<main><div class="month">Jan 2020 (1 entries)</div>
+		<main>
+		
+		<div class="article-list--compact">
+    {{ range $i, $article := .Params.article }}
+<div class="month">Jan 2020 (1 entries)</div>
 		<div class="warp">
-		<div class="date"><span>{{T "article.date"}}</span>{{ T "article.month"}}</div><div class="card">{{T "article.content"}}<div class="time">{{T "article.time"}}</div></div>
-		</div></main>
+		<div class="date"><span>{{$ article.date}}</span>{{ $article.month}}</div><div class="card">{{$article.content}}<div class="time">{{$article.time}}</div></div>
+		</div>
+		  {{ end }}</div>
+		</main>
 	</body>
 </html>
