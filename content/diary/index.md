@@ -7,9 +7,9 @@ menu:
             icon: diary
 layout: diary
 article:
-    - content: test!
-      time: 10：54
-      month: 2020/Jan
+    - content: "test!"
+      time: "10：54"
+      month: "2020/Jan"
       date: 18
       
 
