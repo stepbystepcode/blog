@@ -184,26 +184,21 @@ menu:
     main: []
 
     social:
-        - identifier: github
+        - identifier: a
           name: GitHub
           url: https://github.com/stepbystepcode
           params:
               icon: brand-github
-        - identifier: wechat
+        - identifier: b
           name: Wechat
           url: https://img.gejiba.com/images/52dd5e880d8f941577f3f09a594dab1d.webp
           params:
-              icon: brand-messenger
-        - identifier: search
+              icon: brand-wechat
+        - identifier: c
           name: Search
           url: https://www.stepbystep.cf/search/
           params:
               icon: search
-        - identifier: language
-          name: Language
-          url: https://www.stepbystep.cf/search/
-          params:
-              icon: language
 
 related:
     includeNewer: true
