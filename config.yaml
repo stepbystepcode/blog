@@ -183,7 +183,7 @@ params:
 menu:
     main:
         - identifier: d
-          name: Diary
+          name: 心情
           url: /diary
           weight: 5
           params:
