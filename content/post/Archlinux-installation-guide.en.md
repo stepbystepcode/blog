@@ -1,8 +1,8 @@
 ---
-title: Archlinux安装指南
+title: Archlinux Installation guide
 date: 2022-03-13 17:53:05.0
 updated: 2022-05-04 10:15:12.718
-url: /archives/archlinux
+url: /en/archives/archlinux
 categories: 
 tags: 
 - linux
