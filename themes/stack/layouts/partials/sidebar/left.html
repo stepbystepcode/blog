@@ -78,7 +78,7 @@
 		</li>
 		{{ end }}
 		<li onclick="toggleLang()">{{ partial "helper/icon" "language" }}</li>
-		<li onclick="toggleColorScheme()">{{ partial "helper/icon" "moon" }}</li>
+		<li onclick="toggleColorScheme()">{{ partial "helper/icon" "moon" }}{{ partial "helper/icon" "sun" }}</li>
 	</ol>
 	{{- end -}}
 
@@ -133,7 +133,7 @@
 			}
 		};
 let toggleColorScheme=()=>{
-let colorSchemeItem = localStorage.getItem("StackColorScheme");;
+let colorSchemeItem = localStorage.getItem("StackColorScheme");
 if (colorSchemeItem == 'dark') {
              document.documentElement.dataset.scheme = 'light';localStorage.setItem("StackColorScheme", "light");
          } else {
