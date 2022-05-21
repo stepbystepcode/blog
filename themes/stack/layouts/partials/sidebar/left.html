@@ -140,6 +140,10 @@ if (colorSchemeItem == 'dark') {
              children[0].style.display="block";children[1].style.display="none"
          } else {
              document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");children[0].style.display="none";children[1].style.display="block"}
-}
+}let colorSchemeItem = localStorage.getItem("StackColorScheme");if (colorSchemeItem == 'dark') {
+            
+             children[1].style.display="block";children[0].style.display="none"
+         } else {
+       children[1].style.display="none";children[0].style.display="block"}
 	</script>
 </aside>
