@@ -3,7 +3,9 @@ toggleMenu:
 
 darkMode:
     other: Dark Mode
-
+diary:
+    other: Mood
+    
 list:
     page:
         one: "{{ .Count }} page"
