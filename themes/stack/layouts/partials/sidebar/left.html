@@ -47,7 +47,7 @@
 		</div>
 	</header>
 
-	{{- with .Site.Menus.social -}}
+	{{ with .Site.Menus.social }}
 	<ol class="social-menu">
 		{{ range . }}
 		<li>
@@ -80,7 +80,7 @@
 		<li onclick="toggleLang()">{{ partial "helper/icon" "language" }}</li>
 		<li onclick="toggleColorScheme()" class="theme">{{ partial "helper/icon" "moon" }}{{ partial "helper/icon" "sun" }}</li>
 	</ol>
-	{{- end -}}
+	{{ end }}
 
 	<ol class="menu" id="main-menu">
 		{{ $currentPage := . }} {{ range .Site.Menus.main }} {{ $active := or (eq $currentPage.Title

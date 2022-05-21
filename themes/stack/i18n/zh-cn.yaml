@@ -3,8 +3,10 @@ toggleMenu:
 
 darkMode:
     other: 暗色模式
+    
 diary:
     other: 心情
+    
 article:
     back:
         other: 返回
