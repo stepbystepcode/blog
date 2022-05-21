@@ -1,0 +1,37 @@
+---
+title: 让你的二次元美图更清晰
+date: 2022-02-21 13:06:31.541
+updated: 2022-05-04 09:03:40.845
+url: /en/archives/real-cugan
+categories: 
+tags: 
+- python
+image: https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp
+---
+
+我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道[waifu2x](http://waifu2x.udp.jp/)这个工具，但今天在这里给大家介绍一个比waifu2x好用很多倍的神器——Real-CUGAN。
+GitHub链接如下：https://github.com/fumiama/Real-CUGAN
+
+# 效果对比
+<button onclick="document.querySelector('#pic').src='https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg'">原始图片</button><button onclick="document.querySelector('#pic').src='https://img.gejiba.com/images/3f2dfbcbdafd20ba77699c1c2d95d520.jpg'">waifu2x</button><button onclick="document.querySelector('#pic').src='https://img.gejiba.com/images/8f76fd4c566a873a669b3fe445bcf490.jpg'">Real-CUGAN</button>
+<img id="pic" style="width:300px" src="https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg" />
+# 一、安装Python
+# 二、安装lib组件库
+```
+pip3 install torch
+pip3 install numpy
+pip3 install  opencv-python
+pip3 install  moviepy
+```
+# 三、建立工作目录并命名文件
+建立文件夹及文件
+```
+git clone https://hub.fastgit.xyz/fumiama/Real-CUGAN-Server.git
+cd Real-CUGAN-Server
+```
+替换input_dir1文件夹里的输入图片文件。
+# 四、调用命令处理图片
+```python
+python3 upcunet_v3.py
+```
+输出图片在opt-dir-all-test文件夹中。
