@@ -78,7 +78,7 @@
 		</li>
 		{{ end }}
 		<li onclick="toggleLang()">{{ partial "helper/icon" "language" }}</li>
-		<li>{{ partial "helper/icon" "moon" }}</li>
+		<li onclick="toggleColorScheme()">{{ partial "helper/icon" "moon" }}</li>
 	</ol>
 	{{- end -}}
 
@@ -132,5 +132,11 @@
 				window.location.href = "https://www.stepbystep.cf" + window.location.pathname.slice(3);
 			}
 		};
+let toggleColorScheme=()=>{
+if (colorSchemeItem == 'dark') {
+             document.documentElement.dataset.scheme = 'dark';
+         } else {
+             document.documentElement.dataset.scheme = 'light';} 
+}
 	</script>
 </aside>
