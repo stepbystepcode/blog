@@ -117,6 +117,7 @@ if (colorSchemeItem == 'dark') {
              children[0].style.display="block";children[1].style.display="none";document.querySelector('.article-img').classList.remove("dark");
          } else {
              document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");children[0].style.display="none";children[1].style.display="block";document.querySelector('.article-img').classList.add("dark");}
-}window.onload=function(){let menu=document.querySelector("#main-menu");menu.insertBefore(menu.children[5],menu.children[4]);
+}
+window.onload=function(){let menu=document.querySelector('#main-menu');menu.insertBefore(menu.children[5],menu.children[4]);
 };	</script>
 </aside>
