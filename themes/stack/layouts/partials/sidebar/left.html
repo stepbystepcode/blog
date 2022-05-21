@@ -114,9 +114,9 @@ let toggleColorScheme=()=>{
 colorSchemeItem = localStorage.getItem("StackColorScheme");
 if (colorSchemeItem == 'dark') {
              document.documentElement.dataset.scheme = 'light';localStorage.setItem("StackColorScheme", "light");
-             children[0].style.display="block";children[1].style.display="none"
+             children[0].style.display="block";children[1].style.display="none";document.querySelector(".social-menu").children[1].style.fill="#bababa"
          } else {
-             document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");children[0].style.display="none";children[1].style.display="block"}
+             document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");children[0].style.display="none";children[1].style.display="block";document.querySelector(".social-menu").children[1].style.fill="rgba(255, 255, 255, 0.7)"}
 }
 	</script>
 </aside>
