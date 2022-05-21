@@ -133,11 +133,11 @@
 			}
 		};
 let toggleColorScheme=()=>{
-let colorSchemeItem = localStorage.getItem(colorSchemeKey);
+let colorSchemeItem = localStorage.getItem("StackColorScheme");;
 if (colorSchemeItem == 'dark') {
-             document.documentElement.dataset.scheme = 'dark';
+             document.documentElement.dataset.scheme = 'light';
          } else {
-             document.documentElement.dataset.scheme = 'light';} 
+             document.documentElement.dataset.scheme = 'dark';} 
 }
 	</script>
 </aside>
