@@ -134,10 +134,12 @@
 		};
 let toggleColorScheme=()=>{
 let colorSchemeItem = localStorage.getItem("StackColorScheme");
+let children = document.querySelector(".theme").children;
 if (colorSchemeItem == 'dark') {
              document.documentElement.dataset.scheme = 'light';localStorage.setItem("StackColorScheme", "light");
+             children[0].style.display="block";children[1].style.display="none"
          } else {
-             document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");}
+             document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");children[0].style.display="none";children[1].style.display="block"}
 }
 	</script>
 </aside>
