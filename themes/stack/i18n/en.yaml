@@ -4,8 +4,6 @@ toggleMenu:
 darkMode:
     other: Dark Mode
     
-diary:
-    other: Mood
     
 list:
     page:
@@ -74,3 +72,6 @@ footer:
 
     designedBy:
         other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+
+diary:
+    other: Mood
