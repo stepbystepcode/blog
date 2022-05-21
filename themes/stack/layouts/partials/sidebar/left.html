@@ -114,9 +114,9 @@ let toggleColorScheme=()=>{
 colorSchemeItem = localStorage.getItem("StackColorScheme");
 if (colorSchemeItem == 'dark') {
              document.documentElement.dataset.scheme = 'light';localStorage.setItem("StackColorScheme", "light");
-             children[0].style.display="block";children[1].style.display="none";document.querySelector('.article-img').classList.remove("dark");
+             children[0].style.display="block";children[1].style.display="none";document.body.innerhtml+="<style>.article-list article .article-image img{filter:brightness(100%)!important}</style>"
          } else {
-             document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");children[0].style.display="none";children[1].style.display="block";document.querySelector('.article-img').classList.add("dark");}
+             document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");children[0].style.display="none";children[1].style.display="block";document.body.innerhtml+="<style>.article-list article .article-image img{filter:brightness(70%)!important}</style>"}
 }
 window.onload=function(){let menu=document.querySelector('#main-menu');menu.insertBefore(menu.children[5],menu.children[4]);
 };	</script>
