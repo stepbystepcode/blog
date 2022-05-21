@@ -26,13 +26,13 @@
                         {{- $Height = $thumbnail.Height -}}
                     {{- end -}}
                     
-                    <img src="{{ $Permalink }}" 
+                    <img class="article-img" src="{{ $Permalink }}" 
                         width="{{ $Width }}"
                         height="{{ $Height }}" 
                         alt="{{ .Title }}"
                         loading="lazy">
                 {{ else }}
-                    <img src="{{ $image.permalink }}" loading="lazy" alt="Featured image of post {{ .Title }}" />
+                    <img class="article-img" src="{{ $image.permalink }}" loading="lazy" alt="Featured image of post {{ .Title }}" />
                 {{ end }}
             </div>
         {{ end }}
