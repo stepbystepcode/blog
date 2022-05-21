@@ -133,6 +133,7 @@
 			}
 		};
 let toggleColorScheme=()=>{
+let colorSchemeItem = localStorage.getItem(colorSchemeKey);
 if (colorSchemeItem == 'dark') {
              document.documentElement.dataset.scheme = 'dark';
          } else {
