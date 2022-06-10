@@ -108,9 +108,6 @@
          } else {
        children[1].style.display="none";children[0].style.display="block"}
 let toggleColorScheme=()=>{
-
-
-
 colorSchemeItem = localStorage.getItem("StackColorScheme");
 if (colorSchemeItem == 'dark') {
              document.documentElement.dataset.scheme = 'light';localStorage.setItem("StackColorScheme", "light");
@@ -118,6 +115,5 @@ if (colorSchemeItem == 'dark') {
          } else {
              document.documentElement.dataset.scheme = 'dark'; localStorage.setItem("StackColorScheme", "dark");children[0].style.display="none";children[1].style.display="block";document.body.innerHTML+="<style>.article-list article .article-image img{filter:brightness(70%)!important}</style>"}
 }
-window.onload=function(){let menu=document.querySelector('#main-menu');menu.insertBefore(menu.children[5],menu.children[4]);
-};	</script>
+window.onload=function(){let menu=document.querySelector('#main-menu');menu.insertBefore(menu.children[5],menu.children[4]);};	</script>
 </aside>

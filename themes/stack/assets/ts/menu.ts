@@ -4,7 +4,7 @@
  * @param target 
  * @param duration 
  */
-let slideUp = (target: HTMLElement, duration = 500) => {
+ let slideUp = (target: HTMLElement, duration = 500) => {
     target.classList.add('transiting');
     target.style.transitionProperty = 'height, margin, padding';
     target.style.transitionDuration = duration + 'ms';
