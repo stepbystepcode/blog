@@ -74,27 +74,22 @@
 		let sun = document.querySelector(".sun");
 		let moon = document.querySelector(".moon");
 		if (localStorage.getItem("StackColorScheme") == 'dark') {
-
-			moon.setAttribute('style', 'display:none'); sun.setAttribute('style', 'display:block');
+			moon.style.display = 'none'; sun.style.display = 'block';
 		} else {
-			moon.setAttribute('style', 'display:block'); sun.setAttribute('style', 'display:none');
+			moon.style.display = 'block'; sun.style.display = 'none';
 		}
 		let toggleColorScheme = () => {
-			let sun = document.querySelector(".sun");
-			let moon = document.querySelector(".moon");
 			if (localStorage.getItem("StackColorScheme") == 'dark') {
-				moon.setAttribute('style', 'display:block');
-				sun.setAttribute('style', 'display:none');
+				moon.style.display = 'block';
+				sun.style.display = 'none';
 				document.documentElement.dataset.scheme = 'light';
 				localStorage.setItem("StackColorScheme", "light");
-
 				document.querySelector("main").innerHTML += "<style>.article-list article .article-image img{filter:brightness(100%)!important}</style>"
 			} else {
-				moon.setAttribute('style', 'display:none');
-				sun.setAttribute('style', 'display:block');
+				moon.style.display = 'none';
+				sun.style.display = 'block';
 				document.documentElement.dataset.scheme = 'dark';
 				localStorage.setItem("StackColorScheme", "dark");
-
 				document.querySelector("main").innerHTML += "<style>.article-list article .article-image img{filter:brightness(70%)!important}</style>"
 			}
 		}
