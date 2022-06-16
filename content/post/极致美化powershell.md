@@ -11,29 +11,59 @@ image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
 ---
 
 # 一、下载文件并校验文件完整性
-[点击下载新版Powershell](https://hub.fastgit.xyz/PowerShell/PowerShell/releases/latest)
+[点击下载新版Powershell(PowerShell-x.x.x-win-x64.msi)](https://hub.fastgit.xyz/PowerShell/PowerShell/releases/latest)
 
-[点击下载Git](https://hub.fastgit.xyz/git-for-windows/git/releases/latest)
+[点击下载Git(Git-x.xx.x-64-bit.exe)](https://hub.fastgit.xyz/git-for-windows/git/releases/latest)
+
+[点击下载oh-my-posh(install-amd64.exe)](https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/latest)
+
+[点击下载ihasher](https://disk.stepbystep.cf/d/ihasher.exe)
 # 二、安装Git
 # 三、安装Nerd Font字体
 *推荐JetBrainsMono*
-[点击下载](https://hub.fastgit.xyz/ryanoasis/nerd-fonts/releases/latest)
+[点击下载](https://hub.fastgit.xyz/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)
 下载解压后选中全部ttf文件，右键，安装
 # 四、安装Windows Terminal Preview
 Windows 应用商店搜索Windows Terminal Preview，并安装。
+
+如果由于网络原因无法打开应用商店，可以[点击此处](http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/4b0669e8-806b-4acb-8ab2-5a31cf9db4e9?P1=1655437387&P2=404&P3=2&P4=KnDLrHFc2fgkFeHcQLAEMTsHumSOUMC3kmM1zWt%2biPJh%2fq96u9QN7U52TGQpr6%2bjn5QpHao3oWe3eg6Zhbx6aw%3d%3d)下载安装包。
 # 五、安装新版PowerShell
 一路下一步即可，建议安装到D盘的Powershell文件夹。
 # 六、安装oh-my-posh
-[点击下载oh-my-posh](https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/download/v7.16.2/install-amd64.exe)
-# 七、设置字体
+
+# 七、设置字体与配色方案
+推荐Dracula
+在设置中打开JSON文件，找到"schemes"，在中括号中添加（注意除了最后一个，每个大括号块后的逗号）
+```json
+    {
+        "name": "Dracula",
+        "cursorColor": "#F8F8F2",
+        "selectionBackground": "#44475A",
+        "background": "#282A36",
+        "foreground": "#F8F8F2",
+        "black": "#21222C",
+        "blue": "#BD93F9",
+        "cyan": "#8BE9FD",
+        "green": "#50FA7B",
+        "purple": "#FF79C6",
+        "red": "#FF5555",
+        "white": "#F8F8F2",
+        "yellow": "#F1FA8C",
+        "brightBlack": "#6272A4",
+        "brightBlue": "#D6ACFF",
+        "brightCyan": "#A4FFFF",
+        "brightGreen": "#69FF94",
+        "brightPurple": "#FF92DF",
+        "brightRed": "#FF6E6E",
+        "brightWhite": "#FFFFFF",
+        "brightYellow": "#FFFFA5"
+    }
+```
+
 ![字体设置1](https://img.gejiba.com/images/1a03655068e1df483525e55ea3bb8e2e.webp)
 ![设置字体2](https://img.gejiba.com/images/55ba23a7faf29579ce8cd60f95ebf61a.webp)
 # 八、修改终端配置
-下载主题：
-下载地址：
-<span style="color:red">注意：请先替换地址中的主题名称</span>，然后在浏览器里打开，Ctrl+S保存，注意后缀名应以json结尾
-https://raw.fastgit.org/JanDeDobbeleer/oh-my-posh/main/themes/此处改为你喜欢的主题名称.omp.json
-在D盘新建目录oh-my-posh，将下载的主题文件放在里面
+在D盘新建目录oh-my-posh，将oh-my-posh安装至该目录。
 # 八、设置 PowerShell 的初始化文件
 ```powershell
 if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
@@ -41,7 +71,8 @@ notepad $PROFILE
 ```
 粘贴以下内容进 profile 文件
 ```powershell
-oh-my-posh --init --shell pwsh --config D:/oh-my-posh/ys.omp.json | Invoke-Expression
+clear
+oh-my-posh --init --shell pwsh --config D:/oh-my-posh/themes/ys.omp.json | Invoke-Expression
 ```
 
 主题预览：
