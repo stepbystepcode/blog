@@ -26,7 +26,7 @@ image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
 # 四、安装Windows Terminal Preview
 Windows 应用商店搜索Windows Terminal Preview，并安装。
 
-如果由于网络原因无法打开应用商店，可以[点击此处](https://apps.microsoft.com/store/search/windows%20terminal%20preview)选择Windows Terminal Preview，复制详情页地址，粘贴到[该网站]，选择Retail渠道，下载安装包(最后一个)。
+如果由于网络原因无法打开应用商店，可以[点击此处](https://apps.microsoft.com/store/search/windows%20terminal%20preview)选择Windows Terminal Preview，复制详情页地址，粘贴到[该网站](https://store.rg-adguard.net/)，选择Retail渠道，下载安装包(最后一个)。
 # 五、安装新版PowerShell
 一路下一步即可，建议安装到D盘的Powershell文件夹。
 
