@@ -26,9 +26,14 @@ image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
 # 四、安装Windows Terminal Preview
 Windows 应用商店搜索Windows Terminal Preview，并安装。
 
-如果由于网络原因无法打开应用商店，可以[点击此处](http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/4b0669e8-806b-4acb-8ab2-5a31cf9db4e9?P1=1655437387&P2=404&P3=2&P4=KnDLrHFc2fgkFeHcQLAEMTsHumSOUMC3kmM1zWt%2biPJh%2fq96u9QN7U52TGQpr6%2bjn5QpHao3oWe3eg6Zhbx6aw%3d%3d)下载安装包。
+如果由于网络原因无法打开应用商店，可以[点击此处](https://apps.microsoft.com/store/apps)搜索Windows Terminal Preview，复制详情页地址，粘贴到[该网站]，选择Retail渠道，下载安装包(最后一个)。
 # 五、安装新版PowerShell
 一路下一步即可，建议安装到D盘的Powershell文件夹。
+
+打开Windows Terminal Preview的设置，选择左侧Windows PowerShell，路径改为安装的刚刚安装的D盘中Powershell文件夹中pwsh.exe，并在最后加上 -nologo参数。
+```
+D:\PowerShell\7\pwsh.exe  -nologo
+```
 # 六、安装oh-my-posh
 
 # 七、设置字体与配色方案
