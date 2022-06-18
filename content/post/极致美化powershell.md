@@ -1,5 +1,5 @@
 ---
-title: 极致美化powershell
+title: 极致美化windows终端
 date: 2022-02-21 12:14:24.657
 updated: 2022-05-04 08:24:26.511
 url: /archives/beautify-powershell
@@ -17,7 +17,7 @@ image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
 
 [点击下载oh-my-posh(install-amd64.exe)](https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/latest)
 
-[点击下载ihasher](https://disk.stepbystep.cf/d/ihasher.exe)
+[点击下载ihasher](https://ybygjylj.lanzouf.com/i0XA706lfzle)
 # 二、安装Git
 # 三、安装Nerd Font字体
 *推荐JetBrainsMono*
