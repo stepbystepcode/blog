@@ -17,7 +17,7 @@ image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
 
 [点击下载oh-my-posh(install-amd64.exe)](https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/latest)
 
-[点击下载ihasher](https://ybygjylj.lanzouf.com/i0XA706lfzle)
+[点击下载Checksum](https://ybygjylj.lanzouf.com/iYuZD06mepjc)
 # 二、安装Git
 # 三、安装Nerd Font字体
 *推荐JetBrainsMono*
