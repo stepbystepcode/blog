@@ -36,6 +36,8 @@ D:\PowerShell\7\pwsh.exe  -nologo
 ```
 # 六、安装oh-my-posh
 
+在D盘新建目录oh-my-posh，将oh-my-posh安装至该目录。
+
 # 七、设置字体与配色方案
 推荐Dracula
 在设置中打开JSON文件，找到"schemes"，在中括号中添加（注意除了最后一个，每个大括号块后的逗号）
@@ -68,8 +70,9 @@ D:\PowerShell\7\pwsh.exe  -nologo
 ![字体设置1](https://img.gejiba.com/images/1a03655068e1df483525e55ea3bb8e2e.webp)
 ![设置字体2](https://img.gejiba.com/images/55ba23a7faf29579ce8cd60f95ebf61a.webp)
 # 八、修改终端配置
-在D盘新建目录oh-my-posh，将oh-my-posh安装至该目录。
-# 八、设置 PowerShell 的初始化文件
+
+设置 PowerShell 的初始化文件
+
 ```powershell
 if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
 notepad $PROFILE
