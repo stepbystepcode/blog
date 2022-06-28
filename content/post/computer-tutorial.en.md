@@ -11,7 +11,7 @@ image: https://img.gejiba.com/images/dc28dd597dffccfbf3d871509da52d31.webp
 
 If you have learned the basic operation of the computer (such as switching on and off, clicking the mouse and keyboard...) the next step, you should learn the principles of computer use.
 # General
-## One, brave
+## First, brave
 Some people say that I was born with computer skills, but this is not true. The ability to use a computer depends on your attitude towards the computer. You need to think of the computer as a toy, not a tool, and you need to think of the system and software as a game. As long as you don't go to dangerous areas such as fiddling with system settings, you generally won't break your computer. So: be brave! Be brave to try and gain experience. Don't be afraid of this or that. If you hold back, you will never see the other side of victory.
 ## Second, check
 If you have any questions, go to [Bing](https://www.bing.com/) and search for it. Don't use Baidu anymore, it's all advertisements and useless shoddy information. Remember, check before asking.

@@ -26,7 +26,7 @@ pre span{
 color:red;
 }
 </style>
-# 一、Download ISO image and tools
+# Download ISO image and tools
 [Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso)](https://mirrors.aliyun.com/archlinux/iso/latest/)
 
 [Download rufus(rufus-x.xp.exe)](https://hub.fastgit.xyz/pbatard/rufus/releases/latest)
@@ -34,19 +34,19 @@ color:red;
 [Download ihasher](https://disk.stepbystep.cf/d/ihasher.exe)
 
 ![L4o0YqrTRt.png](https://img.gejiba.com/images/8fc41ece91af084081f268d62dfd12b2.webp)
-# 二、Create installation USB flash drive
+# Create installation USB flash drive
 <span style="color:red;font-size:20px;font-weight:700">Caution: The created installation USB drive will be formatted, all contents inside will be deleted!</span>
 
 If you are asked if you want to allow updates and confirm formatting the USB drive, click "Yes".
 
 ![GUdAxCxxop.png](https://img.gejiba.com/images/8a878ecbbd55c09df96f11e7d1237f99.webp)
 
-# 三、Reserved partitions
+# Reserved partitions
 Press Windows+R and enter diskmgmt.msc
 ![mmexport1647324031181.png](https://img.gejiba.com/images/f24c1f55af9dec72f26fb9ff1e488f2b.webp)
 
 ![mmexport1647324029962.png](https://img.gejiba.com/images/5eaae631dd6a6d922728cea1582945c4.webp)
-# 四、Select UEFI mode and enter the u disk to install the system
+# Select UEFI mode and enter the u disk to install the system
 Select UEFI mode to boot, it varies from computer to computer, please follow the computer manual or search online for this procedure.
 ## Update system time
 <pre><span>root</span>@archiso ~ # timedatectl set-ntp true</pre>

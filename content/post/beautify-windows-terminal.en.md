@@ -23,22 +23,22 @@ image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
 *Recommends JetBrainsMono*
 [Click to download](https://hub.fastgit.xyz/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)
 After downloading and decompressing, select all the ttf files, right-click, and install
-# Four, install Windows Terminal Preview
+# 4. install Windows Terminal Preview
 Search the Windows Store for Windows Terminal Preview and install it.
 
 If you cannot open the app store due to network reasons, you can [click here](https://apps.microsoft.com/store/search/windows%20terminal%20preview) to select Windows Terminal Preview, copy the address of the details page, and paste it into [the Website](https://store.rg-adguard.net/), select the Retail channel, and download the installation package (the last one).
-# Five, install the new version of PowerShell
+# 5. install the new version of PowerShell
 All the way to the next step, it is recommended to install to the Powershell folder of the D drive.
 
 Open the settings of Windows Terminal Preview, select Windows PowerShell on the left, change the path to pwsh.exe in the Powershell folder in the D drive just installed, and add the -nologo parameter at the end.
 ````
 D:\PowerShell\7\pwsh.exe -nologo
 ````
-# Six, install oh-my-posh
+# 6. install oh-my-posh
 
 Create a new directory oh-my-posh on the D drive and install oh-my-posh to this directory.
 
-# Seven, set the font and color scheme
+# 7. set the font and color scheme
 Recommend Dracula
 Open the JSON file in settings, find "schemes", add in square brackets (note the comma after each block of curly brackets except the last one)
 ````json
