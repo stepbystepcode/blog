@@ -6,7 +6,45 @@
         <description>Recent content in Posts on 一步一个脚印</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 22 Mar 2022 17:20:12 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 Jun 2022 09:59:31 +0800</lastBuildDate><atom:link href="https://www.stepbystep.cf/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>5分钟极速生成座位表</title>
+        <link>https://www.stepbystep.cf/archives/students-table/</link>
+        <pubDate>Tue, 28 Jun 2022 09:59:31 +0800</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/students-table/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/3b686bd0461bac0d40f6f4fe05c7643b.webp" alt="Featured image of post 5分钟极速生成座位表" /&gt;&lt;h1 id=&#34;一拍照&#34;&gt;一、拍照&lt;/h1&gt;
+&lt;p&gt;让同学们按学号顺序排队，依次拍照，并让同学们坐好后依次填写座位表格（只填学号）&lt;/p&gt;
+&lt;h1 id=&#34;二打包上传电脑&#34;&gt;二、打包上传电脑&lt;/h1&gt;
+&lt;p&gt;用微信将打包的图片上传至电脑并解压&lt;/p&gt;
+&lt;h1 id=&#34;三批量重命名序号&#34;&gt;三、批量重命名序号&lt;/h1&gt;
+&lt;p&gt;将图片移动到软件目录的img文件夹，运行bat程序&lt;/p&gt;
+&lt;h1 id=&#34;四填写表单生成表格&#34;&gt;四、填写表单生成表格&lt;/h1&gt;
+&lt;p&gt;依次按照提示输入信息，位置按照座位表格顺序输入，用空格分隔开&lt;/p&gt;
+&lt;h1 id=&#34;五打印或保存电子版&#34;&gt;五、打印或保存电子版&lt;/h1&gt;
+&lt;p&gt;Ctrl＋p即可弹出打印窗口&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1FN4y1g7HQ/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;bilibili传送门&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>安卓手机投屏指南</title>
+        <link>https://www.stepbystep.cf/archives/android-casting/</link>
+        <pubDate>Sat, 18 Jun 2022 13:21:12 +0900</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/android-casting/</guid>
+        <description>&lt;h1 id=&#34;一下载scrcpy并解压缩&#34;&gt;一、下载scrcpy并解压缩&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/Genymobile/scrcpy/releases/download/v1.24/scrcpy-win64-v1.24.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点击下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;将其解压至一个稳定安全不会误删除的地方，本例为：&lt;code&gt;D:\scrcpy&lt;/code&gt;，确保进入目录后可以看到scrcpy.exe&lt;/p&gt;
+&lt;h1 id=&#34;二配置环境变量&#34;&gt;二、配置环境变量&lt;/h1&gt;
+&lt;p&gt;此电脑（资源管理器）右键属性→高级系统设置→环境变量→双击上半部分窗格里Path→新建→浏览→选择刚刚解压的（包含scrcpy.exe的）文件夹→确定→确定→确定&lt;/p&gt;
+&lt;h1 id=&#34;三打开手机开发者模式&#34;&gt;三、打开手机开发者模式&lt;/h1&gt;
+&lt;p&gt;找到手机信息（包含手机型号、芯片的信息页），快速反复点击版本号，直到提示“您已经进入开发者模式”，然后返回，找到开发者模式→USB调试→开启→（确定开启）&lt;/p&gt;
+&lt;h1 id=&#34;四投屏&#34;&gt;四、投屏&lt;/h1&gt;
+&lt;p&gt;将手机与电脑用数据线连接后，打开电脑终端，输入scrcpy后回车，在手机上确认，即可在电脑屏幕上看到你的手机屏幕。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>如何批量去掉文档中的中文</title>
         <link>https://www.stepbystep.cf/archives/remove-chinese-character/</link>
         <pubDate>Tue, 22 Mar 2022 17:20:12 +0000</pubDate>
@@ -311,10 +349,10 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
         </item>
         <item>
         <title>极致美化windows终端</title>
-        <link>https://www.stepbystep.cf/archives/beautify-powershell/</link>
+        <link>https://www.stepbystep.cf/archives/beautify-windows-terminal/</link>
         <pubDate>Mon, 21 Feb 2022 12:14:24 +0000</pubDate>
         
-        <guid>https://www.stepbystep.cf/archives/beautify-powershell/</guid>
+        <guid>https://www.stepbystep.cf/archives/beautify-windows-terminal/</guid>
         <description>&lt;img src="https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp" alt="Featured image of post 极致美化windows终端" /&gt;&lt;h1 id=&#34;一下载文件并校验文件完整性&#34;&gt;一、下载文件并校验文件完整性&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/PowerShell/PowerShell/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载新版Powershell(PowerShell-x.x.x-win-x64.msi)&lt;/a&gt;&lt;/p&gt;
@@ -322,8 +360,8 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
     &gt;点击下载Git(Git-x.xx.x-64-bit.exe)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载oh-my-posh(install-amd64.exe)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ybygjylj.lanzouf.com/i0XA706lfzle&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载ihasher&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ybygjylj.lanzouf.com/iYuZD06mepjc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点击下载Checksum&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;二安装git&#34;&gt;二、安装Git&lt;/h1&gt;
 &lt;h1 id=&#34;三安装nerd-font字体&#34;&gt;三、安装Nerd Font字体&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;推荐JetBrainsMono&lt;/em&gt;
@@ -347,6 +385,7 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;六安装oh-my-posh&#34;&gt;六、安装oh-my-posh&lt;/h1&gt;
+&lt;p&gt;在D盘新建目录oh-my-posh，将oh-my-posh安装至该目录。&lt;/p&gt;
 &lt;h1 id=&#34;七设置字体与配色方案&#34;&gt;七、设置字体与配色方案&lt;/h1&gt;
 &lt;p&gt;推荐Dracula
 在设置中打开JSON文件，找到&amp;quot;schemes&amp;quot;，在中括号中添加（注意除了最后一个，每个大括号块后的逗号）&lt;/p&gt;
@@ -423,8 +462,7 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;h1 id=&#34;八修改终端配置&#34;&gt;八、修改终端配置&lt;/h1&gt;
-&lt;p&gt;在D盘新建目录oh-my-posh，将oh-my-posh安装至该目录。&lt;/p&gt;
-&lt;h1 id=&#34;八设置-powershell-的初始化文件&#34;&gt;八、设置 PowerShell 的初始化文件&lt;/h1&gt;
+&lt;p&gt;设置 PowerShell 的初始化文件&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

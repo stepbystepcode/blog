@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.stepbystep.cf/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E6%8A%95%E5%B1%8F%E6%8C%87%E5%8D%97/</loc>
-    <lastmod>2022-06-18T13:21:12+09:00</lastmod>
-  </url><url>
     <loc>https://www.stepbystep.cf/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,21 +15,11 @@
                 href="https://www.stepbystep.cf/"
                 />
   </url><url>
-    <loc>https://www.stepbystep.cf/tags/office/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.stepbystep.cf/en/tags/office/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://www.stepbystep.cf/tags/office/"
-                />
+    <loc>https://www.stepbystep.cf/archives/students-table/</loc>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
   </url><url>
     <loc>https://www.stepbystep.cf/post/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -45,7 +32,7 @@
                 />
   </url><url>
     <loc>https://www.stepbystep.cf/tags/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,6 +42,35 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://www.stepbystep.cf/tags/"
+                />
+  </url><url>
+    <loc>https://www.stepbystep.cf/tags/windows/</loc>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.stepbystep.cf/en/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://www.stepbystep.cf/tags/windows/"
+                />
+  </url><url>
+    <loc>https://www.stepbystep.cf/archives/android-casting/</loc>
+    <lastmod>2022-06-18T13:21:12+09:00</lastmod>
+  </url><url>
+    <loc>https://www.stepbystep.cf/tags/office/</loc>
+    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.stepbystep.cf/en/tags/office/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://www.stepbystep.cf/tags/office/"
                 />
   </url><url>
     <loc>https://www.stepbystep.cf/archives/remove-chinese-character/</loc>
@@ -74,19 +90,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://www.stepbystep.cf/tags/linux/"
-                />
-  </url><url>
-    <loc>https://www.stepbystep.cf/tags/windows/</loc>
-    <lastmod>2022-03-06T06:28:31+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.stepbystep.cf/en/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://www.stepbystep.cf/tags/windows/"
                 />
   </url><url>
     <loc>https://www.stepbystep.cf/archives/computer-tutorial/</loc>
@@ -121,7 +124,7 @@
     <loc>https://www.stepbystep.cf/archives/real-cugan/</loc>
     <lastmod>2022-02-21T13:06:31+00:00</lastmod>
   </url><url>
-    <loc>https://www.stepbystep.cf/archives/beautify-powershell/</loc>
+    <loc>https://www.stepbystep.cf/archives/beautify-windows-terminal/</loc>
     <lastmod>2022-02-21T12:14:24+00:00</lastmod>
   </url><url>
     <loc>https://www.stepbystep.cf/tags/%E8%BD%AF%E4%BB%B6/</loc>
