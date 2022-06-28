@@ -43,7 +43,7 @@ For Example：
 
 ★ Name: 一步一个脚印
 
-★ Bio: 一个爱编程的高中生
+★ Bio: 一个爱编程的大一新生
 
 ★ URL: www.stepbystep.cf
 
