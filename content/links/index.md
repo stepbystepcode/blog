@@ -13,6 +13,10 @@ links:
     description: 这是一个非常牛逼的博客
     website: https://blog.itcat365.cn
     image: https://blog.itcat365.cn/upload/2022/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202112080943142-6abd714cda954b36a76f243355053d3c.jpg
+  - title: 小白龙博客
+    description: 欢迎来到我的世界！！
+    website: https://blog.xiaolong0418.com/
+    image: https://xiaolong-oss-cdn.oss-cn-guangzhou.aliyuncs.com/myblog/images/logo.jpg
 menu:
     main: 
         weight: 4
