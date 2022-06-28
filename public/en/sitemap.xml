@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.stepbystep.cf/en/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -14,6 +14,54 @@
                 hreflang="en"
                 href="https://www.stepbystep.cf/en/"
                 />
+  </url><url>
+    <loc>https://www.stepbystep.cf/archives/students-table/</loc>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
+  </url><url>
+    <loc>https://www.stepbystep.cf/en/post/</loc>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://www.stepbystep.cf/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.stepbystep.cf/en/post/"
+                />
+  </url><url>
+    <loc>https://www.stepbystep.cf/en/tags/</loc>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://www.stepbystep.cf/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.stepbystep.cf/en/tags/"
+                />
+  </url><url>
+    <loc>https://www.stepbystep.cf/en/tags/windows/</loc>
+    <lastmod>2022-06-28T09:59:31+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://www.stepbystep.cf/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.stepbystep.cf/en/tags/windows/"
+                />
+  </url><url>
+    <loc>https://www.stepbystep.cf/archives/android-casting/</loc>
+    <lastmod>2022-06-18T13:21:12+09:00</lastmod>
+  </url><url>
+    <loc>https://www.stepbystep.cf/archives/remove-chinese-character/</loc>
+    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
   </url><url>
     <loc>https://www.stepbystep.cf/en/tags/office/</loc>
     <lastmod>2022-03-22T17:20:12+00:00</lastmod>
@@ -27,35 +75,6 @@
                 hreflang="en"
                 href="https://www.stepbystep.cf/en/tags/office/"
                 />
-  </url><url>
-    <loc>https://www.stepbystep.cf/en/post/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://www.stepbystep.cf/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.stepbystep.cf/en/post/"
-                />
-  </url><url>
-    <loc>https://www.stepbystep.cf/en/tags/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://www.stepbystep.cf/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.stepbystep.cf/en/tags/"
-                />
-  </url><url>
-    <loc>https://www.stepbystep.cf/en/archives/remove-chinese-character/</loc>
-    <lastmod>2022-03-22T17:20:12+00:00</lastmod>
   </url><url>
     <loc>https://www.stepbystep.cf/en/archives/archlinux/</loc>
     <lastmod>2022-03-13T17:53:05+00:00</lastmod>
@@ -71,19 +90,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.stepbystep.cf/en/tags/linux/"
-                />
-  </url><url>
-    <loc>https://www.stepbystep.cf/en/tags/windows/</loc>
-    <lastmod>2022-03-06T06:28:31+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://www.stepbystep.cf/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.stepbystep.cf/en/tags/windows/"
                 />
   </url><url>
     <loc>https://www.stepbystep.cf/en/archives/computer-tutorial/</loc>
@@ -102,6 +108,9 @@
                 href="https://www.stepbystep.cf/en/archives/"
                 />
   </url><url>
+    <loc>https://www.stepbystep.cf/en/archives/real-cugan/</loc>
+    <lastmod>2022-02-21T13:06:31+00:00</lastmod>
+  </url><url>
     <loc>https://www.stepbystep.cf/en/tags/python/</loc>
     <lastmod>2022-02-21T13:06:31+00:00</lastmod>
     <xhtml:link
@@ -114,9 +123,6 @@
                 hreflang="en"
                 href="https://www.stepbystep.cf/en/tags/python/"
                 />
-  </url><url>
-    <loc>https://www.stepbystep.cf/en/archives/real-cugan/</loc>
-    <lastmod>2022-02-21T13:06:31+00:00</lastmod>
   </url><url>
     <loc>https://www.stepbystep.cf/en/archives/beautify-powershell/</loc>
     <lastmod>2022-02-21T12:14:24+00:00</lastmod>

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'><meta name='description' content='我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道waifu2x这个工具，但今天在这里给大家介绍一个'><title>让你的二次元美图更清晰</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'><meta name='description' content='We often encounter the problem that the picture is not clear enough when we preview the two-dimensional beauty map, and the quality of the picture is greatly reduced. Some people may know the tool waifu2x, but today I will introduce to you an artifact that is many times better than waifu2x-Real-CUGAN. The GitHub link is as follows: https://github.com/fumiama/Real-CUGAN
+effect comparison Original imagewaifu2xReal-CUGAN 1. Install Python Second, install the lib component library 1 2 3 4 pip3 install torch pip3 install numpy pip3 install opencv-python pip3 install moviepy 3.'><title>Make your two-dimensional beauty map clearer</title>
 
 <link rel='canonical' href='https://www.stepbystep.cf/en/archives/real-cugan/'> 
 <link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css" />
-<meta property='og:title' content='让你的二次元美图更清晰'>
-<meta property='og:description' content='我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道waifu2x这个工具，但今天在这里给大家介绍一个'>
+<meta property='og:title' content='Make your two-dimensional beauty map clearer'>
+<meta property='og:description' content='We often encounter the problem that the picture is not clear enough when we preview the two-dimensional beauty map, and the quality of the picture is greatly reduced. Some people may know the tool waifu2x, but today I will introduce to you an artifact that is many times better than waifu2x-Real-CUGAN. The GitHub link is as follows: https://github.com/fumiama/Real-CUGAN
+effect comparison Original imagewaifu2xReal-CUGAN 1. Install Python Second, install the lib component library 1 2 3 4 pip3 install torch pip3 install numpy pip3 install opencv-python pip3 install moviepy 3.'>
 <meta property='og:url' content='https://www.stepbystep.cf/en/archives/real-cugan/'>
 <meta property='og:site_name' content='Step by step'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='python' /><meta property='article:published_time' content='2022-02-21T13:06:31&#43;00:00'/><meta property='article:modified_time' content='2022-02-21T13:06:31&#43;00:00'/><meta property='og:image' content='https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp' />
-<meta name="twitter:title" content="让你的二次元美图更清晰">
-<meta name="twitter:description" content="我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道waifu2x这个工具，但今天在这里给大家介绍一个"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Make your two-dimensional beauty map clearer">
+<meta name="twitter:description" content="We often encounter the problem that the picture is not clear enough when we preview the two-dimensional beauty map, and the quality of the picture is greatly reduced. Some people may know the tool waifu2x, but today I will introduce to you an artifact that is many times better than waifu2x-Real-CUGAN. The GitHub link is as follows: https://github.com/fumiama/Real-CUGAN
+effect comparison Original imagewaifu2xReal-CUGAN 1. Install Python Second, install the lib component library 1 2 3 4 pip3 install torch pip3 install numpy pip3 install opencv-python pip3 install moviepy 3."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp' />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <style>
@@ -272,7 +275,7 @@ height: 30px!important;
         <div class="article-image">
             <a href="/en/archives/real-cugan/">
                 
-                    <img src="https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp" loading="lazy" alt="Featured image of post 让你的二次元美图更清晰" />
+                    <img src="https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp" loading="lazy" alt="Featured image of post Make your two-dimensional beauty map clearer" />
                 
             </a>
         </div>
@@ -283,7 +286,7 @@ height: 30px!important;
 
 	<div class="article-title-wrapper">
 		<h2 class="article-title">
-			<a href="/en/archives/real-cugan/">让你的二次元美图更清晰</a>
+			<a href="/en/archives/real-cugan/">Make your two-dimensional beauty map clearer</a>
 		</h2>
 
 		
@@ -327,14 +330,15 @@ height: 30px!important;
     <section class="article-content">
     
     
-    <p>我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道<a class="link" href="http://waifu2x.udp.jp/"  target="_blank" rel="noopener"
-    >waifu2x</a>这个工具，但今天在这里给大家介绍一个比waifu2x好用很多倍的神器——Real-CUGAN。
-GitHub链接如下：https://github.com/fumiama/Real-CUGAN</p>
-<h1 id="效果对比">效果对比</h1>
-<p><button onclick="document.querySelector('#pic').src='https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg'">原始图片</button><button onclick="document.querySelector('#pic').src='https://img.gejiba.com/images/3f2dfbcbdafd20ba77699c1c2d95d520.jpg'">waifu2x</button><button onclick="document.querySelector('#pic').src='https://img.gejiba.com/images/8f76fd4c566a873a669b3fe445bcf490.jpg'">Real-CUGAN</button>
+    <p>We often encounter the problem that the picture is not clear enough when we preview the two-dimensional beauty map, and the quality of the picture is greatly reduced. Some people may know the tool <a class="link" href="http://waifu2x.udp.jp/"  target="_blank" rel="noopener"
+    >waifu2x</a>, but today I will introduce to you an artifact that is many times better than waifu2x-Real-CUGAN.
+The GitHub link is as follows: <a class="link" href="https://github.com/fumiama/Real-CUGAN"  target="_blank" rel="noopener"
+    >https://github.com/fumiama/Real-CUGAN</a></p>
+<h1 id="effect-comparison">effect comparison</h1>
+<p><button onclick="document.querySelector('#pic').src='https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg'">Original image</button><button onclick="document.querySelector ('#pic').src='https://img.gejiba.com/images/3f2dfbcbdafd20ba77699c1c2d95d520.jpg'">waifu2x</button><button onclick="document.querySelector('#pic').src= 'https://img.gejiba.com/images/8f76fd4c566a873a669b3fe445bcf490.jpg'">Real-CUGAN</button>
 <img id="pic" style="width:300px" src="https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg" /></p>
-<h1 id="一安装python">一、安装Python</h1>
-<h1 id="二安装lib组件库">二、安装lib组件库</h1>
+<h1 id="1-install-python">1. Install Python</h1>
+<h1 id="second-install-the-lib-component-library">Second, install the lib component library</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -345,12 +349,12 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN</p>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pip3 install torch
 </span></span><span class="line"><span class="cl">pip3 install numpy
-</span></span><span class="line"><span class="cl">pip3 install  opencv-python
-</span></span><span class="line"><span class="cl">pip3 install  moviepy
+</span></span><span class="line"><span class="cl">pip3 install opencv-python
+</span></span><span class="line"><span class="cl">pip3 install moviepy
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="三建立工作目录并命名文件">三、建立工作目录并命名文件</h1>
-<p>建立文件夹及文件</p>
+</div><h1 id="3-create-a-working-directory-and-name-the-file">3. Create a working directory and name the file</h1>
+<p>Create folders and files</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -361,8 +365,8 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN</p>
 </span></span><span class="line"><span class="cl">cd Real-CUGAN-Server
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>替换input_dir1文件夹里的输入图片文件。</p>
-<h1 id="四调用命令处理图片">四、调用命令处理图片</h1>
+</div><p>Replace the input image file in the input_dir1 folder.</p>
+<h1 id="four-call-the-command-to-process-the-picture">Four, call the command to process the picture</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -371,7 +375,7 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN</p>
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">python3</span> <span class="n">upcunet_v3</span><span class="o">.</span><span class="n">py</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>输出图片在opt-dir-all-test文件夹中。</p>
+</div><p>The output images are in the opt-dir-all-test folder.</p>
 
 </section>
 

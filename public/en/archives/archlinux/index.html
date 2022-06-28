@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'><meta name='description' content='一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso) rufus下载(rufus-x.xp'><title>Archlinux Installation guide</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'><meta name='description' content='一、Download ISO image and tools Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso) Download rufus(rufus-x.xp.exe) Download ihasher 二、Create installation USB flash drive Caution: The created installation USB drive will be formatted, all contents inside will be deleted! If you are asked if you want to allow updates and confirm formatting the USB drive, click &amp;ldquo;Yes&amp;rdquo;. 三、Re'><title>Archlinux Installation guide</title>
 
 <link rel='canonical' href='https://www.stepbystep.cf/en/archives/archlinux/'> 
 <link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css" />
 <meta property='og:title' content='Archlinux Installation guide'>
-<meta property='og:description' content='一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso) rufus下载(rufus-x.xp'>
+<meta property='og:description' content='一、Download ISO image and tools Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso) Download rufus(rufus-x.xp.exe) Download ihasher 二、Create installation USB flash drive Caution: The created installation USB drive will be formatted, all contents inside will be deleted! If you are asked if you want to allow updates and confirm formatting the USB drive, click &amp;ldquo;Yes&amp;rdquo;. 三、Re'>
 <meta property='og:url' content='https://www.stepbystep.cf/en/archives/archlinux/'>
 <meta property='og:site_name' content='Step by step'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='linux' /><meta property='article:published_time' content='2022-03-13T17:53:05&#43;00:00'/><meta property='article:modified_time' content='2022-03-13T17:53:05&#43;00:00'/><meta property='og:image' content='https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp' />
 <meta name="twitter:title" content="Archlinux Installation guide">
-<meta name="twitter:description" content="一、下载ISO镜像与工具 ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso) rufus下载(rufus-x.xp"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="一、Download ISO image and tools Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso) Download rufus(rufus-x.xp.exe) Download ihasher 二、Create installation USB flash drive Caution: The created installation USB drive will be formatted, all contents inside will be deleted! If you are asked if you want to allow updates and confirm formatting the USB drive, click &amp;ldquo;Yes&amp;rdquo;. 三、Re"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp' />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <style>
@@ -314,7 +314,7 @@ height: 30px!important;
 
 
 
-			<time class="article-time--reading"> 2 minute read </time>
+			<time class="article-time--reading"> 1 minute read </time>
 		</div>
 		
 	</footer>
@@ -344,13 +344,13 @@ pre span{
 color:red;
 }
 </style>
-<h1 id="一下载iso镜像与工具">一、下载ISO镜像与工具</h1>
+<h1 id="一download-iso-image-and-tools">一、Download ISO image and tools</h1>
 <p><a class="link" href="https://mirrors.aliyun.com/archlinux/iso/latest/"  target="_blank" rel="noopener"
-    >ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)</a></p>
+    >Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso)</a></p>
 <p><a class="link" href="https://hub.fastgit.xyz/pbatard/rufus/releases/latest"  target="_blank" rel="noopener"
-    >rufus下载(rufus-x.xp.exe)</a></p>
+    >Download rufus(rufus-x.xp.exe)</a></p>
 <p><a class="link" href="https://disk.stepbystep.cf/d/ihasher.exe"  target="_blank" rel="noopener"
-    >ihasher下载</a></p>
+    >Download ihasher</a></p>
 <p><img src="https://img.gejiba.com/images/8fc41ece91af084081f268d62dfd12b2.webp"
 	
 	
@@ -361,9 +361,9 @@ color:red;
 	
 	
 ></p>
-<h1 id="二制作安装u盘">二、制作安装U盘</h1>
-<p><span style="color:red;font-size:20px;font-weight:700">注意：制作的安装U盘将被格式化，即删除里面所有内容!</span></p>
-<p>如果询问是否允许更新、确认格式化U盘，点击yes即可</p>
+<h1 id="二create-installation-usb-flash-drive">二、Create installation USB flash drive</h1>
+<p><span style="color:red;font-size:20px;font-weight:700">Caution: The created installation USB drive will be formatted, all contents inside will be deleted!</span></p>
+<p>If you are asked if you want to allow updates and confirm formatting the USB drive, click &ldquo;Yes&rdquo;.</p>
 <p><img src="https://img.gejiba.com/images/8a878ecbbd55c09df96f11e7d1237f99.webp"
 	
 	
@@ -374,8 +374,8 @@ color:red;
 	
 	
 ></p>
-<h1 id="三预留分区">三、预留分区</h1>
-<p>Windows+R输入diskmgmt.msc
+<h1 id="三reserved-partitions">三、Reserved partitions</h1>
+<p>Press Windows+R and enter diskmgmt.msc
 <img src="https://img.gejiba.com/images/f24c1f55af9dec72f26fb9ff1e488f2b.webp"
 	
 	
@@ -396,104 +396,109 @@ color:red;
 	
 	
 ></p>
-<h1 id="四选择uefi模式并进入u盘安装系统">四、选择UEFI模式并进入u盘安装系统</h1>
-<p>选择UEFI模式启动，不同电脑不太一样，请按照电脑说明书或上网搜索进行该步骤。</p>
-<h2 id="更新系统时间">更新系统时间</h2>
+<h1 id="四select-uefi-mode-and-enter-the-u-disk-to-install-the-system">四、Select UEFI mode and enter the u disk to install the system</h1>
+<p>Select UEFI mode to boot, it varies from computer to computer, please follow the computer manual or search online for this procedure.</p>
+<h2 id="update-system-time">Update system time</h2>
 <pre><span>root</span>@archiso ~ # timedatectl set-ntp true</pre>
-<h2 id="分区">分区</h2>
+<h2 id="partition">Partition</h2>
 <pre><span>root</span>@archiso ~ # fdisk -l</pre>
-<p>结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。</p>
-<p>对于一个选定的设备，以下分区是必须要有的：</p>
-<p>一个根分区（挂载在 根目录）/</p>
-<p>一个 EFI 系统分区</p>
-<p>请使用 fdisk 或 parted 修改分区表。例如：</p>
-<pre><span>root</span>@archiso ~ # fdisk /dev/the_disk_to_be_partitioned（要被分区的磁盘）</pre>
+<p>Devices ending in rom, loop or airoot can be ignored in the result.</p>
+<p>For a selected device, the following partitions are mandatory.</p>
+<p>A root partition (mounted in the root directory)/</p>
+<p>An EFI system partition</p>
+<p>Please use fdisk or parted to modify the partition table. For example:</p>
+<pre><span>root</span>@archiso ~ # fdisk /dev/the_disk_to_be_partitioned</pre>
 <div class="table-wrapper"><table>
 <tbody><tr>
-<th>挂载点
+<th>Mount Points
 </th>
-<th>分区
+<th>Partition
 </th>
-<th>分区类型
+<th>Partition Type
 </th>
-<th>建议大小
+<th>Recommended size
 </th></tr>
 <tr>
 <td>/mnt/boot
 </td>
-<td>/dev/<i>efi_system_partition（efi 系统分区）</i>
+<td>/dev/<i>efi_system_partition</i>
 </td>
-<td>EFI 系统分区
+<td>EFI System Partition
 </td>
-<td>至少 260 MiB
+<td>At least 260 MiB
 </td></tr>
 <tr>
 <td>/mnt
 </td>
-<td>/dev/<i>root_partition（根分区）</i>
+<td>/dev/<i>root_partition</i>
 </td>
-<td>Linux x86-64 根目录 (/)
+<td>Linux x86-64 root_partition (/)
 </td>
-<td>剩余空间
+<td>Remaining space
 </td></tr></tbody></table></div>
-<h2 id="格式化分区">格式化分区</h2>
-<pre><span>root</span>@archiso ~ # mkfs.ext4 /dev/root_partition（根分区）
+<h2 id="formatting-partitions">Formatting partitions</h2>
+<pre><span>root</span>@archiso ~ # mkfs.ext4 /dev/root_partition
 <span>root</span>@archiso ~ # mkfs.fat -F 32 /dev/efi_system_partition</pre>
-<h2 id="挂载分区">挂载分区</h2>
-<p>将根磁盘卷 挂载 到 /mnt，将efi系统卷挂载到/mnt/boot</p>
+<h2 id="mount-partitions">Mount partitions</h2>
+<p>Mount the root volume to /mnt and the efi system volume to /mnt/boot</p>
 <pre><span>root</span>@archiso ~ # mkdir /mnt/boot
-<span>root</span>@archiso ~ # mount /dev/root_partition（根分区） /mnt
-<span>root</span>@archiso ~ # mount /dev/（efi系统分区） /mnt/boot</pre>
-<h2 id="设置镜像源">设置镜像源</h2>
+<span>root</span>@archiso ~ # mount /dev/root_partition /mnt
+<span>root</span>@archiso ~ # mount /dev/ /mnt/boot</pre>
+<h2 id="setting-the-mirror-source">Setting the mirror source</h2>
 <pre><span>root</span>@archiso ~ # reflector --country China --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist</pre>
-<h2 id="安装必需的软件包">安装必需的软件包</h2>
+<h2 id="install-the-required-packages">Install the required packages</h2>
 <pre><span>root</span>@archiso ~ # pacstrap /mnt base linux linux-firmware</pre>
-<h2 id="配置系统">配置系统</h2>
+<h2 id="configuration-system">Configuration System</h2>
 <p>Fstab
-用以下命令生成 fstab 文件 (用 -U 或 -L 选项设置UUID 或卷标)：</p>
+Generate the fstab file with the following command (set the UUID or volume label with the -U or -L option).</p>
 <pre><span>root</span>@archiso ~ # genfstab -U /mnt >> /mnt/etc/fstab</pre>
-<p>强烈建议在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。</p>
+<p>It is highly recommended to check the generated /mnt/etc/fstab file after executing the above command to make sure it is correct.</p>
 <h2 id="chroot">Chroot</h2>
-<p>Change root 到新安装的系统：</p>
+<p>Enter your new system.</p>
 <pre><span>root</span>@archiso ~ # arch-chroot /mnt
 [root@archiso /]#</pre>
-<h2 id="时区">时区</h2>
-<p>要设置时区：</p>
+<h2 id="timezone">Timezone</h2>
 <pre>[root@archiso /]# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 [root@archiso /]# hwclock --systohc</pre>
-<h2 id="本地化">本地化</h2>
-<p>编辑 /etc/locale.gen，然后取消掉 en_US.UTF-8 UTF-8 和其他需要的 地区 前的注释（#）。</p>
+<h2 id="set-locale">Set Locale</h2>
+<p>Edit /etc/locale.gen,and then uncomment en_US.UTF-8 UTF-8(delete #)。</p>
 <pre>[root@archiso /]# vim /etc/locale.gen
 [root@archiso /]# locale-gen
 [root@archiso /]# vim /etc/locale.conf</pre>
 <pre>
 LANG=en_US.UTF-8
 </pre>
-<h2 id="网络配置">网络配置</h2>
-<p>创建 hostname 文件:</p>
+<h2 id="network-configuration">Network Configuration</h2>
+<p>Create hostname file:</p>
 <p>/etc/hostname</p>
 <pre>
-myhostname（主机名）
+myhostname(set your own hostname here)
 </pre>
-<p>添加对应的信息到 hosts:</p>
+<p>Add the corresponding information to the hosts:</p>
 <pre>[root@archiso /]# vim /etc/hosts</pre>
 <pre>
 127.0.0.1	localhost
 ::1		localhost
-127.0.1.1	myhostname.localdomain	myhostname # 主机名.本地域名 主机名
+127.0.1.1	myhostname.localdomain	myhostname
 </pre>
-<h2 id="设置root密码">设置root密码</h2>
+<h2 id="set-password-for-root">set password for root</h2>
 <pre>[root@archiso /]# passwd</pre>
-<h2 id="安装引导内核联网相关软件包">安装引导、内核、联网相关软件包</h2>
+<h2 id="installation-of-boot-kernel-and-networking-related-packages">Installation of boot, kernel, and networking related packages</h2>
 <pre>[root@archiso /]# pacman -S grub efibootmgr intel-ucode os-prober wpa_supplicant dhcpcd</pre>
-<h2 id="配置grub引导">配置grub引导</h2>
-<pre>[root@archiso /]# mkdir /boot/grub
-[root@archiso /]# grub-mkconfig > /boot/grub/grub.cfg
-[root@archiso /]# grub-install --target=x86_64-efi --efi-directory=/boot
-[root@archiso /]# 
-[root@archiso /]# 
+<h2 id="configure-refind-boot">Configure refind boot</h2>
+<pre>
+[root@archiso /]# pacman -S refind
+[root@archiso /]# refind-install
+[root@archiso /]# nano /boot/refind.conf
 </pre>
-<h2 id="退出chroot">退出chroot</h2>
+<pre>
+
+"Boot with standard options" "root-UUID-(root_partition_uuid) rw loglevel=3 quiet"
+"Boot to single-user mode" "root-UUID-(root_partition_uuid) rw loglevel=3 quiet"
+"Boot with minimal options" "ro root=/dew/(root_partition_path)"
+
+</pre>
+<h2 id="exit-chroot">Exit chroot</h2>
 <pre>[root@archiso /]# exit
 <span>root</span>@archiso ~ # umount -R /mnt
 </pre>
@@ -677,21 +682,21 @@ myhostname（主机名）
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#更新系统时间">更新系统时间</a></li>
-    <li><a href="#分区">分区</a></li>
-    <li><a href="#格式化分区">格式化分区</a></li>
-    <li><a href="#挂载分区">挂载分区</a></li>
-    <li><a href="#设置镜像源">设置镜像源</a></li>
-    <li><a href="#安装必需的软件包">安装必需的软件包</a></li>
-    <li><a href="#配置系统">配置系统</a></li>
+    <li><a href="#update-system-time">Update system time</a></li>
+    <li><a href="#partition">Partition</a></li>
+    <li><a href="#formatting-partitions">Formatting partitions</a></li>
+    <li><a href="#mount-partitions">Mount partitions</a></li>
+    <li><a href="#setting-the-mirror-source">Setting the mirror source</a></li>
+    <li><a href="#install-the-required-packages">Install the required packages</a></li>
+    <li><a href="#configuration-system">Configuration System</a></li>
     <li><a href="#chroot">Chroot</a></li>
-    <li><a href="#时区">时区</a></li>
-    <li><a href="#本地化">本地化</a></li>
-    <li><a href="#网络配置">网络配置</a></li>
-    <li><a href="#设置root密码">设置root密码</a></li>
-    <li><a href="#安装引导内核联网相关软件包">安装引导、内核、联网相关软件包</a></li>
-    <li><a href="#配置grub引导">配置grub引导</a></li>
-    <li><a href="#退出chroot">退出chroot</a></li>
+    <li><a href="#timezone">Timezone</a></li>
+    <li><a href="#set-locale">Set Locale</a></li>
+    <li><a href="#network-configuration">Network Configuration</a></li>
+    <li><a href="#set-password-for-root">set password for root</a></li>
+    <li><a href="#installation-of-boot-kernel-and-networking-related-packages">Installation of boot, kernel, and networking related packages</a></li>
+    <li><a href="#configure-refind-boot">Configure refind boot</a></li>
+    <li><a href="#exit-chroot">Exit chroot</a></li>
   </ol>
 </nav>
         </div>

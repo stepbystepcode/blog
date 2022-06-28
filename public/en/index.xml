@@ -6,31 +6,68 @@
         <description>Recent content on Step by step</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 22 Mar 2022 17:20:12 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/en/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>如何批量去掉文档中的中文</title>
-        <link>https://www.stepbystep.cf/en/archives/remove-chinese-character/</link>
+        <lastBuildDate>Tue, 28 Jun 2022 09:59:31 +0800</lastBuildDate><atom:link href="https://www.stepbystep.cf/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Generate seating charts in 5 minutes</title>
+        <link>https://www.stepbystep.cf/archives/students-table/</link>
+        <pubDate>Tue, 28 Jun 2022 09:59:31 +0800</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/students-table/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/3b686bd0461bac0d40f6f4fe05c7643b.webp" alt="Featured image of post Generate seating charts in 5 minutes" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ybygjylj.lanzouf.com/izQaB0719g2b&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Software Download&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;i-photo-taking&#34;&gt;I. Photo-taking&lt;/h1&gt;
+&lt;p&gt;Let the students line up in order of school number, take photos in turn, and let them sit down and fill in the seating form in turn (only fill in the school number)&lt;/p&gt;
+&lt;h1 id=&#34;ii-package-and-upload-to-computer&#34;&gt;II. Package and upload to computer&lt;/h1&gt;
+&lt;p&gt;Use WeChat to upload the packaged pictures to the computer and decompress them&lt;/p&gt;
+&lt;h1 id=&#34;iii-batch-rename-serial-number&#34;&gt;III. batch rename serial number&lt;/h1&gt;
+&lt;p&gt;Move the pictures to the img folder of the software directory and run the bat program&lt;/p&gt;
+&lt;h1 id=&#34;iv-fill-out-the-form-to-generate-the-form&#34;&gt;IV. fill out the form to generate the form&lt;/h1&gt;
+&lt;p&gt;Follow the prompts to enter the information in turn, the location in accordance with the order of the seat form input, separated by spaces&lt;/p&gt;
+&lt;h1 id=&#34;v-print-or-save-the-electronic-version&#34;&gt;V. Print or save the electronic version&lt;/h1&gt;
+&lt;p&gt;Ctrl + p to pop up the print window&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1FN4y1g7HQ/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;bilibili portal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/stepbystepcode/students-table&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;github portal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Translated with &lt;a class=&#34;link&#34; href=&#34;https://www.DeepL.com/Translator&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;www.DeepL.com/Translator&lt;/a&gt; (free version)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Android Phone Screen Casting Guide</title>
+        <link>https://www.stepbystep.cf/archives/android-casting/</link>
+        <pubDate>Sat, 18 Jun 2022 13:21:12 +0900</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/android-casting/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/6b28b6f6a09bf792403efe3d8b012450.png" alt="Featured image of post Android Phone Screen Casting Guide" /&gt;&lt;h1 id=&#34;one-download-scrcpy-and-unzip&#34;&gt;One, Download scrcpy and unzip&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/Genymobile/scrcpy/releases/download/v1.24/scrcpy-win64-v1.24.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Click to download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Extract it to a stable and safe place where it will not be deleted by mistake, in this case: &lt;code&gt;D:\scrcpy&lt;/code&gt;, make sure you can see scrcpy.exe after entering the directory&lt;/p&gt;
+&lt;h1 id=&#34;two-configure-environment-variables&#34;&gt;Two, Configure environment variables&lt;/h1&gt;
+&lt;p&gt;This computer (Explorer) right-click Properties → Advanced System Settings → Environment Variables → double-click Path in the top half of the pane → New → Browse → select the (scrcpy.exe containing) folder you just unzipped → OK → OK → OK&lt;/p&gt;
+&lt;h1 id=&#34;three-open-phone-developer-mode&#34;&gt;Three, Open phone developer mode&lt;/h1&gt;
+&lt;p&gt;Find the phone information (including the phone model, chip information page), quickly and repeatedly click the version number until the prompt &amp;ldquo;You have entered the developer mode&amp;rdquo;, then return, find the developer mode → USB debugging → open → (OK to open)&lt;/p&gt;
+&lt;h1 id=&#34;four-cast-screen&#34;&gt;Four, Cast Screen&lt;/h1&gt;
+&lt;p&gt;After connecting your phone to the computer with the data cable, open the computer terminal, enter scrcpy and enter, and confirm on your phone to see your phone screen on the computer screen.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>how to batch remove the Chinese in the document</title>
+        <link>https://www.stepbystep.cf/archives/remove-chinese-character/</link>
         <pubDate>Tue, 22 Mar 2022 17:20:12 +0000</pubDate>
         
-        <guid>https://www.stepbystep.cf/en/archives/remove-chinese-character/</guid>
-        <description>&lt;img src="https://img.gejiba.com/images/24573291207ff1f08c2a9a343cfe7925.webp" alt="Featured image of post 如何批量去掉文档中的中文" /&gt;&lt;ol&gt;
-&lt;li&gt;用word打开要处理的文档&lt;/li&gt;
-&lt;li&gt;Ctrl+A 全选文档&lt;/li&gt;
-&lt;li&gt;Ctrl+H 打开替换窗口
-&lt;img src=&#34;https://img.gejiba.com/images/4d9859f12162c00796d4c436ff3a802d.webp&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Snipaste_20220322_172443.png&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;点击左下角更多&lt;/li&gt;
-&lt;li&gt;确保“使用通配符”为勾选状态&lt;/li&gt;
-&lt;li&gt;查找框中输入&lt;code&gt;[!^1-^127]&lt;/code&gt; (英文状态输入)&lt;/li&gt;
-&lt;li&gt;替换框为空白&lt;/li&gt;
-&lt;li&gt;点击“替换全部”&lt;/li&gt;
+        <guid>https://www.stepbystep.cf/archives/remove-chinese-character/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/24573291207ff1f08c2a9a343cfe7925.webp" alt="Featured image of post how to batch remove the Chinese in the document" /&gt;&lt;p&gt;1.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;open the document to be processed with word&lt;/li&gt;
+&lt;li&gt;Ctrl+A select all documents&lt;/li&gt;
+&lt;li&gt;Ctrl+H open the replace window
+! &lt;a class=&#34;link&#34; href=&#34;https://img.gejiba.com/images/4d9859f12162c00796d4c436ff3a802d.webp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Snipaste_20220322_172443.png&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click More in the bottom left corner&lt;/li&gt;
+&lt;li&gt;Make sure &amp;ldquo;Use wildcards&amp;rdquo; is checked&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;[! ^1-^127]&lt;/code&gt; (English state input)&lt;/li&gt;
+&lt;li&gt;Leave the Replace box blank&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Replace all&amp;rdquo;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         </item>
@@ -57,13 +94,13 @@ pre span{
 color:red;
 }
 &lt;/style&gt;
-&lt;h1 id=&#34;一下载iso镜像与工具&#34;&gt;一、下载ISO镜像与工具&lt;/h1&gt;
+&lt;h1 id=&#34;一download-iso-image-and-tools&#34;&gt;一、Download ISO image and tools&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)&lt;/a&gt;&lt;/p&gt;
+    &gt;Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;rufus下载(rufus-x.xp.exe)&lt;/a&gt;&lt;/p&gt;
+    &gt;Download rufus(rufus-x.xp.exe)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://disk.stepbystep.cf/d/ihasher.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ihasher下载&lt;/a&gt;&lt;/p&gt;
+    &gt;Download ihasher&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8fc41ece91af084081f268d62dfd12b2.webp&#34;
 	
 	
@@ -74,9 +111,9 @@ color:red;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;二制作安装u盘&#34;&gt;二、制作安装U盘&lt;/h1&gt;
-&lt;p&gt;&lt;span style=&#34;color:red;font-size:20px;font-weight:700&#34;&gt;注意：制作的安装U盘将被格式化，即删除里面所有内容!&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;如果询问是否允许更新、确认格式化U盘，点击yes即可&lt;/p&gt;
+&lt;h1 id=&#34;二create-installation-usb-flash-drive&#34;&gt;二、Create installation USB flash drive&lt;/h1&gt;
+&lt;p&gt;&lt;span style=&#34;color:red;font-size:20px;font-weight:700&#34;&gt;Caution: The created installation USB drive will be formatted, all contents inside will be deleted!&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you are asked if you want to allow updates and confirm formatting the USB drive, click &amp;ldquo;Yes&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8a878ecbbd55c09df96f11e7d1237f99.webp&#34;
 	
 	
@@ -87,8 +124,8 @@ color:red;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;三预留分区&#34;&gt;三、预留分区&lt;/h1&gt;
-&lt;p&gt;Windows+R输入diskmgmt.msc
+&lt;h1 id=&#34;三reserved-partitions&#34;&gt;三、Reserved partitions&lt;/h1&gt;
+&lt;p&gt;Press Windows+R and enter diskmgmt.msc
 &lt;img src=&#34;https://img.gejiba.com/images/f24c1f55af9dec72f26fb9ff1e488f2b.webp&#34;
 	
 	
@@ -109,104 +146,109 @@ color:red;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;四选择uefi模式并进入u盘安装系统&#34;&gt;四、选择UEFI模式并进入u盘安装系统&lt;/h1&gt;
-&lt;p&gt;选择UEFI模式启动，不同电脑不太一样，请按照电脑说明书或上网搜索进行该步骤。&lt;/p&gt;
-&lt;h2 id=&#34;更新系统时间&#34;&gt;更新系统时间&lt;/h2&gt;
+&lt;h1 id=&#34;四select-uefi-mode-and-enter-the-u-disk-to-install-the-system&#34;&gt;四、Select UEFI mode and enter the u disk to install the system&lt;/h1&gt;
+&lt;p&gt;Select UEFI mode to boot, it varies from computer to computer, please follow the computer manual or search online for this procedure.&lt;/p&gt;
+&lt;h2 id=&#34;update-system-time&#34;&gt;Update system time&lt;/h2&gt;
 &lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # timedatectl set-ntp true&lt;/pre&gt;
-&lt;h2 id=&#34;分区&#34;&gt;分区&lt;/h2&gt;
+&lt;h2 id=&#34;partition&#34;&gt;Partition&lt;/h2&gt;
 &lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # fdisk -l&lt;/pre&gt;
-&lt;p&gt;结果中以 rom、loop 或者 airoot 结尾的设备可以被忽略。&lt;/p&gt;
-&lt;p&gt;对于一个选定的设备，以下分区是必须要有的：&lt;/p&gt;
-&lt;p&gt;一个根分区（挂载在 根目录）/&lt;/p&gt;
-&lt;p&gt;一个 EFI 系统分区&lt;/p&gt;
-&lt;p&gt;请使用 fdisk 或 parted 修改分区表。例如：&lt;/p&gt;
-&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # fdisk /dev/the_disk_to_be_partitioned（要被分区的磁盘）&lt;/pre&gt;
+&lt;p&gt;Devices ending in rom, loop or airoot can be ignored in the result.&lt;/p&gt;
+&lt;p&gt;For a selected device, the following partitions are mandatory.&lt;/p&gt;
+&lt;p&gt;A root partition (mounted in the root directory)/&lt;/p&gt;
+&lt;p&gt;An EFI system partition&lt;/p&gt;
+&lt;p&gt;Please use fdisk or parted to modify the partition table. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # fdisk /dev/the_disk_to_be_partitioned&lt;/pre&gt;
 &lt;table&gt;
 &lt;tbody&gt;&lt;tr&gt;
-&lt;th&gt;挂载点
+&lt;th&gt;Mount Points
 &lt;/th&gt;
-&lt;th&gt;分区
+&lt;th&gt;Partition
 &lt;/th&gt;
-&lt;th&gt;分区类型
+&lt;th&gt;Partition Type
 &lt;/th&gt;
-&lt;th&gt;建议大小
+&lt;th&gt;Recommended size
 &lt;/th&gt;&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;/mnt/boot
 &lt;/td&gt;
-&lt;td&gt;/dev/&lt;i&gt;efi_system_partition（efi 系统分区）&lt;/i&gt;
+&lt;td&gt;/dev/&lt;i&gt;efi_system_partition&lt;/i&gt;
 &lt;/td&gt;
-&lt;td&gt;EFI 系统分区
+&lt;td&gt;EFI System Partition
 &lt;/td&gt;
-&lt;td&gt;至少 260 MiB
+&lt;td&gt;At least 260 MiB
 &lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;/mnt
 &lt;/td&gt;
-&lt;td&gt;/dev/&lt;i&gt;root_partition（根分区）&lt;/i&gt;
+&lt;td&gt;/dev/&lt;i&gt;root_partition&lt;/i&gt;
 &lt;/td&gt;
-&lt;td&gt;Linux x86-64 根目录 (/)
+&lt;td&gt;Linux x86-64 root_partition (/)
 &lt;/td&gt;
-&lt;td&gt;剩余空间
+&lt;td&gt;Remaining space
 &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;格式化分区&#34;&gt;格式化分区&lt;/h2&gt;
-&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkfs.ext4 /dev/root_partition（根分区）
+&lt;h2 id=&#34;formatting-partitions&#34;&gt;Formatting partitions&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkfs.ext4 /dev/root_partition
 &lt;span&gt;root&lt;/span&gt;@archiso ~ # mkfs.fat -F 32 /dev/efi_system_partition&lt;/pre&gt;
-&lt;h2 id=&#34;挂载分区&#34;&gt;挂载分区&lt;/h2&gt;
-&lt;p&gt;将根磁盘卷 挂载 到 /mnt，将efi系统卷挂载到/mnt/boot&lt;/p&gt;
+&lt;h2 id=&#34;mount-partitions&#34;&gt;Mount partitions&lt;/h2&gt;
+&lt;p&gt;Mount the root volume to /mnt and the efi system volume to /mnt/boot&lt;/p&gt;
 &lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkdir /mnt/boot
-&lt;span&gt;root&lt;/span&gt;@archiso ~ # mount /dev/root_partition（根分区） /mnt
-&lt;span&gt;root&lt;/span&gt;@archiso ~ # mount /dev/（efi系统分区） /mnt/boot&lt;/pre&gt;
-&lt;h2 id=&#34;设置镜像源&#34;&gt;设置镜像源&lt;/h2&gt;
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # mount /dev/root_partition /mnt
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # mount /dev/ /mnt/boot&lt;/pre&gt;
+&lt;h2 id=&#34;setting-the-mirror-source&#34;&gt;Setting the mirror source&lt;/h2&gt;
 &lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # reflector --country China --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist&lt;/pre&gt;
-&lt;h2 id=&#34;安装必需的软件包&#34;&gt;安装必需的软件包&lt;/h2&gt;
+&lt;h2 id=&#34;install-the-required-packages&#34;&gt;Install the required packages&lt;/h2&gt;
 &lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # pacstrap /mnt base linux linux-firmware&lt;/pre&gt;
-&lt;h2 id=&#34;配置系统&#34;&gt;配置系统&lt;/h2&gt;
+&lt;h2 id=&#34;configuration-system&#34;&gt;Configuration System&lt;/h2&gt;
 &lt;p&gt;Fstab
-用以下命令生成 fstab 文件 (用 -U 或 -L 选项设置UUID 或卷标)：&lt;/p&gt;
+Generate the fstab file with the following command (set the UUID or volume label with the -U or -L option).&lt;/p&gt;
 &lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # genfstab -U /mnt &gt;&gt; /mnt/etc/fstab&lt;/pre&gt;
-&lt;p&gt;强烈建议在执行完以上命令后，后检查一下生成的 /mnt/etc/fstab 文件是否正确。&lt;/p&gt;
+&lt;p&gt;It is highly recommended to check the generated /mnt/etc/fstab file after executing the above command to make sure it is correct.&lt;/p&gt;
 &lt;h2 id=&#34;chroot&#34;&gt;Chroot&lt;/h2&gt;
-&lt;p&gt;Change root 到新安装的系统：&lt;/p&gt;
+&lt;p&gt;Enter your new system.&lt;/p&gt;
 &lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # arch-chroot /mnt
 [root@archiso /]#&lt;/pre&gt;
-&lt;h2 id=&#34;时区&#34;&gt;时区&lt;/h2&gt;
-&lt;p&gt;要设置时区：&lt;/p&gt;
+&lt;h2 id=&#34;timezone&#34;&gt;Timezone&lt;/h2&gt;
 &lt;pre&gt;[root@archiso /]# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 [root@archiso /]# hwclock --systohc&lt;/pre&gt;
-&lt;h2 id=&#34;本地化&#34;&gt;本地化&lt;/h2&gt;
-&lt;p&gt;编辑 /etc/locale.gen，然后取消掉 en_US.UTF-8 UTF-8 和其他需要的 地区 前的注释（#）。&lt;/p&gt;
+&lt;h2 id=&#34;set-locale&#34;&gt;Set Locale&lt;/h2&gt;
+&lt;p&gt;Edit /etc/locale.gen,and then uncomment en_US.UTF-8 UTF-8(delete #)。&lt;/p&gt;
 &lt;pre&gt;[root@archiso /]# vim /etc/locale.gen
 [root@archiso /]# locale-gen
 [root@archiso /]# vim /etc/locale.conf&lt;/pre&gt;
 &lt;pre&gt;
 LANG=en_US.UTF-8
 &lt;/pre&gt;
-&lt;h2 id=&#34;网络配置&#34;&gt;网络配置&lt;/h2&gt;
-&lt;p&gt;创建 hostname 文件:&lt;/p&gt;
+&lt;h2 id=&#34;network-configuration&#34;&gt;Network Configuration&lt;/h2&gt;
+&lt;p&gt;Create hostname file:&lt;/p&gt;
 &lt;p&gt;/etc/hostname&lt;/p&gt;
 &lt;pre&gt;
-myhostname（主机名）
+myhostname(set your own hostname here)
 &lt;/pre&gt;
-&lt;p&gt;添加对应的信息到 hosts:&lt;/p&gt;
+&lt;p&gt;Add the corresponding information to the hosts:&lt;/p&gt;
 &lt;pre&gt;[root@archiso /]# vim /etc/hosts&lt;/pre&gt;
 &lt;pre&gt;
 127.0.0.1	localhost
 ::1		localhost
-127.0.1.1	myhostname.localdomain	myhostname # 主机名.本地域名 主机名
+127.0.1.1	myhostname.localdomain	myhostname
 &lt;/pre&gt;
-&lt;h2 id=&#34;设置root密码&#34;&gt;设置root密码&lt;/h2&gt;
+&lt;h2 id=&#34;set-password-for-root&#34;&gt;set password for root&lt;/h2&gt;
 &lt;pre&gt;[root@archiso /]# passwd&lt;/pre&gt;
-&lt;h2 id=&#34;安装引导内核联网相关软件包&#34;&gt;安装引导、内核、联网相关软件包&lt;/h2&gt;
+&lt;h2 id=&#34;installation-of-boot-kernel-and-networking-related-packages&#34;&gt;Installation of boot, kernel, and networking related packages&lt;/h2&gt;
 &lt;pre&gt;[root@archiso /]# pacman -S grub efibootmgr intel-ucode os-prober wpa_supplicant dhcpcd&lt;/pre&gt;
-&lt;h2 id=&#34;配置grub引导&#34;&gt;配置grub引导&lt;/h2&gt;
-&lt;pre&gt;[root@archiso /]# mkdir /boot/grub
-[root@archiso /]# grub-mkconfig &gt; /boot/grub/grub.cfg
-[root@archiso /]# grub-install --target=x86_64-efi --efi-directory=/boot
-[root@archiso /]# 
-[root@archiso /]# 
+&lt;h2 id=&#34;configure-refind-boot&#34;&gt;Configure refind boot&lt;/h2&gt;
+&lt;pre&gt;
+[root@archiso /]# pacman -S refind
+[root@archiso /]# refind-install
+[root@archiso /]# nano /boot/refind.conf
 &lt;/pre&gt;
-&lt;h2 id=&#34;退出chroot&#34;&gt;退出chroot&lt;/h2&gt;
+&lt;pre&gt;
+
+&#34;Boot with standard options&#34; &#34;root-UUID-(root_partition_uuid) rw loglevel=3 quiet&#34;
+&#34;Boot to single-user mode&#34; &#34;root-UUID-(root_partition_uuid) rw loglevel=3 quiet&#34;
+&#34;Boot with minimal options&#34; &#34;ro root=/dew/(root_partition_path)&#34;
+
+&lt;/pre&gt;
+&lt;h2 id=&#34;exit-chroot&#34;&gt;Exit chroot&lt;/h2&gt;
 &lt;pre&gt;[root@archiso /]# exit
 &lt;span&gt;root&lt;/span&gt;@archiso ~ # umount -R /mnt
 &lt;/pre&gt;
@@ -265,19 +307,20 @@ myhostname（主机名）
         <description></description>
         </item>
         <item>
-        <title>让你的二次元美图更清晰</title>
+        <title>Make your two-dimensional beauty map clearer</title>
         <link>https://www.stepbystep.cf/en/archives/real-cugan/</link>
         <pubDate>Mon, 21 Feb 2022 13:06:31 +0000</pubDate>
         
         <guid>https://www.stepbystep.cf/en/archives/real-cugan/</guid>
-        <description>&lt;img src="https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp" alt="Featured image of post 让你的二次元美图更清晰" /&gt;&lt;p&gt;我们在平时预览二次元美图的时候经常会遇到图片不够清晰的问题，图片质量大打折扣。有人可能知道&lt;a class=&#34;link&#34; href=&#34;http://waifu2x.udp.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;waifu2x&lt;/a&gt;这个工具，但今天在这里给大家介绍一个比waifu2x好用很多倍的神器——Real-CUGAN。
-GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
-&lt;h1 id=&#34;效果对比&#34;&gt;效果对比&lt;/h1&gt;
-&lt;p&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg&#39;&#34;&gt;原始图片&lt;/button&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/3f2dfbcbdafd20ba77699c1c2d95d520.jpg&#39;&#34;&gt;waifu2x&lt;/button&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/8f76fd4c566a873a669b3fe445bcf490.jpg&#39;&#34;&gt;Real-CUGAN&lt;/button&gt;
+        <description>&lt;img src="https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp" alt="Featured image of post Make your two-dimensional beauty map clearer" /&gt;&lt;p&gt;We often encounter the problem that the picture is not clear enough when we preview the two-dimensional beauty map, and the quality of the picture is greatly reduced. Some people may know the tool &lt;a class=&#34;link&#34; href=&#34;http://waifu2x.udp.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;waifu2x&lt;/a&gt;, but today I will introduce to you an artifact that is many times better than waifu2x-Real-CUGAN.
+The GitHub link is as follows: &lt;a class=&#34;link&#34; href=&#34;https://github.com/fumiama/Real-CUGAN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/fumiama/Real-CUGAN&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;effect-comparison&#34;&gt;effect comparison&lt;/h1&gt;
+&lt;p&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg&#39;&#34;&gt;Original image&lt;/button&gt;&lt;button onclick=&#34;document.querySelector (&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/3f2dfbcbdafd20ba77699c1c2d95d520.jpg&#39;&#34;&gt;waifu2x&lt;/button&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src= &#39;https://img.gejiba.com/images/8f76fd4c566a873a669b3fe445bcf490.jpg&#39;&#34;&gt;Real-CUGAN&lt;/button&gt;
 &lt;img id=&#34;pic&#34; style=&#34;width:300px&#34; src=&#34;https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;一安装python&#34;&gt;一、安装Python&lt;/h1&gt;
-&lt;h1 id=&#34;二安装lib组件库&#34;&gt;二、安装lib组件库&lt;/h1&gt;
+&lt;h1 id=&#34;1-install-python&#34;&gt;1. Install Python&lt;/h1&gt;
+&lt;h1 id=&#34;second-install-the-lib-component-library&#34;&gt;Second, install the lib component library&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -288,12 +331,12 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install torch
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install numpy
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install  opencv-python
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install  moviepy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install opencv-python
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install moviepy
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;三建立工作目录并命名文件&#34;&gt;三、建立工作目录并命名文件&lt;/h1&gt;
-&lt;p&gt;建立文件夹及文件&lt;/p&gt;
+&lt;/div&gt;&lt;h1 id=&#34;3-create-a-working-directory-and-name-the-file&#34;&gt;3. Create a working directory and name the file&lt;/h1&gt;
+&lt;p&gt;Create folders and files&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -304,8 +347,8 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd Real-CUGAN-Server
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;替换input_dir1文件夹里的输入图片文件。&lt;/p&gt;
-&lt;h1 id=&#34;四调用命令处理图片&#34;&gt;四、调用命令处理图片&lt;/h1&gt;
+&lt;/div&gt;&lt;p&gt;Replace the input image file in the input_dir1 folder.&lt;/p&gt;
+&lt;h1 id=&#34;four-call-the-command-to-process-the-picture&#34;&gt;Four, call the command to process the picture&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -314,7 +357,7 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;python3&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;upcunet_v3&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;py&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;输出图片在opt-dir-all-test文件夹中。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;The output images are in the opt-dir-all-test folder.&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -323,32 +366,32 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
         <pubDate>Mon, 21 Feb 2022 12:14:24 +0000</pubDate>
         
         <guid>https://www.stepbystep.cf/en/archives/beautify-powershell/</guid>
-        <description>&lt;img src="https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp" alt="Featured image of post 极致美化powershell" /&gt;&lt;h1 id=&#34;一下载文件并校验文件完整性&#34;&gt;一、下载文件并校验文件完整性&lt;/h1&gt;
+        <description>&lt;img src="https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp" alt="Featured image of post 极致美化powershell" /&gt;&lt;h1 id=&#34;i-download-the-file-and-verify-the-integrity-of-the-file&#34;&gt;I. Download the file and verify the integrity of the file&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/PowerShell/PowerShell/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载新版Powershell&lt;/a&gt;&lt;/p&gt;
+    &gt;Click to download the new version of Powershell&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/git-for-windows/git/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载Git&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;二安装git&#34;&gt;二、安装Git&lt;/h1&gt;
-&lt;h1 id=&#34;三安装nerd-font字体&#34;&gt;三、安装Nerd Font字体&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;推荐JetBrainsMono&lt;/em&gt;
+    &gt;Click to download Git&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ii-installing-git&#34;&gt;II. Installing Git&lt;/h1&gt;
+&lt;h1 id=&#34;iii-install-nerd-font&#34;&gt;III. Install Nerd Font&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Recommend JetBrainsMono&lt;/em&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/ryanoasis/nerd-fonts/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载&lt;/a&gt;
-下载解压后选中全部ttf文件，右键，安装&lt;/p&gt;
-&lt;h1 id=&#34;四安装windows-terminal-preview&#34;&gt;四、安装Windows Terminal Preview&lt;/h1&gt;
-&lt;p&gt;Windows 应用商店搜索Windows Terminal Preview，并安装。&lt;/p&gt;
-&lt;h1 id=&#34;五安装新版powershell&#34;&gt;五、安装新版PowerShell&lt;/h1&gt;
-&lt;p&gt;一路下一步即可，建议安装到D盘的Powershell文件夹。&lt;/p&gt;
-&lt;h1 id=&#34;六安装oh-my-posh&#34;&gt;六、安装oh-my-posh&lt;/h1&gt;
+    &gt;Click to download&lt;/a&gt;
+After downloading and unpacking, select all ttf files, right click, install&lt;/p&gt;
+&lt;h1 id=&#34;iv-install-windows-terminal-preview&#34;&gt;IV. Install Windows Terminal Preview&lt;/h1&gt;
+&lt;p&gt;Search for Windows Terminal Preview in the Windows App Store and install it.&lt;/p&gt;
+&lt;h1 id=&#34;v-install-the-new-version-of-powershell&#34;&gt;V. Install the new version of Powershell&lt;/h1&gt;
+&lt;p&gt;Just go all the way to the next step, it is recommended to install to Powershell folder in D drive.&lt;/p&gt;
+&lt;h1 id=&#34;vi-install-oh-my-posh&#34;&gt;VI. Install oh-my-posh&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/download/v7.16.2/install-amd64.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载oh-my-posh&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;七设置字体&#34;&gt;七、设置字体&lt;/h1&gt;
+    &gt;Click to download oh-my-posh&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;vii-setting-the-font&#34;&gt;VII. Setting the font&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/1a03655068e1df483525e55ea3bb8e2e.webp&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;字体设置1&#34;
+		alt=&#34;Font settings 1&#34;
 	
 	
 &gt;
@@ -358,14 +401,14 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;设置字体2&#34;
+		alt=&#34;Font settings 2&#34;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;八修改终端配置&#34;&gt;八、修改终端配置&lt;/h1&gt;
-&lt;p&gt;下载主题：
-下载地址：
-&lt;span style=&#34;color:red&#34;&gt;注意：请先替换地址中的主题名称&lt;/span&gt;，然后在浏览器里打开，Ctrl+S保存，注意后缀名应以json结尾
+&lt;h1 id=&#34;viii-modify-the-terminal-configuration&#34;&gt;VIII. Modify the terminal configuration&lt;/h1&gt;
+&lt;p&gt;Download theme:
+Download url：
+&lt;span style=&#34;color:red&#34;&gt;Note: Please replace the theme name in the address first&lt;/span&gt;，然后在浏览器里打开，Ctrl+S保存，注意后缀名应以json结尾
 &lt;a class=&#34;link&#34; href=&#34;https://raw.fastgit.org/JanDeDobbeleer/oh-my-posh/main/themes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://raw.fastgit.org/JanDeDobbeleer/oh-my-posh/main/themes/&lt;/a&gt;此处改为你喜欢的主题名称.omp.json
 在D盘新建目录oh-my-posh，将下载的主题文件放在里面&lt;/p&gt;

@@ -1,20 +1,20 @@
 ---
-title: 如何批量去掉文档中的中文
+title: how to batch remove the Chinese in the document
 date: 2022-03-22 17:20:12.875
 updated: 2022-05-04 09:06:39.529
-url: /en/archives/remove-chinese-character
+url: /archives/remove-chinese-character
 categories: 
 tags: 
 - office
 image: https://img.gejiba.com/images/24573291207ff1f08c2a9a343cfe7925.webp
----
+---1.
 
-1. 用word打开要处理的文档
-2. Ctrl+A 全选文档
-3. Ctrl+H 打开替换窗口
-![Snipaste_20220322_172443.png](https://img.gejiba.com/images/4d9859f12162c00796d4c436ff3a802d.webp)
-4. 点击左下角更多
-5. 确保“使用通配符”为勾选状态
-6. 查找框中输入```[!^1-^127]``` (英文状态输入)
-7. 替换框为空白
-8. 点击“替换全部”
+1. open the document to be processed with word
+2. Ctrl+A select all documents
+3. Ctrl+H open the replace window
+! [Snipaste_20220322_172443.png](https://img.gejiba.com/images/4d9859f12162c00796d4c436ff3a802d.webp)
+4. Click More in the bottom left corner
+5. Make sure "Use wildcards" is checked
+6. Type ``[! ^1-^127]`` (English state input)
+7. Leave the Replace box blank
+8. Click "Replace all"

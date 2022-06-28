@@ -1,5 +1,5 @@
 ---
-title: "5分钟极速生成座位表"
+title: "Generate seating charts in 5 minutes"
 date: 2022-06-28T09:59:31+08:00
 draft: true
 url: /archives/students-table
@@ -8,19 +8,22 @@ tags:
 image: https://img.gejiba.com/images/3b686bd0461bac0d40f6f4fe05c7643b.webp
 ---
 
-[软件下载](https://ybygjylj.lanzouf.com/izQaB0719g2b)
+[Software Download](https://ybygjylj.lanzouf.com/izQaB0719g2b)
 
-# 一、拍照
-让同学们按学号顺序排队，依次拍照，并让同学们坐好后依次填写座位表格（只填学号）
-# 二、打包上传电脑
-用微信将打包的图片上传至电脑并解压
-# 三、批量重命名序号
-将图片移动到软件目录的img文件夹，运行bat程序
-# 四、填写表单生成表格
-依次按照提示输入信息，位置按照座位表格顺序输入，用空格分隔开
-# 五、打印或保存电子版
-Ctrl＋p即可弹出打印窗口
+# I. Photo-taking
+Let the students line up in order of school number, take photos in turn, and let them sit down and fill in the seating form in turn (only fill in the school number)
+# II. Package and upload to computer
+Use WeChat to upload the packaged pictures to the computer and decompress them
+# III. batch rename serial number
+Move the pictures to the img folder of the software directory and run the bat program
+# IV. fill out the form to generate the form
+Follow the prompts to enter the information in turn, the location in accordance with the order of the seat form input, separated by spaces
+# V. Print or save the electronic version
+Ctrl + p to pop up the print window
 
-[bilibili传送门](https://www.bilibili.com/video/BV1FN4y1g7HQ/)
+[bilibili portal](https://www.bilibili.com/video/BV1FN4y1g7HQ/)
 
-[github传送门](https://github.com/stepbystepcode/students-table)
+[github portal](https://github.com/stepbystepcode/students-table)
+
+
+Translated with www.DeepL.com/Translator (free version)

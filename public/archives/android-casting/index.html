@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'><meta name='description' content='一、下载scrcpy并解压缩 点击下载 将其解压至一个稳定安全不会误删除的地方，本例为：D:\scrcpy，确保进入目录后可以看到scrcpy.'><title>安卓手机投屏指南</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'><meta name='description' content='One, Download scrcpy and unzip Click to download
+Extract it to a stable and safe place where it will not be deleted by mistake, in this case: D:\scrcpy, make sure you can see scrcpy.exe after entering the directory
+Two, Configure environment variables This computer (Explorer) right-click Properties → Advanced System Settings → Environment Variables → double-click Path in the top half of the pane → New → Browse → select the (scrcpy.'><title>Android Phone Screen Casting Guide</title>
 
 <link rel='canonical' href='https://www.stepbystep.cf/archives/android-casting/'> 
 <link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css" />
-<meta property='og:title' content='安卓手机投屏指南'>
-<meta property='og:description' content='一、下载scrcpy并解压缩 点击下载 将其解压至一个稳定安全不会误删除的地方，本例为：D:\scrcpy，确保进入目录后可以看到scrcpy.'>
+<meta property='og:title' content='Android Phone Screen Casting Guide'>
+<meta property='og:description' content='One, Download scrcpy and unzip Click to download
+Extract it to a stable and safe place where it will not be deleted by mistake, in this case: D:\scrcpy, make sure you can see scrcpy.exe after entering the directory
+Two, Configure environment variables This computer (Explorer) right-click Properties → Advanced System Settings → Environment Variables → double-click Path in the top half of the pane → New → Browse → select the (scrcpy.'>
 <meta property='og:url' content='https://www.stepbystep.cf/archives/android-casting/'>
-<meta property='og:site_name' content='一步一个脚印'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='windows' /><meta property='article:published_time' content='2022-06-18T13:21:12&#43;09:00'/><meta property='article:modified_time' content='2022-06-18T13:21:12&#43;09:00'/>
-<meta name="twitter:title" content="安卓手机投屏指南">
-<meta name="twitter:description" content="一、下载scrcpy并解压缩 点击下载 将其解压至一个稳定安全不会误删除的地方，本例为：D:\scrcpy，确保进入目录后可以看到scrcpy.">
+<meta property='og:site_name' content='Step by step'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='windows' /><meta property='article:published_time' content='2022-06-18T13:21:12&#43;09:00'/><meta property='article:modified_time' content='2022-06-18T13:21:12&#43;09:00'/><meta property='og:image' content='https://img.gejiba.com/images/6b28b6f6a09bf792403efe3d8b012450.png' />
+<meta name="twitter:title" content="Android Phone Screen Casting Guide">
+<meta name="twitter:description" content="One, Download scrcpy and unzip Click to download
+Extract it to a stable and safe place where it will not be deleted by mistake, in this case: D:\scrcpy, make sure you can see scrcpy.exe after entering the directory
+Two, Configure environment variables This computer (Explorer) right-click Properties → Advanced System Settings → Environment Variables → double-click Path in the top half of the pane → New → Browse → select the (scrcpy."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://img.gejiba.com/images/6b28b6f6a09bf792403efe3d8b012450.png' />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <style>
 .wechat{
@@ -48,7 +55,7 @@ height: 30px!important;
     })();
 </script>
 <div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-	<button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+	<button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
 		<span class="hamburger-box">
 			<span class="hamburger-inner"></span>
 		</span>
@@ -57,7 +64,7 @@ height: 30px!important;
 	<header>
 		 
 		<figure class="site-avatar">
-			<a href="/">
+			<a href="/en/">
 				   
 				<img src="/img/avatar_hu46bc9b9ee9b6ad90c62ec6260983f5e7_5496_300x0_resize_q75_h2_box_2.webp" width="300"
 					height="300" class="site-logo" loading="lazy" alt="Avatar" />
@@ -70,7 +77,7 @@ height: 30px!important;
 		 
 
 		<div class="site-meta">
-			<h1 class="site-name"><a href="/">一步一个脚印</a></h1>
+			<h1 class="site-name"><a href="/en">Step by step</a></h1>
 			<h2 class="site-description">一步一个脚印抵达成功的彼岸！</h2>
 		</div>
 	</header><ol class="social-menu">
@@ -149,7 +156,7 @@ height: 30px!important;
 		  
 
 		<li >
-			<a href="/" >
+			<a href="/en/" >
 				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <polyline points="5 12 3 12 12 3 21 12 19 12" />
@@ -159,13 +166,13 @@ height: 30px!important;
 
 
  
-				<span>主页</span>
+				<span>Home</span>
 			</a>
 		</li>
 		 
 
 		<li >
-			<a href="/archives/" >
+			<a href="/en/archives/" >
 				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <rect x="3" y="4" width="18" height="4" rx="2" />
@@ -175,28 +182,13 @@ height: 30px!important;
 
 
  
-				<span>归档</span>
+				<span>Archives</span>
 			</a>
 		</li>
 		 
 
 		<li >
-			<a href="/tags/" >
-				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
- 
-				<span>分类</span>
-			</a>
-		</li>
-		 
-
-		<li >
-			<a href="/links/" >
+			<a href="/en/links/" >
 				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
@@ -205,13 +197,28 @@ height: 30px!important;
 
 
  
-				<span>友链</span>
+				<span>Links</span>
 			</a>
 		</li>
 		 
 
 		<li >
-			<a href="/about/" >
+			<a href="/en/tags/" >
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+ 
+				<span>Tag</span>
+			</a>
+		</li>
+		 
+
+		<li >
+			<a href="/en/about/" >
 				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="12" cy="7" r="4" />
@@ -220,7 +227,7 @@ height: 30px!important;
 
 
  
-				<span>关于</span>
+				<span>About</span>
 			</a>
 		</li>
 		
@@ -229,7 +236,7 @@ height: 30px!important;
   <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
   <line x1="13" y1="8" x2="15" y2="8" />
   <line x1="13" y1="12" x2="15" y2="12" />
-</svg><span>心情</span></a>
+</svg><span>Mood</span></a>
 		</li>
 	</ol>
 	<script>
@@ -266,15 +273,23 @@ height: 30px!important;
 		}
 		window.onload = function () { let menu = document.querySelector('#main-menu'); menu.insertBefore(menu.children[5], menu.children[4]); };	</script>
 </aside><main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/archives/android-casting/">
+                
+                    <img src="https://img.gejiba.com/images/6b28b6f6a09bf792403efe3d8b012450.png" loading="lazy" alt="Featured image of post Android Phone Screen Casting Guide" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
 	
 
 	<div class="article-title-wrapper">
 		<h2 class="article-title">
-			<a href="/archives/android-casting/">安卓手机投屏指南</a>
+			<a href="/archives/android-casting/">Android Phone Screen Casting Guide</a>
 		</h2>
 
 		
@@ -305,7 +320,7 @@ height: 30px!important;
 
 
 
-			<time class="article-time--reading"> 阅读时长: 1 分钟 </time>
+			<time class="article-time--reading"> 1 minute read </time>
 		</div>
 		
 	</footer>
@@ -318,16 +333,16 @@ height: 30px!important;
     <section class="article-content">
     
     
-    <h1 id="一下载scrcpy并解压缩">一、下载scrcpy并解压缩</h1>
+    <h1 id="one-download-scrcpy-and-unzip">One, Download scrcpy and unzip</h1>
 <p><a class="link" href="https://hub.fastgit.xyz/Genymobile/scrcpy/releases/download/v1.24/scrcpy-win64-v1.24.zip"  target="_blank" rel="noopener"
-    >点击下载</a></p>
-<p>将其解压至一个稳定安全不会误删除的地方，本例为：<code>D:\scrcpy</code>，确保进入目录后可以看到scrcpy.exe</p>
-<h1 id="二配置环境变量">二、配置环境变量</h1>
-<p>此电脑（资源管理器）右键属性→高级系统设置→环境变量→双击上半部分窗格里Path→新建→浏览→选择刚刚解压的（包含scrcpy.exe的）文件夹→确定→确定→确定</p>
-<h1 id="三打开手机开发者模式">三、打开手机开发者模式</h1>
-<p>找到手机信息（包含手机型号、芯片的信息页），快速反复点击版本号，直到提示“您已经进入开发者模式”，然后返回，找到开发者模式→USB调试→开启→（确定开启）</p>
-<h1 id="四投屏">四、投屏</h1>
-<p>将手机与电脑用数据线连接后，打开电脑终端，输入scrcpy后回车，在手机上确认，即可在电脑屏幕上看到你的手机屏幕。</p>
+    >Click to download</a></p>
+<p>Extract it to a stable and safe place where it will not be deleted by mistake, in this case: <code>D:\scrcpy</code>, make sure you can see scrcpy.exe after entering the directory</p>
+<h1 id="two-configure-environment-variables">Two, Configure environment variables</h1>
+<p>This computer (Explorer) right-click Properties → Advanced System Settings → Environment Variables → double-click Path in the top half of the pane → New → Browse → select the (scrcpy.exe containing) folder you just unzipped → OK → OK → OK</p>
+<h1 id="three-open-phone-developer-mode">Three, Open phone developer mode</h1>
+<p>Find the phone information (including the phone model, chip information page), quickly and repeatedly click the version number until the prompt &ldquo;You have entered the developer mode&rdquo;, then return, find the developer mode → USB debugging → open → (OK to open)</p>
+<h1 id="four-cast-screen">Four, Cast Screen</h1>
+<p>After connecting your phone to the computer with the data cable, open the computer terminal, enter scrcpy and enter, and confirm on your phone to see your phone screen on the computer screen.</p>
 
 </section>
 
@@ -336,7 +351,7 @@ height: 30px!important;
     
     <section class="article-tags">
         
-            <a href="/tags/windows/">windows</a>
+            <a href="/en/tags/windows/">windows</a>
         
     </section>
 
@@ -392,12 +407,12 @@ height: 30px!important;
         
             2020 - 
         
-        2022 一步一个脚印
+        2022 Step by step
     </section>
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 

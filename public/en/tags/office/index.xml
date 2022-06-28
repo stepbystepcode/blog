@@ -7,30 +7,23 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Tue, 22 Mar 2022 17:20:12 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/en/tags/office/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>如何批量去掉文档中的中文</title>
-        <link>https://www.stepbystep.cf/en/archives/remove-chinese-character/</link>
+        <title>how to batch remove the Chinese in the document</title>
+        <link>https://www.stepbystep.cf/archives/remove-chinese-character/</link>
         <pubDate>Tue, 22 Mar 2022 17:20:12 +0000</pubDate>
         
-        <guid>https://www.stepbystep.cf/en/archives/remove-chinese-character/</guid>
-        <description>&lt;img src="https://img.gejiba.com/images/24573291207ff1f08c2a9a343cfe7925.webp" alt="Featured image of post 如何批量去掉文档中的中文" /&gt;&lt;ol&gt;
-&lt;li&gt;用word打开要处理的文档&lt;/li&gt;
-&lt;li&gt;Ctrl+A 全选文档&lt;/li&gt;
-&lt;li&gt;Ctrl+H 打开替换窗口
-&lt;img src=&#34;https://img.gejiba.com/images/4d9859f12162c00796d4c436ff3a802d.webp&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Snipaste_20220322_172443.png&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;点击左下角更多&lt;/li&gt;
-&lt;li&gt;确保“使用通配符”为勾选状态&lt;/li&gt;
-&lt;li&gt;查找框中输入&lt;code&gt;[!^1-^127]&lt;/code&gt; (英文状态输入)&lt;/li&gt;
-&lt;li&gt;替换框为空白&lt;/li&gt;
-&lt;li&gt;点击“替换全部”&lt;/li&gt;
+        <guid>https://www.stepbystep.cf/archives/remove-chinese-character/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/24573291207ff1f08c2a9a343cfe7925.webp" alt="Featured image of post how to batch remove the Chinese in the document" /&gt;&lt;p&gt;1.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;open the document to be processed with word&lt;/li&gt;
+&lt;li&gt;Ctrl+A select all documents&lt;/li&gt;
+&lt;li&gt;Ctrl+H open the replace window
+! &lt;a class=&#34;link&#34; href=&#34;https://img.gejiba.com/images/4d9859f12162c00796d4c436ff3a802d.webp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Snipaste_20220322_172443.png&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click More in the bottom left corner&lt;/li&gt;
+&lt;li&gt;Make sure &amp;ldquo;Use wildcards&amp;rdquo; is checked&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;[! ^1-^127]&lt;/code&gt; (English state input)&lt;/li&gt;
+&lt;li&gt;Leave the Replace box blank&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Replace all&amp;rdquo;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         </item>

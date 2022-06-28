@@ -6,7 +6,51 @@
         <description>Recent content in windows on Step by step</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 06 Mar 2022 06:28:31 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/en/tags/windows/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 Jun 2022 09:59:31 +0800</lastBuildDate><atom:link href="https://www.stepbystep.cf/en/tags/windows/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Generate seating charts in 5 minutes</title>
+        <link>https://www.stepbystep.cf/archives/students-table/</link>
+        <pubDate>Tue, 28 Jun 2022 09:59:31 +0800</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/students-table/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/3b686bd0461bac0d40f6f4fe05c7643b.webp" alt="Featured image of post Generate seating charts in 5 minutes" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ybygjylj.lanzouf.com/izQaB0719g2b&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Software Download&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;i-photo-taking&#34;&gt;I. Photo-taking&lt;/h1&gt;
+&lt;p&gt;Let the students line up in order of school number, take photos in turn, and let them sit down and fill in the seating form in turn (only fill in the school number)&lt;/p&gt;
+&lt;h1 id=&#34;ii-package-and-upload-to-computer&#34;&gt;II. Package and upload to computer&lt;/h1&gt;
+&lt;p&gt;Use WeChat to upload the packaged pictures to the computer and decompress them&lt;/p&gt;
+&lt;h1 id=&#34;iii-batch-rename-serial-number&#34;&gt;III. batch rename serial number&lt;/h1&gt;
+&lt;p&gt;Move the pictures to the img folder of the software directory and run the bat program&lt;/p&gt;
+&lt;h1 id=&#34;iv-fill-out-the-form-to-generate-the-form&#34;&gt;IV. fill out the form to generate the form&lt;/h1&gt;
+&lt;p&gt;Follow the prompts to enter the information in turn, the location in accordance with the order of the seat form input, separated by spaces&lt;/p&gt;
+&lt;h1 id=&#34;v-print-or-save-the-electronic-version&#34;&gt;V. Print or save the electronic version&lt;/h1&gt;
+&lt;p&gt;Ctrl + p to pop up the print window&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1FN4y1g7HQ/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;bilibili portal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/stepbystepcode/students-table&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;github portal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Translated with &lt;a class=&#34;link&#34; href=&#34;https://www.DeepL.com/Translator&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;www.DeepL.com/Translator&lt;/a&gt; (free version)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Android Phone Screen Casting Guide</title>
+        <link>https://www.stepbystep.cf/archives/android-casting/</link>
+        <pubDate>Sat, 18 Jun 2022 13:21:12 +0900</pubDate>
+        
+        <guid>https://www.stepbystep.cf/archives/android-casting/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/6b28b6f6a09bf792403efe3d8b012450.png" alt="Featured image of post Android Phone Screen Casting Guide" /&gt;&lt;h1 id=&#34;one-download-scrcpy-and-unzip&#34;&gt;One, Download scrcpy and unzip&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/Genymobile/scrcpy/releases/download/v1.24/scrcpy-win64-v1.24.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Click to download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Extract it to a stable and safe place where it will not be deleted by mistake, in this case: &lt;code&gt;D:\scrcpy&lt;/code&gt;, make sure you can see scrcpy.exe after entering the directory&lt;/p&gt;
+&lt;h1 id=&#34;two-configure-environment-variables&#34;&gt;Two, Configure environment variables&lt;/h1&gt;
+&lt;p&gt;This computer (Explorer) right-click Properties → Advanced System Settings → Environment Variables → double-click Path in the top half of the pane → New → Browse → select the (scrcpy.exe containing) folder you just unzipped → OK → OK → OK&lt;/p&gt;
+&lt;h1 id=&#34;three-open-phone-developer-mode&#34;&gt;Three, Open phone developer mode&lt;/h1&gt;
+&lt;p&gt;Find the phone information (including the phone model, chip information page), quickly and repeatedly click the version number until the prompt &amp;ldquo;You have entered the developer mode&amp;rdquo;, then return, find the developer mode → USB debugging → open → (OK to open)&lt;/p&gt;
+&lt;h1 id=&#34;four-cast-screen&#34;&gt;Four, Cast Screen&lt;/h1&gt;
+&lt;p&gt;After connecting your phone to the computer with the data cable, open the computer terminal, enter scrcpy and enter, and confirm on your phone to see your phone screen on the computer screen.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>电脑小白入门手册📔</title>
         <link>https://www.stepbystep.cf/en/archives/computer-tutorial/</link>
         <pubDate>Sun, 06 Mar 2022 06:28:31 +0000</pubDate>
@@ -51,32 +95,32 @@
         <pubDate>Mon, 21 Feb 2022 12:14:24 +0000</pubDate>
         
         <guid>https://www.stepbystep.cf/en/archives/beautify-powershell/</guid>
-        <description>&lt;img src="https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp" alt="Featured image of post 极致美化powershell" /&gt;&lt;h1 id=&#34;一下载文件并校验文件完整性&#34;&gt;一、下载文件并校验文件完整性&lt;/h1&gt;
+        <description>&lt;img src="https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp" alt="Featured image of post 极致美化powershell" /&gt;&lt;h1 id=&#34;i-download-the-file-and-verify-the-integrity-of-the-file&#34;&gt;I. Download the file and verify the integrity of the file&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/PowerShell/PowerShell/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载新版Powershell&lt;/a&gt;&lt;/p&gt;
+    &gt;Click to download the new version of Powershell&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/git-for-windows/git/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载Git&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;二安装git&#34;&gt;二、安装Git&lt;/h1&gt;
-&lt;h1 id=&#34;三安装nerd-font字体&#34;&gt;三、安装Nerd Font字体&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;推荐JetBrainsMono&lt;/em&gt;
+    &gt;Click to download Git&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ii-installing-git&#34;&gt;II. Installing Git&lt;/h1&gt;
+&lt;h1 id=&#34;iii-install-nerd-font&#34;&gt;III. Install Nerd Font&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Recommend JetBrainsMono&lt;/em&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/ryanoasis/nerd-fonts/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载&lt;/a&gt;
-下载解压后选中全部ttf文件，右键，安装&lt;/p&gt;
-&lt;h1 id=&#34;四安装windows-terminal-preview&#34;&gt;四、安装Windows Terminal Preview&lt;/h1&gt;
-&lt;p&gt;Windows 应用商店搜索Windows Terminal Preview，并安装。&lt;/p&gt;
-&lt;h1 id=&#34;五安装新版powershell&#34;&gt;五、安装新版PowerShell&lt;/h1&gt;
-&lt;p&gt;一路下一步即可，建议安装到D盘的Powershell文件夹。&lt;/p&gt;
-&lt;h1 id=&#34;六安装oh-my-posh&#34;&gt;六、安装oh-my-posh&lt;/h1&gt;
+    &gt;Click to download&lt;/a&gt;
+After downloading and unpacking, select all ttf files, right click, install&lt;/p&gt;
+&lt;h1 id=&#34;iv-install-windows-terminal-preview&#34;&gt;IV. Install Windows Terminal Preview&lt;/h1&gt;
+&lt;p&gt;Search for Windows Terminal Preview in the Windows App Store and install it.&lt;/p&gt;
+&lt;h1 id=&#34;v-install-the-new-version-of-powershell&#34;&gt;V. Install the new version of Powershell&lt;/h1&gt;
+&lt;p&gt;Just go all the way to the next step, it is recommended to install to Powershell folder in D drive.&lt;/p&gt;
+&lt;h1 id=&#34;vi-install-oh-my-posh&#34;&gt;VI. Install oh-my-posh&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/JanDeDobbeleer/oh-my-posh/releases/download/v7.16.2/install-amd64.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击下载oh-my-posh&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;七设置字体&#34;&gt;七、设置字体&lt;/h1&gt;
+    &gt;Click to download oh-my-posh&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;vii-setting-the-font&#34;&gt;VII. Setting the font&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/1a03655068e1df483525e55ea3bb8e2e.webp&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;字体设置1&#34;
+		alt=&#34;Font settings 1&#34;
 	
 	
 &gt;
@@ -86,14 +130,14 @@
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;设置字体2&#34;
+		alt=&#34;Font settings 2&#34;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;八修改终端配置&#34;&gt;八、修改终端配置&lt;/h1&gt;
-&lt;p&gt;下载主题：
-下载地址：
-&lt;span style=&#34;color:red&#34;&gt;注意：请先替换地址中的主题名称&lt;/span&gt;，然后在浏览器里打开，Ctrl+S保存，注意后缀名应以json结尾
+&lt;h1 id=&#34;viii-modify-the-terminal-configuration&#34;&gt;VIII. Modify the terminal configuration&lt;/h1&gt;
+&lt;p&gt;Download theme:
+Download url：
+&lt;span style=&#34;color:red&#34;&gt;Note: Please replace the theme name in the address first&lt;/span&gt;，然后在浏览器里打开，Ctrl+S保存，注意后缀名应以json结尾
 &lt;a class=&#34;link&#34; href=&#34;https://raw.fastgit.org/JanDeDobbeleer/oh-my-posh/main/themes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://raw.fastgit.org/JanDeDobbeleer/oh-my-posh/main/themes/&lt;/a&gt;此处改为你喜欢的主题名称.omp.json
 在D盘新建目录oh-my-posh，将下载的主题文件放在里面&lt;/p&gt;
