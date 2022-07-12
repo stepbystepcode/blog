@@ -2,7 +2,7 @@
 title: "Android Phone Screen Casting Guide"
 date: 2022-06-18T13:21:12+09:00
 draft: true
-url: /archives/android-casting
+url: /en/archives/android-casting
 categories: 
 tags: 
 - windows

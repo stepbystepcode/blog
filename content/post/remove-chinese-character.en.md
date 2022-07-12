@@ -2,7 +2,7 @@
 title: how to batch remove the Chinese in the document
 date: 2022-03-22 17:20:12.875
 updated: 2022-05-04 09:06:39.529
-url: /archives/remove-chinese-character
+url: /en/archives/remove-chinese-character
 categories: 
 tags: 
 - office

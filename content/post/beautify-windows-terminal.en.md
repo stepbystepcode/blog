@@ -2,7 +2,7 @@
 title: The ultimate beautification of the windows terminal
 date: 2022-02-21 12:14:24.657
 updated: 2022-05-04 08:24:26.511
-url: /archives/beautify-windows-terminal
+url: /en/archives/beautify-windows-terminal
 categories:
 tags:
 - windows
