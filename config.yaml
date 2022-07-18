@@ -197,8 +197,8 @@ menu:
           url: https://b23.tv/cAoPex5
           params:
               icon: brand-bili
-        - identifier: c
-          name: c-Search
+        - identifier: d
+          name: d-Search
           url: https://www.stepbystep.cf/search/
           params:
               icon: search
