@@ -12,7 +12,7 @@
         {{- block "head" . -}}{{ end }}
     </head>
     <body class="{{ block `body-class` . }}{{ end }}">
-        <div id="my-botui-app"><bot-ui></botui></div>
+        
         {{- partial "head/colorScheme" . -}}
 
         {{/* The container is wider when there's any activated widget */}}
@@ -29,7 +29,7 @@
             {{- end -}}
             <main class="main full-width">
                 {{- block "main" . }}
-
+                <div id="my-botui-app"><bot-ui></botui></div>
                 {{- end }}
             </main>
             {{- block "right-sidebar" . -}}{{ end }}
