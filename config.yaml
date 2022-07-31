@@ -95,7 +95,7 @@ params:
             visitor:
             avatar:
             emoji:
-              - https://npm.elemecdn.com/stepbystep-blog@1.0.2/comment/
+              - https://ybygjylj.gitee.io/cdn/comment/
             requiredMeta:
                 - name
             placeholder: 有不明白的地方或建议，欢迎评论告诉我
