@@ -4,21 +4,21 @@ Vibrant:
       type: script
 
 PhotoSwipe:
-    - src: https://npm.elemecdn.com/photoswipe@4.1.3/dist/photoswipe.min.js
+    - src: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/photoswipe.min.js
       integrity: sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=
       type: script
       defer: true
 
-    - src: https://npm.elemecdn.com/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js
+    - src: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/photoswipe-ui-default.min.js
       integrity: sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=
       type: script
       defer: true
 
-    - src: https://npm.elemecdn.com/photoswipe@4.1.3/dist/default-skin/default-skin.css
+    - src: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/default-skin/default-skin.css
       integrity: sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=
       type: style
 
-    - src: https://npm.elemecdn.com/photoswipe@4.1.3/dist/photoswipe.css
+    - src: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/photoswipe.css
       integrity: sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=
       type: style
 
