@@ -3,7 +3,18 @@
     <head>
         {{- partial "head/head.html" . -}}
         
-
+<style>
+    @media (min-width: 768px) {
+        iframe{
+            height: 900px;
+        }
+    }
+    @media (max-width: 768px) {
+        iframe{
+            height: 450px;
+        }
+    }
+</style>
 
         {{- block "head" . -}}{{ end }}
     </head>
