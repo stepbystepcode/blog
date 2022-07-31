@@ -2,11 +2,6 @@
 <html lang="{{ .Site.LanguageCode }}" dir="{{ default `ltr` .Language.LanguageDirection }}">
     <head>
         {{- partial "head/head.html" . -}}
-        <link rel="stylesheet" href="https://cdn.stepbystep.cf/botui/botui.min.css" />
-        <link rel="stylesheet" href="https://cdn.stepbystep.cf/botui/botui-theme-default.css" />
-        <script src="https://cdn.stepbystep.cf/botui/own-bot.js"></script>
-        <script src="https://cdn.stepbystep.cf/botui/vue.min.js"></script>
-        <script src="https://cdn.stepbystep.cf/botui/botui.min.js"></script>
 
 
         {{- block "head" . -}}{{ end }}
@@ -29,7 +24,7 @@
             {{- end -}}
             <main class="main full-width">
                 {{- block "main" . }}
-                <div id="my-botui-app"><bot-ui></botui></div>
+                <iframe src="./botui.html" frameborder="0"></iframe>
                 {{- end }}
             </main>
             {{- block "right-sidebar" . -}}{{ end }}
