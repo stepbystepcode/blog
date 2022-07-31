@@ -29,7 +29,7 @@ pre span{
 color:red;
 }
 &lt;/style&gt;
-&lt;h1 id=&#34;一download-iso-image-and-tools&#34;&gt;一、Download ISO image and tools&lt;/h1&gt;
+&lt;h1 id=&#34;download-iso-image-and-tools&#34;&gt;Download ISO image and tools&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -46,7 +46,7 @@ color:red;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;二create-installation-usb-flash-drive&#34;&gt;二、Create installation USB flash drive&lt;/h1&gt;
+&lt;h1 id=&#34;create-installation-usb-flash-drive&#34;&gt;Create installation USB flash drive&lt;/h1&gt;
 &lt;p&gt;&lt;span style=&#34;color:red;font-size:20px;font-weight:700&#34;&gt;Caution: The created installation USB drive will be formatted, all contents inside will be deleted!&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;If you are asked if you want to allow updates and confirm formatting the USB drive, click &amp;ldquo;Yes&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8a878ecbbd55c09df96f11e7d1237f99.webp&#34;
@@ -59,7 +59,7 @@ color:red;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;三reserved-partitions&#34;&gt;三、Reserved partitions&lt;/h1&gt;
+&lt;h1 id=&#34;reserved-partitions&#34;&gt;Reserved partitions&lt;/h1&gt;
 &lt;p&gt;Press Windows+R and enter diskmgmt.msc
 &lt;img src=&#34;https://img.gejiba.com/images/f24c1f55af9dec72f26fb9ff1e488f2b.webp&#34;
 	
@@ -81,7 +81,7 @@ color:red;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;四select-uefi-mode-and-enter-the-u-disk-to-install-the-system&#34;&gt;四、Select UEFI mode and enter the u disk to install the system&lt;/h1&gt;
+&lt;h1 id=&#34;select-uefi-mode-and-enter-the-u-disk-to-install-the-system&#34;&gt;Select UEFI mode and enter the u disk to install the system&lt;/h1&gt;
 &lt;p&gt;Select UEFI mode to boot, it varies from computer to computer, please follow the computer manual or search online for this procedure.&lt;/p&gt;
 &lt;h2 id=&#34;update-system-time&#34;&gt;Update system time&lt;/h2&gt;
 &lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # timedatectl set-ntp true&lt;/pre&gt;
