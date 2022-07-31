@@ -4,13 +4,15 @@
         {{- partial "head/head.html" . -}}
         <link rel="stylesheet" href="https://cdn.stepbystep.cf/botui/botui.min.css" />
         <link rel="stylesheet" href="https://cdn.stepbystep.cf/botui/botui-theme-default.css" />
-        <script src="https://cdn.stepbystep.cf/botui/own-bot.js"></script><script src="https://cdn.stepbystep.cf/botui/vue.min.js"></script>
-            <script src="https://cdn.stepbystep.cf/botui/botui.min.js"></script>
+        <script src="https://cdn.stepbystep.cf/botui/own-bot.js"></script>
+        <script src="https://cdn.stepbystep.cf/botui/vue.min.js"></script>
+        <script src="https://cdn.stepbystep.cf/botui/botui.min.js"></script>
 
 
         {{- block "head" . -}}{{ end }}
     </head>
     <body class="{{ block `body-class` . }}{{ end }}">
+        <div id="my-botui-app"><bot-ui></botui></div>
         {{- partial "head/colorScheme" . -}}
 
         {{/* The container is wider when there's any activated widget */}}
@@ -28,11 +30,6 @@
             <main class="main full-width">
                 {{- block "main" . }}
 
-        <div id="my-botui-app">
-
-          <bot-ui></botui>
-
-        </div>
                 {{- end }}
             </main>
             {{- block "right-sidebar" . -}}{{ end }}
