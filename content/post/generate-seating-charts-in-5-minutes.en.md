@@ -1,7 +1,6 @@
 ---
 title: "Generate seating charts in 5 minutes"
 date: 2022-06-28T09:59:31+08:00
-draft: true
 url: /en/archives/students-table
 tags: 
 - windows
