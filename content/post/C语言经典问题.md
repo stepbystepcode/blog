@@ -1,11 +1,11 @@
 ---
-title: 电脑小白入门手册📔
-date: 2022-03-06 06:28:31.858
-updated: 2022-05-04 10:24:36.01
-url: /archives/computer-tutorial
+title: C语言经典问题
+date: 2022-08-01 06:28:31.858
+updated: 2022-08-01 06:28:31.858
+url: /archives/c-problems
 categories: 
 tags: 
-- windows
+- c
 image: https://img.gejiba.com/images/dc28dd597dffccfbf3d871509da52d31.webp
 ---
 
