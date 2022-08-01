@@ -1,7 +1,9 @@
 ---
-title: "C语言经典问题"
-date: 2022-08-01T18:55:22+08:00
+title: C语言经典问题
+date: 2022-08-01 11:35:12.875
+updated: 2022-05-04 09:06:39.529
 url: /archives/c-problems
+categories: 
 tags: 
 - c
 image: https://img.gejiba.com/images/b129b387545aacfcae6819fc42aca17a.png
