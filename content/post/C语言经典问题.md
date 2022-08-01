@@ -4,7 +4,6 @@ date: 2022-08-01T18:55:22+08:00
 url: /archives/c-problems
 tags: 
 - c
-- programming
 image: https://img.gejiba.com/images/b129b387545aacfcae6819fc42aca17a.png
 ---
 
