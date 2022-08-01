@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>linux on Step by step</title>
+        <link>https://www.stepbystep.cf/en/tags/linux/</link>
+        <description>Recent content in linux on Step by step</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 13 Mar 2022 17:53:05 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/en/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Archlinux Installation guide</title>
+        <link>https://www.stepbystep.cf/en/archives/archlinux/</link>
+        <pubDate>Sun, 13 Mar 2022 17:53:05 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/en/archives/archlinux/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp" alt="Featured image of post Archlinux Installation guide" /&gt;&lt;style&gt;
+@font-face
+{
+	font-family: tty;
+	src: url(&#39;../font/437.ttf&#39;)
+}
+pre{
+background:black;
+color:#ccc;
+padding:10px;
+white-space:break-spaces;
+font-family:tty
+}
+pre span{
+color:red;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;download-iso-image-and-tools&#34;&gt;Download ISO image and tools&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fastgit.xyz/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Download rufus(rufus-x.xp.exe)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://disk.stepbystep.cf/d/ihasher.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Download ihasher&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8fc41ece91af084081f268d62dfd12b2.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;L4o0YqrTRt.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;create-installation-usb-flash-drive&#34;&gt;Create installation USB flash drive&lt;/h1&gt;
+&lt;p&gt;&lt;span style=&#34;color:red;font-size:20px;font-weight:700&#34;&gt;Caution: The created installation USB drive will be formatted, all contents inside will be deleted!&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If you are asked if you want to allow updates and confirm formatting the USB drive, click &amp;ldquo;Yes&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/8a878ecbbd55c09df96f11e7d1237f99.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;GUdAxCxxop.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;reserved-partitions&#34;&gt;Reserved partitions&lt;/h1&gt;
+&lt;p&gt;Press Windows+R and enter diskmgmt.msc
+&lt;img src=&#34;https://img.gejiba.com/images/f24c1f55af9dec72f26fb9ff1e488f2b.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;mmexport1647324031181.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.gejiba.com/images/5eaae631dd6a6d922728cea1582945c4.webp&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;mmexport1647324029962.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;select-uefi-mode-and-enter-the-u-disk-to-install-the-system&#34;&gt;Select UEFI mode and enter the u disk to install the system&lt;/h1&gt;
+&lt;p&gt;Select UEFI mode to boot, it varies from computer to computer, please follow the computer manual or search online for this procedure.&lt;/p&gt;
+&lt;h2 id=&#34;update-system-time&#34;&gt;Update system time&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # timedatectl set-ntp true&lt;/pre&gt;
+&lt;h2 id=&#34;partition&#34;&gt;Partition&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # fdisk -l&lt;/pre&gt;
+&lt;p&gt;Devices ending in rom, loop or airoot can be ignored in the result.&lt;/p&gt;
+&lt;p&gt;For a selected device, the following partitions are mandatory.&lt;/p&gt;
+&lt;p&gt;A root partition (mounted in the root directory)/&lt;/p&gt;
+&lt;p&gt;An EFI system partition&lt;/p&gt;
+&lt;p&gt;Please use fdisk or parted to modify the partition table. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # fdisk /dev/the_disk_to_be_partitioned&lt;/pre&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th&gt;Mount Points
+&lt;/th&gt;
+&lt;th&gt;Partition
+&lt;/th&gt;
+&lt;th&gt;Partition Type
+&lt;/th&gt;
+&lt;th&gt;Recommended size
+&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/mnt/boot
+&lt;/td&gt;
+&lt;td&gt;/dev/&lt;i&gt;efi_system_partition&lt;/i&gt;
+&lt;/td&gt;
+&lt;td&gt;EFI System Partition
+&lt;/td&gt;
+&lt;td&gt;At least 260 MiB
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/mnt
+&lt;/td&gt;
+&lt;td&gt;/dev/&lt;i&gt;root_partition&lt;/i&gt;
+&lt;/td&gt;
+&lt;td&gt;Linux x86-64 root_partition (/)
+&lt;/td&gt;
+&lt;td&gt;Remaining space
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;formatting-partitions&#34;&gt;Formatting partitions&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkfs.ext4 /dev/root_partition
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkfs.fat -F 32 /dev/efi_system_partition&lt;/pre&gt;
+&lt;h2 id=&#34;mount-partitions&#34;&gt;Mount partitions&lt;/h2&gt;
+&lt;p&gt;Mount the root volume to /mnt and the efi system volume to /mnt/boot&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # mkdir /mnt/boot
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # mount /dev/root_partition /mnt
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # mount /dev/ /mnt/boot&lt;/pre&gt;
+&lt;h2 id=&#34;setting-the-mirror-source&#34;&gt;Setting the mirror source&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # reflector --country China --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist&lt;/pre&gt;
+&lt;h2 id=&#34;install-the-required-packages&#34;&gt;Install the required packages&lt;/h2&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # pacstrap /mnt base linux linux-firmware&lt;/pre&gt;
+&lt;h2 id=&#34;configuration-system&#34;&gt;Configuration System&lt;/h2&gt;
+&lt;p&gt;Fstab
+Generate the fstab file with the following command (set the UUID or volume label with the -U or -L option).&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # genfstab -U /mnt &gt;&gt; /mnt/etc/fstab&lt;/pre&gt;
+&lt;p&gt;It is highly recommended to check the generated /mnt/etc/fstab file after executing the above command to make sure it is correct.&lt;/p&gt;
+&lt;h2 id=&#34;chroot&#34;&gt;Chroot&lt;/h2&gt;
+&lt;p&gt;Enter your new system.&lt;/p&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # arch-chroot /mnt
+[root@archiso /]#&lt;/pre&gt;
+&lt;h2 id=&#34;timezone&#34;&gt;Timezone&lt;/h2&gt;
+&lt;pre&gt;[root@archiso /]# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+[root@archiso /]# hwclock --systohc&lt;/pre&gt;
+&lt;h2 id=&#34;set-locale&#34;&gt;Set Locale&lt;/h2&gt;
+&lt;p&gt;Edit /etc/locale.gen,and then uncomment en_US.UTF-8 UTF-8(delete #)。&lt;/p&gt;
+&lt;pre&gt;[root@archiso /]# vim /etc/locale.gen
+[root@archiso /]# locale-gen
+[root@archiso /]# vim /etc/locale.conf&lt;/pre&gt;
+&lt;pre&gt;
+LANG=en_US.UTF-8
+&lt;/pre&gt;
+&lt;h2 id=&#34;network-configuration&#34;&gt;Network Configuration&lt;/h2&gt;
+&lt;p&gt;Create hostname file:&lt;/p&gt;
+&lt;p&gt;/etc/hostname&lt;/p&gt;
+&lt;pre&gt;
+myhostname(set your own hostname here)
+&lt;/pre&gt;
+&lt;p&gt;Add the corresponding information to the hosts:&lt;/p&gt;
+&lt;pre&gt;[root@archiso /]# vim /etc/hosts&lt;/pre&gt;
+&lt;pre&gt;
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	myhostname.localdomain	myhostname
+&lt;/pre&gt;
+&lt;h2 id=&#34;set-password-for-root&#34;&gt;set password for root&lt;/h2&gt;
+&lt;pre&gt;[root@archiso /]# passwd&lt;/pre&gt;
+&lt;h2 id=&#34;installation-of-boot-kernel-and-networking-related-packages&#34;&gt;Installation of boot, kernel, and networking related packages&lt;/h2&gt;
+&lt;pre&gt;[root@archiso /]# pacman -S grub efibootmgr intel-ucode os-prober wpa_supplicant dhcpcd&lt;/pre&gt;
+&lt;h2 id=&#34;configure-refind-boot&#34;&gt;Configure refind boot&lt;/h2&gt;
+&lt;pre&gt;
+[root@archiso /]# pacman -S refind
+[root@archiso /]# refind-install
+[root@archiso /]# nano /boot/refind.conf
+&lt;/pre&gt;
+&lt;pre&gt;
+
+&#34;Boot with standard options&#34; &#34;root-UUID-(root_partition_uuid) rw loglevel=3 quiet&#34;
+&#34;Boot to single-user mode&#34; &#34;root-UUID-(root_partition_uuid) rw loglevel=3 quiet&#34;
+&#34;Boot with minimal options&#34; &#34;ro root=/dew/(root_partition_path)&#34;
+
+&lt;/pre&gt;
+&lt;h2 id=&#34;exit-chroot&#34;&gt;Exit chroot&lt;/h2&gt;
+&lt;pre&gt;[root@archiso /]# exit
+&lt;span&gt;root&lt;/span&gt;@archiso ~ # umount -R /mnt
+&lt;/pre&gt;
+&lt;pre&gt;&lt;span&gt;root&lt;/span&gt;@archiso ~ # reboot&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[1]ArchWiki. Installation guide[EB/OL]. [2022-3-16]. &lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.org/title/Installation_guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wiki.archlinux.org/title/Installation_guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

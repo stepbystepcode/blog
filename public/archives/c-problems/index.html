@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'><meta name='description' content='1 用预处理指令#define 声明一个常数，用以表明1年中有多少秒（忽略闰年问题） 1 #define SEC_YEAR (365*24*60*60)UL 考察点： #define 语法的基本知识（例如：不能以分号结束，括号'><title>c语言经典问题</title>
+
+<link rel='canonical' href='https://www.stepbystep.cf/archives/c-problems/'> 
+<link rel="stylesheet" href="/scss/style.min.f538425e0bba51d614efe8ad4ecc190e45a127befeadf3de08ef9fc2544f9e94.css" />
+<meta property='og:title' content='c语言经典问题'>
+<meta property='og:description' content='1 用预处理指令#define 声明一个常数，用以表明1年中有多少秒（忽略闰年问题） 1 #define SEC_YEAR (365*24*60*60)UL 考察点： #define 语法的基本知识（例如：不能以分号结束，括号'>
+<meta property='og:url' content='https://www.stepbystep.cf/archives/c-problems/'>
+<meta property='og:site_name' content='一步一个脚印'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='c' /><meta property='article:published_time' content='2022-08-01T11:35:12&#43;00:00'/><meta property='article:modified_time' content='2022-08-01T11:35:12&#43;00:00'/><meta property='og:image' content='https://img.gejiba.com/images/b129b387545aacfcae6819fc42aca17a.png' />
+<meta name="twitter:title" content="c语言经典问题">
+<meta name="twitter:description" content="1 用预处理指令#define 声明一个常数，用以表明1年中有多少秒（忽略闰年问题） 1 #define SEC_YEAR (365*24*60*60)UL 考察点： #define 语法的基本知识（例如：不能以分号结束，括号"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://img.gejiba.com/images/b129b387545aacfcae6819fc42aca17a.png' />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<style>
+.wechat{
+stroke-width: 3!important;
+width: 30px!important;
+height: 30px!important;
+}
+
+</style>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+	<button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+
+	<header>
+		 
+		<figure class="site-avatar">
+			<a href="/">
+				   
+				<img src="/img/avatar_hu31c567f24bb3d3ef81b7008bbfe116bf_2384_300x0_resize_q75_h2_box_2.webp" width="300"
+					height="300" class="site-logo" loading="lazy" alt="Avatar" />
+				 
+			</a>
+			
+			<span class="emoji">👣</span>
+			
+		</figure>
+		 
+
+		<div class="site-meta">
+			<h1 class="site-name"><a href="/">一步一个脚印</a></h1>
+			<h2 class="site-description">一步一个脚印抵达成功的彼岸！</h2>
+		</div>
+	</header><ol class="social-menu">
+		
+		<li>
+			<a href="https://github.com/stepbystepcode" target="_blank"  title="a-GitHub" >
+				  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+ 
+			</a>
+		</li>
+		
+		<li>
+			<a href="https://img.gejiba.com/images/52dd5e880d8f941577f3f09a594dab1d.webp" target="_blank"  title="b-Wechat" >
+				  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user wechat" width="30" height="30" viewBox="0 0 85 85" stroke-width="3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<g id="_1990990525664">
+	<g>
+		<path class="st0" d="M56.4,27.3c0.8,0,1.5,0.1,2.3,0.1c-6-24.3-47.5-22.4-48.4,3.7c0,6.7,3.6,12.2,9.6,16.5L17.5,55l8.4-4.3
+			c3.7,0.8,6.9,1.5,10.7,1.2C32.9,39.6,43,27.2,56.4,27.3z M43.4,19.2c1.3,0,2.4,0.5,3.2,1.3c0.8,0.8,1.2,1.9,1.2,3.2
+			c0,1.3-0.5,2.4-1.2,3.2c-0.8,0.8-1.9,1.3-3.2,1.3c-1.3,0-2.5-0.5-3.5-1.2c-0.9-0.8-1.5-1.9-1.5-3.2c0-1.3,0.6-2.4,1.5-3.2
+			C40.9,19.8,42.2,19.3,43.4,19.2L43.4,19.2z M26.6,28.2c-1.2,0-2.5-0.5-3.5-1.2c-0.9-0.8-1.5-1.9-1.5-3.2c0-1.3,0.6-2.4,1.5-3.2
+			c0.9-0.8,2.2-1.2,3.5-1.2c1.3,0,2.4,0.5,3.2,1.3c0.8,0.8,1.2,1.9,1.2,3.2c0,1.3-0.5,2.4-1.2,3.2C28.9,27.8,27.8,28.2,26.6,28.2
+			L26.6,28.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M78.3,46.4c0-9.8-9.6-17.8-20.4-17.8c-11.5,0-20.4,8.1-20.4,17.8c0,9.8,9,17.8,20.4,17.8
+			c2.4,0,4.8-0.7,7.3-1.2l6.5,3.7l-1.8-6.1C74.7,56.8,78.3,51.9,78.3,46.4L78.3,46.4z M51.2,44.7c-1,0-2-0.5-2.6-1.2
+			c-0.7-0.7-1.1-1.6-1.1-2.7c0-1,0.5-2,1.1-2.7c0.7-0.7,1.6-1.2,2.6-1.2c1.2,0,2.2,0.4,3,1l0,0l0,0c0.9,0.7,1.4,1.8,1.4,2.8
+			c0,1.1-0.5,2.1-1.4,2.8c0,0-0.1,0.1-0.1,0.1C53.4,44.4,52.4,44.7,51.2,44.7L51.2,44.7z M64.5,44.7c-1,0-2-0.5-2.6-1.2
+			c-0.7-0.7-1.1-1.6-1.1-2.7c0-1,0.5-2,1.1-2.7c0.7-0.7,1.6-1.2,2.6-1.2c1.2,0,2.2,0.4,3,1c0.9,0.7,1.4,1.8,1.4,2.8
+			c0,1.1-0.5,2.1-1.4,2.8c0,0-0.1,0.1-0.1,0.1C66.6,44.4,65.7,44.7,64.5,44.7L64.5,44.7z"/>
+	</g>
+</g>
+</svg>
+ 
+			</a>
+		</li>
+		
+		<li>
+			<a href="https://b23.tv/cAoPex5" target="_blank"  title="c-Search" >
+				  <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+<style type="text/css">
+	.st0{fill:none;}
+</style>
+<path class="st0" d="M6.5,4.9l1.6,0l1.5,0l3.6,0h3.2H17c1,0,2.4,0.5,3.2,1.3c0.9,0.8,1.3,1.9,1.3,3.2v6.3c0,1.3-0.5,2.4-1.3,3.2
+	c-0.9,0.9-1.9,1.3-3.2,1.3H5.7c-1.3,0-2.4-0.5-3.2-1.3c-0.9-0.9-1.3-1.9-1.3-3.2V9.4c0-1.3,0.5-2.4,1.3-3.2c0.9-0.8,1.9-1.3,3.2-1.3
+	L6.5,4.9 M7.3,10.2c0.4,0,0.7,0.1,0.9,0.4c0.2,0.2,0.4,0.6,0.4,1v1.2c0,0.4-0.1,0.7-0.4,1C8,13.9,7.7,14,7.3,14s-0.7-0.1-0.9-0.4
+	c-0.2-0.2-0.4-0.6-0.4-1v-1.2c0-0.4,0.1-0.7,0.4-0.9C6.7,10.3,7,10.2,7.3,10.2z M15.3,10.2c0.4,0,0.7,0.1,0.9,0.4
+	c0.2,0.2,0.4,0.6,0.4,1v1.2c0,0.4-0.1,0.7-0.4,1C16,13.9,15.7,14,15.3,14s-0.7-0.1-0.9-0.4c-0.2-0.2-0.4-0.6-0.4-1v-1.2
+	c0-0.4,0.1-0.7,0.4-1C14.7,10.3,15,10.2,15.3,10.2z"/>
+<path class="st0" d="M6.6,2.5l1.5,2.4L6.6,2.5z"/>
+<line class="st0" x1="16.1" y1="2.5" x2="14.6" y2="4.9"/>
+</svg>
+ 
+			</a>
+		</li>
+		
+		<li>
+			<a href="https://www.stepbystep.cf/search/" target="_blank"  title="d-Search" >
+				  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+ 
+			</a>
+		</li>
+		
+		<li onclick="toggleLang()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+</li>
+		<li onclick="toggleColorScheme()" class="theme"><span class="sun"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="12" cy="12" r="4" />
+  <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+</svg></span><span class="moon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+</svg></span></li>
+	</ol><ol class="menu" id="main-menu">
+		  
+
+		<li >
+			<a href="/" >
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+ 
+				<span>主页</span>
+			</a>
+		</li>
+		 
+
+		<li >
+			<a href="/archives/" >
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+ 
+				<span>归档</span>
+			</a>
+		</li>
+		 
+
+		<li >
+			<a href="/tags/" >
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+ 
+				<span>分类</span>
+			</a>
+		</li>
+		 
+
+		<li >
+			<a href="/links/" >
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+ 
+				<span>友链</span>
+			</a>
+		</li>
+		 
+
+		<li >
+			<a href="/about/" >
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+ 
+				<span>关于</span>
+			</a>
+		</li>
+		
+		<li><a href="https://diary-phi.vercel.app/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+  <line x1="13" y1="8" x2="15" y2="8" />
+  <line x1="13" y1="12" x2="15" y2="12" />
+</svg><span>心情</span></a>
+		</li>
+	</ol>
+	<script>
+
+		let toggleLang = () => {
+
+			if (window.location.href.indexOf("en") == -1) {
+				window.location.href = "https://www.stepbystep.cf/en" + window.location.pathname;
+			} else {
+				window.location.href = "https://www.stepbystep.cf" + window.location.pathname.slice(3);
+			}
+		}
+		let sun = document.querySelector(".sun");
+		let moon = document.querySelector(".moon");
+		if (localStorage.getItem("StackColorScheme") == 'dark') {
+			moon.style.display = 'none'; sun.style.display = 'block';
+		} else {
+			moon.style.display = 'block'; sun.style.display = 'none';
+		}
+		let toggleColorScheme = () => {
+			if (localStorage.getItem("StackColorScheme") == 'dark') {
+				moon.style.display = 'block';
+				sun.style.display = 'none';
+				document.documentElement.dataset.scheme = 'light';
+				localStorage.setItem("StackColorScheme", "light");
+				document.querySelector("main").innerHTML += "<style>.article-list article .article-image img{filter:brightness(100%)!important}</style>"
+			} else {
+				moon.style.display = 'none';
+				sun.style.display = 'block';
+				document.documentElement.dataset.scheme = 'dark';
+				localStorage.setItem("StackColorScheme", "dark");
+				document.querySelector("main").innerHTML += "<style>.article-list article .article-image img{filter:brightness(70%)!important}</style>"
+			}
+		}
+		window.onload = function () { let menu = document.querySelector('#main-menu'); menu.insertBefore(menu.children[5], menu.children[4]); };	</script>
+</aside><main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/archives/c-problems/">
+                
+                    <img src="https://img.gejiba.com/images/b129b387545aacfcae6819fc42aca17a.png" loading="lazy" alt="Featured image of post c语言经典问题" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+	
+
+	<div class="article-title-wrapper">
+		<h2 class="article-title">
+			<a href="/archives/c-problems/">c语言经典问题</a>
+		</h2>
+
+		
+	</div>
+
+	
+	<footer class="article-time">
+		
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+			<time class="article-time--published">Aug 01, 2022</time>
+		</div>
+		 
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+			<time class="article-time--reading"> 阅读时长: 12 分钟 </time>
+		</div>
+		
+	</footer>
+	
+</div>
+
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="1">1</h1>
+<h2 id="用预处理指令define-声明一个常数用以表明1年中有多少秒忽略闰年问题">用预处理指令#define 声明一个常数，用以表明1年中有多少秒（忽略闰年问题）</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define SEC_YEAR  (365*24*60*60)UL
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>考察点：</p>
+<p>#define 语法的基本知识（例如：不能以分号结束，括号的使用，等等）</p>
+<p>懂得预处理器将为你计算常数表达式的值，因此，直接写出你是如何计算一年中有多少秒而不是计算出实际的值，是更清晰而没有代价的。</p>
+<p>意识到这个表达式将使一个16位机的整型数溢出-因此要用到长整型符号L,告诉编译器这个常数是的长整型数</p>
+<p>如果你在你的表达式中用到UL（表示无符号长整型），那么你有了一个好的起点。记住，第一印象很重要。</p>
+<h1 id="2">2</h1>
+<h2 id="写一个标准宏min-这个宏输入两个参数并返回较小的一个">写一个&quot;标准&quot;宏MIN ，这个宏输入两个参数并返回较小的一个。</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define MIN(a,b)  ((a)&lt;=(b)?(a):(b))
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>考察点：</p>
+<p>标识#define在宏中应用的基本知识。这是很重要的。因为在 嵌入(inline)操作符 变为标准C的一部分之前，宏是方便产生嵌入代码的唯一方法，对于嵌入式系统来说，为了能达到要求的性能，嵌入代码经常是必须的方法。</p>
+<p>懂得在宏中小心地把参数用括号括起来</p>
+<p>我也用这个问题开始讨论宏的副作用，例如：当你写下面的代码时会发生什么事？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">   <span class="n">least</span> <span class="o">=</span> <span class="n">MIN</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="o">++</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>宏定义的作用结果MIN(*p++,b) ((*p++)&lt;(b)?(*p++),b)  指针p会做两次自增操作</p>
+<p>如何消除宏的副作用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define min_i(x,y)    ((x)&lt;=(y)?(x):(y))      </span><span class="c1">//（1）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define min_t(type,x,y) ({type _x = x;\       </span><span class="c1">//（2）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                        <span class="n">type</span> <span class="n">_y</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>\
+</span></span><span class="line"><span class="cl">                        <span class="n">_x</span><span class="o">&lt;</span><span class="n">_y</span><span class="o">?</span><span class="nl">_x</span><span class="p">:</span><span class="n">_y</span><span class="p">;</span>\
+</span></span><span class="line"><span class="cl">                        <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#define min(x,y)    {const typeof(x)  _x = (x);\  </span><span class="c1">//（3）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="k">const</span> <span class="n">typeof</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="n">_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span><span class="p">);</span>\
+</span></span><span class="line"><span class="cl">                    <span class="p">(</span><span class="kt">void</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">_x</span><span class="o">=&amp;</span><span class="n">_y</span><span class="p">);</span><span class="err">\</span>      <span class="c1">//（4）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="n">_x</span><span class="o">&lt;</span><span class="n">_y</span><span class="o">?</span><span class="nl">_x</span><span class="p">:</span><span class="n">_y</span><span class="p">;</span>\
+</span></span><span class="line"><span class="cl">                    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;min_i(a++,b++)=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">min_i</span><span class="p">(</span><span class="n">a</span><span class="o">++</span><span class="p">,</span><span class="n">b</span><span class="o">++</span><span class="p">));</span>  <span class="c1">//11
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;a=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>  <span class="c1">//12
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;b=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>  <span class="c1">//21
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;min_t(int,a++,b++)=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">min_t</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="n">a</span><span class="o">++</span><span class="p">,</span><span class="n">b</span><span class="o">++</span><span class="p">));</span>  <span class="c1">//10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;a=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>  <span class="c1">//11
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;b=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>  <span class="c1">//21
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;min(a++,b++)=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">min</span><span class="p">(</span><span class="n">a</span><span class="o">++</span><span class="p">,</span><span class="n">b</span><span class="o">++</span><span class="p">));</span>  <span class="c1">//10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;a=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>  <span class="c1">//11
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;b=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>  <span class="c1">//21
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个定义计算x和y分别两次（x和y中的小者被计算两次)，当参数由副作用时，将产生不正确的结果</p>
+<p>使用语句表达式只计算参数一次，避免了可能的错误，语句表达式通常用于宏定义
+typeof(x)表示x的值类型
+检查参数x和y的类型是否相同(如果x和y的类型不同编译器将会发出warning，并不影响后面语句的运行</p>
+<h1 id="3">3</h1>
+<h2 id="预处理器标识error的目的是什么">预处理器标识#error的目的是什么？</h2>
+<p>编译程序时，只要遇到 #error 就会跳出一个编译错误，既然是编译错误，要它干嘛呢？其目的就是保证程序是按照你所设想的那样进行编译的。</p>
+<p>下面举个例子：程序中往往有很多的预处理指令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#ifdef XXX
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>  <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#else
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>  <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>当程序比较大时，往往有些宏定义是在外部指定的（如makefile），或是在系统头文件中指定的，当你不太确定当前是否定义了 XXX 时，就可以改成如下这样进行编译：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#ifdef XXX
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#error &#34;XXX has been defined&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cp">#else
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>这样,如果编译时出现错误,输出了XXX has been defined,表明宏XXX已经被定义了。</p>
+<h1 id="4">4</h1>
+<h2 id="嵌入式系统中经常要用到无限循环你怎么样用c编写死循环呢">嵌入式系统中经常要用到无限循环，你怎么样用C编写死循环呢？</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(;;)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="nl">loop</span><span class="p">:...</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="k">goto</span> <span class="n">loop</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="5">5</h1>
+<h2 id="用变量a给出下面的定义">用变量a给出下面的定义</h2>
+<p>a) 一个整型数（An integer）
+b)一个指向整型数的指针（ A pointer to an integer）
+c)一个指向指针的的指针，它指向的指针是指向一个整型数（ A pointer to a pointer to an intege）
+d)一个有10个整型数的数组（ An array of 10 integers）
+e) 一个有10个指针的数组，该指针是指向一个整型数的。（An array of 10 pointers to integers）
+f) 一个指向有10个整型数数组的指针（ A pointer to an array of 10 integers）
+g) 一个指向函数的指针，该函数有一个整型参数并返回一个整型数（A pointer to a function that takes an integer as an argument and returns an integer）
+h)  一个有10个指针的数组，该指针指向一个函数，该函数有一个整型参数并返回一个整型数 （ An array of ten pointers to functions that take an integer argument and return an integer ）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">a</span><span class="p">)</span><span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">b</span><span class="p">)</span><span class="kt">int</span> <span class="o">*</span><span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span><span class="p">)</span><span class="kt">int</span> <span class="o">**</span><span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">d</span><span class="p">)</span><span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">e</span><span class="p">)</span><span class="kt">int</span> <span class="o">*</span><span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="p">)</span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">)[</span><span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">g</span><span class="p">)</span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">)(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">h</span><span class="p">)</span><span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">])(</span><span class="kt">int</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="6">6</h1>
+<h2 id="关键字static的作用是什么">关键字static的作用是什么？</h2>
+<p>在C语言中，关键字static有三个明显的作用：</p>
+<p>第一、在修饰变量的时候，static修饰的静态局部变量只执行一次，而且延长了局部变量的生命周期，直到程序运行结束以后才释放。
+第二、static修饰全局变量的时候，这个全局变量只能在本文件中访问，不能在其它文件中访问，即便是extern外部声明也不可以。
+第三、static修饰一个函数，则这个函数的只能在本文件中调用，不能被其他文件调用。Static修饰的局部变量存放在全局数据区的静态变量区。初始化的时候自动初始化为0；
+（1）不想被释放的时候，可以使用static修饰。比如修饰函数中存放在栈空间的数组。如果不想让这个数组在函数调用结束释放可以使用static修饰
+（2）考虑到数据安全性（当程想要使用全局变量的时候应该先考虑使用static）
+在C++中static关键字除了具有C中的作用还有在类中的使用在类中，static可以用来修饰静态数据成员和静态成员方法静态数据成员</p>
+<p>（1）静态数据成员可以实现多个对象之间的数据共享，它是类的所有对象的共享成员，它在内存中只占一份空间，如果改变它的值，则各对象中这个数据成员的值都被改变。
+（2）静态数据成员是在程序开始运行时被分配空间，到程序结束之后才释放，只要类中指定了静态数据成员，即使不定义对象，也会为静态数据成员分配空间。
+（3）静态数据成员可以被初始化，但是只能在类体外进行初始化，若为对静态数据成员赋初值，则编译器会自动为其初始化为0
+（4）静态数据成员既可以通过对象名引用，也可以通过类名引用。
+静态成员函数</p>
+<p>（1）静态成员函数和静态数据成员一样，他们都属于类的静态成员，而不是对象成员。
+（2）非静态成员函数有this指针，而静态成员函数没有this指针。
+（3）静态成员函数主要用来方位静态数据成员而不能访问非静态成员。</p>
+<h1 id="7">7</h1>
+<h2 id="关键字const有什么含意">关键字const有什么含意？</h2>
+<p>只要一个变量前用const来修饰，就意味着该变量里的数据只能被访问，而不能被修改，也就是意味着const“只读”（readonly）。</p>
+<p>规则：const离谁近，谁就不能被修改；</p>
+<p>const修饰一个变量时，一定要给这个变量初始化，若不初始化，在后面也不能初始化。</p>
+<p>const作用：</p>
+<p>1：可以用来定义常量，修饰函数参数，修饰函数返回值 ，且被const修饰的东西，都受到强制保护，可以预防其它代码无意识的进行修改，从而提高了程序的健壮性（是指系统对于规范要求以外的输入能够判断这个输入不符合规范要求，并能有合理的处理方式。ps：即所谓高手写的程序不容易死）；
+2：使编译器保护那些不希望被修改的参数，防止无意代码的修改，减少bug；
+3：给读代码的人传递有用的信息，声明一个参数，是为了告诉用户这个参数的应用目的；
+const优点：</p>
+<p>1：编译器可以对const进行类型安全检查（所谓的类型安全检查，能将程序集间彼此隔离开来，这种隔离能确保程序集彼此间不会产生负面影响，提高程序的可读性）；
+2：有些集成化的调试工具可以对const常量进行调试，使编译器对处理内容有了更多的了解，消除了一些隐患。eg：void hanshu（const int i）{&hellip;&hellip;.}  编译器就会知道i是一个不允许被修改的常量
+3：可以节省空间，避免不必要的内存分配，因为编译器通常不为const常量分配内存空间，而是将它保存在符号表中，这样就没有了存储于读内存的操作，使效率也得以提高；
+4：可以很方便的进行参数的修改和调整，同时避免意义模糊的数字出现</p>
+<h1 id="8">8</h1>
+<h2 id="关键字volatile有什么含意并给出三个不同的例子">关键字volatile有什么含意？并给出三个不同的例子。</h2>
+<p>一个定义为volatile的变量是说这变量可能会被意想不到地改变，这样，编译器就不会去假设这个变量的值了。精确地说就是，优化器在用到这个变量时必须每次都小心地重新读取这个变量的值，而不是使用保存在寄存器里的备份。下面是volatile变量的几个例子：</p>
+<p>1：并行设备的硬件寄存器（如：状态寄存器）
+2：一个中断服务子程序中会访问到的非自动变量(Non-automatic variables)
+3：多线程应用中被几个任务共享的变量</p>
+<h1 id="9">9</h1>
+<h2 id="嵌入式系统总是要用户对变量或寄存器进行位操作给定一个整型变量a写两段代码第一个设置a的bit-3第二个清除a-的bit-3在以上两个操作中要保持其它位不变">嵌入式系统总是要用户对变量或寄存器进行位操作。给定一个整型变量a，写两段代码，第一个设置a的bit 3，第二个清除a 的bit 3。在以上两个操作中，要保持其它位不变。</h2>
+<p>考察点：</p>
+<p>1：不知道如何下手。该被面者从没做过任何嵌入式系统的工作。</p>
+<p>2：用bit fields。Bit fields是被扔到C语言死角的东西，它保证你的代码在不同编译器之间是不可移植的，同时也保证了的你的代码是不可 重用的。</p>
+<p>最近不幸看到 Infineon为其较复杂的通信芯片写的驱动程序，它用到了bit fields因此完全对我无用，因为我的编译器用其它的方 式来实现bit fields的。从道德讲：永远不要让一个非嵌入式的家伙粘实际硬件的边。</p>
+<p>3：用 #defines 和 bit masks 操作。这是一个有极高可移植性的方法，是应该被用到的方法。最佳的解决方案如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define BIT3 (0x1 &lt;&lt; 3)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">static</span> <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">set_bit3</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">|=</span> <span class="n">BIT3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">clear_bit3</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="n">BIT3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="10">10</h1>
+<h2 id="嵌入式系统经常具有要求程序员去访问某特定的内存位置的特点在某工程中要求设置一绝对地址为0x67a9的整型变量的值为0xaa66编译器是一个纯粹的ansi编译器写代码去完成这一任务">嵌入式系统经常具有要求程序员去访问某特定的内存位置的特点。在某工程中，要求设置一绝对地址为0x67a9的整型变量的值为0xaa66。编译器是一个纯粹的ANSI编译器。写代码去完成这一任务。</h2>
+<p>考察点：</p>
+<p>这一问题测试你是否知道为了访问一绝对地址把一个整型数强制转换（typecast）为一指针是合法的。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ptr</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="p">)</span><span class="mh">0x67a9</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="mh">0xaa55</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">......</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="k">const</span><span class="p">)(</span><span class="mh">0x67a9</span><span class="p">)</span> <span class="o">=</span> <span class="mh">0xaa66</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="11">11</h1>
+<h2 id="中断是嵌入式系统中重要的组成部分这导致了很多编译开发商提供一种扩展让标准c支持中断具代表事实是产生了一个新的关键字--__interrupt下面的代码就使用了__interrupt关键字去定义了一个中断服务子程序isr请评论一下这段代码的">中断是嵌入式系统中重要的组成部分，这导致了很多编译开发商提供一种扩展—让标准C支持中断。具代表事实是，产生了一个新的关键字  __interrupt。下面的代码就使用了__interrupt关键字去定义了一个中断服务子程序(ISR)，请评论一下这段代码的。</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">__interrupt</span> <span class="kt">double</span> <span class="nf">compute_area</span> <span class="p">(</span><span class="kt">double</span> <span class="n">radius</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">area</span> <span class="o">=</span> <span class="n">PI</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">radius</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">Area = %f&#34;</span><span class="p">,</span> <span class="n">area</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">area</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>考察点：</p>
+<p>1：ISR 不能返回一个值。如果你不懂这个，那么你不会被雇用的。
+2：ISR 不能传递参数。如果你没有看到这一点，你被雇用的机会等同第一项。
+3：在许多的处理器/编译器中，浮点一般都是不可重入的。有些处理器/编译器需要让额处的寄存器入栈，有些处理器/编译器就是不允许在ISR中做浮点运算。此外，ISR应该是短而有效率的，在ISR中做浮点运算是不明智的。
+4：与第三点一脉相承，printf()经常有重入和性能上的问题。如果你丢掉了第三和第四点，我不会太为难你的。不用说，如果你能得到后两点，那么你的被雇用前景越来越光明了。</p>
+<h1 id="12">12</h1>
+<h2 id="下面的代码输出是什么为什么">下面的代码输出是什么，为什么？</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span> <span class="o">&gt;</span> <span class="mi">6</span><span class="p">)</span> <span class="o">?</span> <span class="n">puts</span><span class="p">(</span><span class="s">&#34;&gt; 6&#34;</span><span class="p">)</span> <span class="o">:</span> <span class="n">puts</span><span class="p">(</span><span class="s">&#34;&lt;= 6&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>考察点：</p>
+<p>这个问题测试你是否懂得C语言中的整数自动转换原则，我发现有些开发者懂得极少这些东西。</p>
+<p>不管如何，这无符号整型问题的答案是输出是 &ldquo;&gt;6&rdquo;。原因 是当表达式中存在有符号类型和无符号类型时所有的操作数都自动转换为无符号类型。</p>
+<p>因此-20变成了一个非常大的正整数，所以该表达式计算出的结果大于6。这一点对于应当频繁用到无符号数据类型的嵌入式系统来说是丰常重要的。</p>
+<p>如果你答错了这个问题，你也就到了得不到这份工作的边缘。</p>
+<h1 id="13">13</h1>
+<h2 id="评价下面的代码片断">评价下面的代码片断：</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">zero</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">compzero</span> <span class="o">=</span> <span class="mh">0xFFFF</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/*1&#39;s complement of zero */</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>考察点：</p>
+<p>对于一个int型不是16位的处理器为说，上面的代码是不正确的。应编写如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">compzero</span> <span class="o">=</span> <span class="o">~</span><span class="mi">0</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这一问题真正能揭露出应试者是否懂得处理器字长的重要性。在我的经验里，好的嵌入式程序员非常准确地明白硬件的细节和它的局限，然而PC机程序往往把硬件</p>
+<p>作为一个无法避免的烦恼。</p>
+<p>到了这个阶段，应试者或者完全垂头丧气了或者信心满满志在必得。如果显然应试者不是很好，那么这个测试就在这里结束了。</p>
+<p>但如果显然应试者做得不错，那么我就 扔出下面的追加问题，这些问题是比较难的，我想仅仅非常优秀的应试者能做得不错。提出这些问题，我希望更多看到应试者应付问题的方法，而不是答案。不管如 何，你就当是这个娱乐吧&hellip;</p>
+<h1 id="14">14</h1>
+<h2 id="尽管不像非嵌入式计算机那么常见嵌入式系统还是有从堆heap中动态分配内存的过程的">尽管不像非嵌入式计算机那么常见，嵌入式系统还是有从堆（heap）中动态分配内存的过程的。</h2>
+<p>那么嵌入式系统中，动态分配内存可能发生的问题是什么？</p>
+<p>这 里，我期望应试者能提到内存碎片，碎片收集的问题，变量的持行时间等等。这个主题已经在ESP杂志中被广泛地讨论过了（主要是  P.J. Plauger, 他的解释远远超过我这里能提到的任何解释），回过头看一下这些杂志吧！让应试者进入一种虚假的安全感觉后，我拿出这么 一个小节目：下面的代码片段的输出是什么，为什么？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">((</span><span class="n">ptr</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">puts</span><span class="p">(</span><span class="s">&#34;Got a null pointer&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">puts</span><span class="p">(</span><span class="s">&#34;Got a valid pointer&#34;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这 是一个有趣的问题。最近在我的一个同事不经意把0值传给了函数malloc，得到了一个合法的指针之后，我才想到这个问题。这就是上面的代码，该代码的输 出是&quot;Got a valid pointer&quot;。</p>
+<p>我用这个来开始讨论这样的一问题，看看被面试者是否想到库例程这样做是正确。</p>
+<p>得到正确的答案固然重要，但解决问题的方法和你做决定的基本原理更重要些。</p>
+<h1 id="15">15</h1>
+<h2 id="typedef-在c语言中频繁用以声明一个已经存在的数据类型的同义字也可以用预处理器做类似的事例如思考一下下面的例子">Typedef 在C语言中频繁用以声明一个已经存在的数据类型的同义字。也可以用预处理器做类似的事。例如，思考一下下面的例子：</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define dPS struct s *
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">typedef</span> <span class="k">struct</span> <span class="n">s</span> <span class="o">*</span> <span class="n">tPS</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以上两种情况的意图都是要定义dPS 和 tPS 作为一个指向结构s指针。哪种方法更好呢？（如果有的话）为什么？</p>
+<p>考察点：</p>
+<p>这是一个非常微妙的问题，任何人答对这个问题（正当的原因）是应当被恭喜的。答案是：typedef更好。思考下面的例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">dPS</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">tPS</span> <span class="n">p3</span><span class="p">,</span><span class="n">p4</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第一个扩展为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">s</span> <span class="o">*</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面的代码定义p1为一个指向结构的指，p2为一个实际的结构，这也许不是你想要的。第二个例子正确地定义了p3 和p4 两个指针。</p>
+<h1 id="16">16</h1>
+<h2 id="c语言同意一些令人震惊的结构下面的结构是合法的吗如果是它做些什么">C语言同意一些令人震惊的结构,下面的结构是合法的吗，如果是它做些什么？</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">+++</span><span class="n">b</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>考察点：</p>
+<p>这个问题将作为这个测验的一个愉快的结尾。不管你相不相信，上面的例子是完全合乎语法的。问题是编译器如何处理它？水平不高的编译作者实际上会争论这个问题，根据最处理原则，编译器应当能处理尽可能所有合法的用法。因此，上面的代码被处理成：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">++</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>因此, 这段代码持行后a = 6, b = 7, c = 12。</p>
+<p>如果你知道答案，或猜出正确答案，做得好。
+如果你不知道答案，我也不把这个当作问题。我发现这个问题的最大好处是这是一个关于代码编写风格，代码的可读性，代码的可修改性的好的话题。</p>
+<blockquote>
+<p>原文：https://www.cnblogs.com/hjhgogo/p/9953506.html<br>
+文章来源于网络，版权归原作者所有，如有侵权，请联系删除。</p>
+</blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/c/">c</a>
+        
+    </section>
+
+
+      <div id="waline"></div>
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src='https://npm.elemecdn.com/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.stepbystep.cf/comment/"],"locale":{"admin":"Admin"},"placeholder":"有不明白的地方或建议，欢迎评论告诉我","requiredMeta":["name"],"serverURL":"https://hugo-comment-seven.vercel.app"});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2022 一步一个脚印
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#用预处理指令define-声明一个常数用以表明1年中有多少秒忽略闰年问题">用预处理指令#define 声明一个常数，用以表明1年中有多少秒（忽略闰年问题）</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#写一个标准宏min-这个宏输入两个参数并返回较小的一个">写一个&quot;标准&quot;宏MIN ，这个宏输入两个参数并返回较小的一个。</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#预处理器标识error的目的是什么">预处理器标识#error的目的是什么？</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#嵌入式系统中经常要用到无限循环你怎么样用c编写死循环呢">嵌入式系统中经常要用到无限循环，你怎么样用C编写死循环呢？</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#用变量a给出下面的定义">用变量a给出下面的定义</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#关键字static的作用是什么">关键字static的作用是什么？</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#关键字const有什么含意">关键字const有什么含意？</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#关键字volatile有什么含意并给出三个不同的例子">关键字volatile有什么含意？并给出三个不同的例子。</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#嵌入式系统总是要用户对变量或寄存器进行位操作给定一个整型变量a写两段代码第一个设置a的bit-3第二个清除a-的bit-3在以上两个操作中要保持其它位不变">嵌入式系统总是要用户对变量或寄存器进行位操作。给定一个整型变量a，写两段代码，第一个设置a的bit 3，第二个清除a 的bit 3。在以上两个操作中，要保持其它位不变。</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#嵌入式系统经常具有要求程序员去访问某特定的内存位置的特点在某工程中要求设置一绝对地址为0x67a9的整型变量的值为0xaa66编译器是一个纯粹的ansi编译器写代码去完成这一任务">嵌入式系统经常具有要求程序员去访问某特定的内存位置的特点。在某工程中，要求设置一绝对地址为0x67a9的整型变量的值为0xaa66。编译器是一个纯粹的ANSI编译器。写代码去完成这一任务。</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#中断是嵌入式系统中重要的组成部分这导致了很多编译开发商提供一种扩展让标准c支持中断具代表事实是产生了一个新的关键字--__interrupt下面的代码就使用了__interrupt关键字去定义了一个中断服务子程序isr请评论一下这段代码的">中断是嵌入式系统中重要的组成部分，这导致了很多编译开发商提供一种扩展—让标准C支持中断。具代表事实是，产生了一个新的关键字  __interrupt。下面的代码就使用了__interrupt关键字去定义了一个中断服务子程序(ISR)，请评论一下这段代码的。</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#下面的代码输出是什么为什么">下面的代码输出是什么，为什么？</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#评价下面的代码片断">评价下面的代码片断：</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#尽管不像非嵌入式计算机那么常见嵌入式系统还是有从堆heap中动态分配内存的过程的">尽管不像非嵌入式计算机那么常见，嵌入式系统还是有从堆（heap）中动态分配内存的过程的。</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#typedef-在c语言中频繁用以声明一个已经存在的数据类型的同义字也可以用预处理器做类似的事例如思考一下下面的例子">Typedef 在C语言中频繁用以声明一个已经存在的数据类型的同义字。也可以用预处理器做类似的事。例如，思考一下下面的例子：</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#c语言同意一些令人震惊的结构下面的结构是合法的吗如果是它做些什么">C语言同意一些令人震惊的结构,下面的结构是合法的吗，如果是它做些什么？</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://npm.elemecdn.com/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>python on Step by step</title>
+        <link>https://www.stepbystep.cf/en/tags/python/</link>
+        <description>Recent content in python on Step by step</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 21 Feb 2022 13:06:31 +0000</lastBuildDate><atom:link href="https://www.stepbystep.cf/en/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Make your two-dimensional beauty map clearer</title>
+        <link>https://www.stepbystep.cf/en/archives/real-cugan/</link>
+        <pubDate>Mon, 21 Feb 2022 13:06:31 +0000</pubDate>
+        
+        <guid>https://www.stepbystep.cf/en/archives/real-cugan/</guid>
+        <description>&lt;img src="https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp" alt="Featured image of post Make your two-dimensional beauty map clearer" /&gt;&lt;p&gt;We often encounter the problem that the picture is not clear enough when we preview the two-dimensional beauty map, and the quality of the picture is greatly reduced. Some people may know the tool &lt;a class=&#34;link&#34; href=&#34;http://waifu2x.udp.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;waifu2x&lt;/a&gt;, but today I will introduce to you an artifact that is many times better than waifu2x-Real-CUGAN.
+The GitHub link is as follows: &lt;a class=&#34;link&#34; href=&#34;https://github.com/fumiama/Real-CUGAN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/fumiama/Real-CUGAN&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;effect-comparison&#34;&gt;effect comparison&lt;/h1&gt;
+&lt;p&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg&#39;&#34;&gt;Original image&lt;/button&gt;&lt;button onclick=&#34;document.querySelector (&#39;#pic&#39;).src=&#39;https://img.gejiba.com/images/3f2dfbcbdafd20ba77699c1c2d95d520.jpg&#39;&#34;&gt;waifu2x&lt;/button&gt;&lt;button onclick=&#34;document.querySelector(&#39;#pic&#39;).src= &#39;https://img.gejiba.com/images/8f76fd4c566a873a669b3fe445bcf490.jpg&#39;&#34;&gt;Real-CUGAN&lt;/button&gt;
+&lt;img id=&#34;pic&#34; style=&#34;width:300px&#34; src=&#34;https://img.gejiba.com/images/17baca4ad88182932fc76a90ae3b021a.jpg&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;1-install-python&#34;&gt;1. Install Python&lt;/h1&gt;
+&lt;h1 id=&#34;second-install-the-lib-component-library&#34;&gt;Second, install the lib component library&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install torch
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install numpy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install opencv-python
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip3 install moviepy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;3-create-a-working-directory-and-name-the-file&#34;&gt;3. Create a working directory and name the file&lt;/h1&gt;
+&lt;p&gt;Create folders and files&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://hub.fastgit.xyz/fumiama/Real-CUGAN-Server.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd Real-CUGAN-Server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Replace the input image file in the input_dir1 folder.&lt;/p&gt;
+&lt;h1 id=&#34;four-call-the-command-to-process-the-picture&#34;&gt;Four, call the command to process the picture&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;python3&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;upcunet_v3&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;py&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The output images are in the opt-dir-all-test folder.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
