@@ -1,11 +1,11 @@
 ---
-title: "语言经典问题"
+title: "C语言经典问题"
 date: 2022-06-28T09:59:31+08:00
 url: /archives/c-problems
 categories: 
 tags: 
 - c
-image: https://img.gejiba.com/images/dc28dd597dffccfbf3d871509da52d31.webp
+image: https://img.gejiba.com/images/b129b387545aacfcae6819fc42aca17a.png
 ---
 
 # 1
