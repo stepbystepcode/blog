@@ -1,6 +1,6 @@
 ---
 title: "C语言经典问题"
-date: 2022-06-28T09:59:31+08:00
+date: 2022-08-01T09:59:31+08:00
 url: /archives/c-problems
 categories: 
 tags: 
