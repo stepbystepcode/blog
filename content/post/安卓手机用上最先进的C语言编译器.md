@@ -36,7 +36,7 @@ pkg install clang
 > hello_world.c
 ```c
 #include <stdio.h>
-int main()
+int main(void)
 {
     printf("Hello world!");
     return 0;
