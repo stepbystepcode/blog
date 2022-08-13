@@ -26,13 +26,20 @@ image:
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main stable main@' $PREFIX/etc/apt/sources.list
 apt update && apt upgrade
 ```
+当你看到如下提示后需要输入回车：
+![](https://img.gejiba.com/images/386cfc10759559b63f617bfb2194572e.jpg)
 ### 四、安装clang
 输入如下内容并回车
 ```
 pkg install clang
 ```
 ### 五、写一个hello world测试
-你可以用你喜欢的方式，用vi或者nano，或者可以直接用mt管理器再download文件夹新建后缀名为.c的文件进行编辑，别忘了保存哦！
+你可以用你喜欢的方式，用vi或者nano，或者可以直接用mt管理器新建后缀名为.c的文件进行编辑，别忘了保存哦！
+如果你是用mt管理器在手机内部存储的download文件夹新建了一个名为hello_world.c的文件，你需要额外执行如下语句。 
+```shell
+mv storage/download/hello_world.c ./
+```
+
 > hello_world.c
 ```c
 #include <stdio.h>
