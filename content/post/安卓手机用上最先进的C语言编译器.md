@@ -7,7 +7,7 @@ tags:
 - 原创
 - termux
 - c语言
-image:
+image:https://img.gejiba.com/images/7252350afc3e47e76ea600b5ab259aaf.webp
 ---
 # 安卓手机用上最先进的C语言编译器
 现在C语言编译器网上一招一大堆，但是往往不是很好用，都是第三方不知名的编译器，导致最终运行效果和电脑上不一致。今天我来给大家介绍一个编译器，堪称C语言编译器之王了。他就是——Clang。
