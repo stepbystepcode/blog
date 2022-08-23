@@ -7,7 +7,7 @@ tags:
 - OCR
 - 软件分享
 - Windows
-image: https://img.gejiba.com/images/7252350afc3e47e76ea600b5ab259aaf.webp
+image: https://img.gejiba.com/images/8b395100d21db591e0a3bb0b461c7f5e.jpg
 ---
 # 送你一个无需联网的神级OCR
 现在我们对ocr的需求越来越多，但是真正好用免费的ocr却很少，面对浩如烟海无法复制的文本，不用一个字一个词地手敲了。今天就来分享一款即划即用的神级ocr。
