@@ -1,6 +1,7 @@
 ---
 title: "送你一个无需联网的神级OCR"
-date: 2022-08-21
+date: 2022-08-21 17:53:05.0
+
 url: /archives/ocr
 tags: 
 - OCR
