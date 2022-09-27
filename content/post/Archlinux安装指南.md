@@ -29,9 +29,9 @@ color:red;
 # 一、下载ISO镜像与工具
 [ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)](https://mirrors.aliyun.com/archlinux/iso/latest/)
 
-[rufus下载(rufus-x.xp.exe)](https://hub.fastgit.xyz/pbatard/rufus/releases/latest)
+[rufus下载(rufus-x.xp.exe)](https://cdn.githubjs.cf/pbatard/rufus/releases/latest)
 
-[ihasher下载](https://disk.stepbystep.cf/d/ihasher.exe)
+[ihasher下载](https://ybygjylj.lanzouy.com/iYuZD06mepjc)
 
 ![L4o0YqrTRt.png](https://img.gejiba.com/images/8fc41ece91af084081f268d62dfd12b2.webp)
 # 二、制作安装U盘

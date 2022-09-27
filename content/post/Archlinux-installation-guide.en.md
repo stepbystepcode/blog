@@ -29,9 +29,9 @@ color:red;
 # Download ISO image and tools
 [Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso)](https://mirrors.aliyun.com/archlinux/iso/latest/)
 
-[Download rufus(rufus-x.xp.exe)](https://hub.fastgit.xyz/pbatard/rufus/releases/latest)
+[Download rufus(rufus-x.xp.exe)](https://cdn.githubjs.cf/pbatard/rufus/releases/latest)
 
-[Download ihasher](https://disk.stepbystep.cf/d/ihasher.exe)
+[Download ihasher](https://ybygjylj.lanzouy.com/iYuZD06mepjc)
 
 ![L4o0YqrTRt.png](https://img.gejiba.com/images/8fc41ece91af084081f268d62dfd12b2.webp)
 # Create installation USB flash drive

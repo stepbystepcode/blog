@@ -26,7 +26,7 @@ pip3 install moviepy
 # 3. Create a working directory and name the file
 Create folders and files
 ````
-git clone https://hub.fastgit.xyz/fumiama/Real-CUGAN-Server.git
+git clone https://cdn.githubjs.cf/fumiama/Real-CUGAN-Server.git
 cd Real-CUGAN-Server
 ````
 Replace the input image file in the input_dir1 folder.
