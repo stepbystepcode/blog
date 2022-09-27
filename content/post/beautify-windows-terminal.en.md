@@ -11,17 +11,17 @@ image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
 ---
 
 # 1. Download the file and verify the integrity of the file
-[Click to download the new version of Powershell (PowerShell-x.x.x-win-x64.msi)](https://cdn.githubjs.cf/PowerShell/PowerShell/releases/latest)
+[Click to download the new version of Powershell (PowerShell-x.x.x-win-x64.msi)](https://hub.hhhh.host/PowerShell/PowerShell/releases/latest)
 
-[Click to download Git(Git-x.xx.x-64-bit.exe)](https://hub.fastgit.xyz/git-for-windows/git/releases/latest)
+[Click to download Git(Git-x.xx.x-64-bit.exe)](https://hub.hhhh.host/git-for-windows/git/releases/latest)
 
-[Click to download oh-my-posh(install-amd64.exe)](https://cdn.githubjs.cf/JanDeDobbeleer/oh-my-posh/releases/latest)
+[Click to download oh-my-posh(install-amd64.exe)](https://hub.hhhh.host/JanDeDobbeleer/oh-my-posh/releases/latest)
 
 [Click to download Checksum](https://ybygjylj.lanzouf.com/iYuZD06mepjc)
 # 2. Install Git
 # 3. Install Nerd Font
 *Recommends JetBrainsMono*
-[Click to download](https://cdn.githubjs.cf/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)
+[Click to download](https://hub.hhhh.host/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)
 After downloading and decompressing, select all the ttf files, right-click, and install
 # 4. install Windows Terminal Preview
 Search the Windows Store for Windows Terminal Preview and install it.
