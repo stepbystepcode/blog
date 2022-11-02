@@ -1,7 +1,7 @@
 ---
 title: "大一新生必看!!!C语言环境安装保姆级教程"
 date: 2022-11-01T14:49:30+08:00
-url: /archives/android-clang-compiler
+url: /archives/dev-c++
 tags: 
 - 原创
 - c语言
