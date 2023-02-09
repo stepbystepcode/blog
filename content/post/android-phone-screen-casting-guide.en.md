@@ -5,7 +5,7 @@ url: /en/archives/android-casting
 categories: 
 tags: 
 - windows
-image: https://i.imgtg.com/2023/02/09/c17jj.png
+image: https://img.gejiba.com/images/6b28b6f6a09bf792403efe3d8b012450.png
 ---
 
 # 1. Download scrcpy and unzip
