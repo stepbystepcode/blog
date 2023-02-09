@@ -5,7 +5,7 @@ url: /archives/c-problems
 categories: 
 tags: 
 - c
-image: https://img.gejiba.com/images/b129b387545aacfcae6819fc42aca17a.png
+image: https://i.imgtg.com/2023/02/09/c1FGi.webp
 ---
 
 # 1

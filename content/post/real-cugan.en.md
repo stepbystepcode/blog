@@ -6,7 +6,7 @@ url: /en/archives/real-cugan
 categories:
 tags:
 - python
-image: https://img.gejiba.com/images/74623b89a8bda64c563f3064c421788b.webp
+image: https://i.imgtg.com/2023/02/09/c1zeL.webp
 ---
 
 We often encounter the problem that the picture is not clear enough when we preview the two-dimensional beauty map, and the quality of the picture is greatly reduced. Some people may know the tool [waifu2x](http://waifu2x.udp.jp/), but today I will introduce to you an artifact that is many times better than waifu2x-Real-CUGAN.

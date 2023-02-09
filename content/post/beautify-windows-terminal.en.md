@@ -7,7 +7,7 @@ categories:
 tags:
 - windows
 - software
-image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
+image: https://i.imgtg.com/2023/02/09/c1BjK.jpg
 ---
 
 # 1. Download the file and verify the integrity of the file

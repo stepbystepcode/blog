@@ -6,7 +6,7 @@ url: /archives/archlinux
 categories: 
 tags: 
 - linux
-image: https://img.gejiba.com/images/075c3114aaa8572c21a29560330cccca.webp
+image: https://i.imgtg.com/2023/02/09/c1nht.webp
 ---
 
 <style>
