@@ -7,7 +7,7 @@ categories:
 tags: 
 - windows
 - 软件
-image: https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp
+image: https://i.imgtg.com/2023/02/09/c1BjK.jpg
 ---
 
 # 一、下载文件并校验文件完整性

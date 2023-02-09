@@ -5,7 +5,7 @@ url: /archives/dev-c++
 tags: 
 - 原创
 - c语言
-image: https://img.gejiba.com/images/22f9b6c98d4cbc61445a9f6b17110443.png
+image: https://i.imgtg.com/2023/02/09/c1UWa.webp
 ---
 
 [官方下载地址](https://sourceforge.net/projects/orwelldevcpp/)
