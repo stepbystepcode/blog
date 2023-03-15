@@ -11,17 +11,17 @@ image: https://i.imgtg.com/2023/02/09/c1BjK.jpg
 ---
 
 # 一、下载文件并校验文件完整性
-[点击下载新版Powershell(PowerShell-x.x.x-win-x64.msi)](https://hub.hhhh.host/PowerShell/PowerShell/releases/latest)
+[点击下载新版Powershell(PowerShell-x.x.x-win-x64.msi)](https://hub.fgit.ml/PowerShell/PowerShell/releases/latest)
 
-[点击下载Git(Git-x.xx.x-64-bit.exe)](https://hub.hhhh.host/git-for-windows/git/releases/latest)
+[点击下载Git(Git-x.xx.x-64-bit.exe)](https://hub.fgit.ml/git-for-windows/git/releases/latest)
 
-[点击下载oh-my-posh(install-amd64.exe)](https://hub.hhhh.host/JanDeDobbeleer/oh-my-posh/releases/latest)
+[点击下载oh-my-posh(install-amd64.exe)](https://hub.fgit.ml/JanDeDobbeleer/oh-my-posh/releases/latest)
 
 [点击下载Checksum](https://ybygjylj.lanzouf.com/iYuZD06mepjc)
 # 二、安装Git
 # 三、安装Nerd Font字体
 *推荐JetBrainsMono*
-[点击下载](https://hub.hhhh.host/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)
+[点击下载](https://hub.fgit.ml/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)
 下载解压后选中全部ttf文件，右键，安装
 # 四、安装Windows Terminal Preview
 Windows 应用商店搜索Windows Terminal Preview，并安装。
