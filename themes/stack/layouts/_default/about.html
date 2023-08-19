@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" dir="{{ default `ltr` .Language.LanguageDirection }}">
-    <head>
-        {{- partial "head/head.html" . -}}
-        
-<style>
-    @media (min-width: 768px) {
-        iframe{
-            height: 900px;
-        }
-    }
-    @media (max-width: 768px) {
-        iframe{
-            height: 450px;
-        }
-    }
-</style>
 
-        {{- block "head" . -}}{{ end }}
-    </head>
-    <body class="{{ block `body-class` . }}{{ end }}">
-        
-        {{- partial "head/colorScheme" . -}}
+<head>
+    {{- partial "head/head.html" . -}}
 
-        {{/* The container is wider when there's any activated widget */}}
-        {{- $hasWidget := false -}}
-        {{- range .Site.Params.widgets -}}
-            {{- if gt (len .) 0 -}}
-                {{- $hasWidget = true -}}
-            {{- end -}}
+    <style>
+        @media (min-width: 768px) {
+            iframe {
+                height: 900px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: 450px;
+            }
+        }
+    </style>
+
+    {{- block "head" . -}}{{ end }}
+</head>
+
+<body class="{{ block `body-class` . }}{{ end }}">
+
+    {{- partial "head/colorScheme" . -}}
+
+    {{/* The container is wider when there's any activated widget */}}
+    {{- $hasWidget := false -}}
+    {{- range .Site.Params.widgets -}}
+    {{- if gt (len .) 0 -}}
+    {{- $hasWidget = true -}}
+    {{- end -}}
+    {{- end -}}
+    <div class="container main-container flex on-phone--column {{ if $hasWidget }}extended{{ else }}compact{{ end }}">
+
+        {{- block "left-sidebar" . -}}
+        {{ partial "sidebar/left.html" . }}
         {{- end -}}
-        <div class="container main-container flex on-phone--column {{ if $hasWidget }}extended{{ else }}compact{{ end }}">
+        <main class="main full-width" style="max-height: 100vh">
+            {{- block "main" . }}
+            <iframe src="../botui" frameborder="0"></iframe>
+            {{- end }}
+        </main>
+        {{- block "right-sidebar" . -}}{{ end }}
+    </div>
+    {{ partial "footer/include.html" . }}
 
-            {{- block "left-sidebar" . -}}
-                {{ partial "sidebar/left.html" . }}
-            {{- end -}}
-            <main class="main full-width">
-                {{- block "main" . }}
-<iframe src="../botui" frameborder="0"></iframe>
-                {{- end }}
-            </main>
-            {{- block "right-sidebar" . -}}{{ end }}
-        </div>
-        {{ partial "footer/include.html" . }}
 
-        
-    </body>
+</body>
+
 </html>
