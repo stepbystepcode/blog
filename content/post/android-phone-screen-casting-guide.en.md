@@ -10,7 +10,7 @@ image: https://img.gejiba.com/images/6b28b6f6a09bf792403efe3d8b012450.png
 
 # 1. Download scrcpy and unzip
 
-[Click to download](https://hub.hhhh.host/Genymobile/scrcpy/releases/download/v1.24/scrcpy-win64-v1.24.zip)
+[Click to download](https://hub.fgit.cf/Genymobile/scrcpy/releases/download/v1.24/scrcpy-win64-v1.24.zip)
 
 Extract it to a stable and safe place where it will not be deleted by mistake, in this case: ```D:\scrcpy```, make sure you can see scrcpy.exe after entering the directory
 

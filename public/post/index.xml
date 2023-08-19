@@ -638,7 +638,7 @@ const优点：&lt;/p&gt;
 &lt;p&gt;Ctrl＋p即可弹出打印窗口&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1FN4y1g7HQ/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;bilibili传送门&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.hhhh.host/stepbystepcode/students-table&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fgit.cf/stepbystepcode/students-table&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;github传送门&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
@@ -649,7 +649,7 @@ const优点：&lt;/p&gt;
         
         <guid>https://www.stepbystep.cf/archives/android-casting/</guid>
         <description>&lt;img src="https://img.gejiba.com/images/6b28b6f6a09bf792403efe3d8b012450.png" alt="Featured image of post 安卓手机投屏指南" /&gt;&lt;h1 id=&#34;一下载scrcpy并解压缩&#34;&gt;一、下载scrcpy并解压缩&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.hhhh.host/Genymobile/scrcpy/releases/download/v1.24/scrcpy-win64-v1.24.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fgit.cf/Genymobile/scrcpy/releases/download/v1.24/scrcpy-win64-v1.24.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;将其解压至一个稳定安全不会误删除的地方，本例为：&lt;code&gt;D:\scrcpy&lt;/code&gt;，确保进入目录后可以看到scrcpy.exe&lt;/p&gt;
 &lt;h1 id=&#34;二配置环境变量&#34;&gt;二、配置环境变量&lt;/h1&gt;
@@ -714,7 +714,7 @@ color:red;
 &lt;h1 id=&#34;一下载iso镜像与工具&#34;&gt;一、下载ISO镜像与工具&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.hhhh.host/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fgit.cf/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;rufus下载(rufus-x.xp.exe)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ybygjylj.lanzouy.com/iYuZD06mepjc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ihasher下载&lt;/a&gt;&lt;/p&gt;
@@ -946,7 +946,7 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://hub.hhhh.host/fumiama/Real-CUGAN-Server.git
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://hub.fgit.cf/fumiama/Real-CUGAN-Server.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd Real-CUGAN-Server
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -970,18 +970,18 @@ GitHub链接如下：https://github.com/fumiama/Real-CUGAN&lt;/p&gt;
         
         <guid>https://www.stepbystep.cf/archives/beautify-windows-terminal/</guid>
         <description>&lt;img src="https://img.gejiba.com/images/565ad253511245591b93e2d79ec3c6f3.webp" alt="Featured image of post 极致美化windows终端" /&gt;&lt;h1 id=&#34;一下载文件并校验文件完整性&#34;&gt;一、下载文件并校验文件完整性&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.hhhh.host/PowerShell/PowerShell/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fgit.cf/PowerShell/PowerShell/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载新版Powershell(PowerShell-x.x.x-win-x64.msi)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.hhhh.host/git-for-windows/git/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fgit.cf/git-for-windows/git/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载Git(Git-x.xx.x-64-bit.exe)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.hhhh.host/JanDeDobbeleer/oh-my-posh/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fgit.cf/JanDeDobbeleer/oh-my-posh/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载oh-my-posh(install-amd64.exe)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ybygjylj.lanzouf.com/iYuZD06mepjc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载Checksum&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;二安装git&#34;&gt;二、安装Git&lt;/h1&gt;
 &lt;h1 id=&#34;三安装nerd-font字体&#34;&gt;三、安装Nerd Font字体&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;推荐JetBrainsMono&lt;/em&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://hub.hhhh.host/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;a class=&#34;link&#34; href=&#34;https://hub.fgit.cf/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击下载&lt;/a&gt;
 下载解压后选中全部ttf文件，右键，安装&lt;/p&gt;
 &lt;h1 id=&#34;四安装windows-terminal-preview&#34;&gt;四、安装Windows Terminal Preview&lt;/h1&gt;

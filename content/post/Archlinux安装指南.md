@@ -29,7 +29,7 @@ color:red;
 # 一、下载ISO镜像与工具
 [ISO镜像下载(archlinux-xxxx.xx.xx-x86_64.iso)](https://mirrors.aliyun.com/archlinux/iso/latest/)
 
-[rufus下载(rufus-x.xp.exe)](https://hub.fgit.ml/pbatard/rufus/releases/latest)
+[rufus下载(rufus-x.xp.exe)](https://hub.fgit.cf/pbatard/rufus/releases/latest)
 
 [ihasher下载](https://ybygjylj.lanzouy.com/iYuZD06mepjc)
 

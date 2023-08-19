@@ -32,7 +32,7 @@ color:red;
 &lt;h1 id=&#34;download-iso-image-and-tools&#34;&gt;Download ISO image and tools&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.aliyun.com/archlinux/iso/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.hhhh.host/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hub.fgit.cf/pbatard/rufus/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Download rufus(rufus-x.xp.exe)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ybygjylj.lanzouy.com/iYuZD06mepjc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Download ihasher&lt;/a&gt;&lt;/p&gt;

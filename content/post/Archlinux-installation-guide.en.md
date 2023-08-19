@@ -29,7 +29,7 @@ color:red;
 # Download ISO image and tools
 [Download ISO image(archlinux-xxxx.xx.xx-x86_64.iso)](https://mirrors.aliyun.com/archlinux/iso/latest/)
 
-[Download rufus(rufus-x.xp.exe)](https://hub.hhhh.host/pbatard/rufus/releases/latest)
+[Download rufus(rufus-x.xp.exe)](https://hub.fgit.cf/pbatard/rufus/releases/latest)
 
 [Download ihasher](https://ybygjylj.lanzouy.com/iYuZD06mepjc)
 
