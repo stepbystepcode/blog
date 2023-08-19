@@ -1,0 +1,5 @@
+{
+    "routes": [
+      { "src": "/assets/(.*)", "dest": "/themes/stack/static/assets/$1" } 
+    ]
+  }
