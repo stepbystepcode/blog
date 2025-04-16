@@ -16,7 +16,7 @@ image: https://i.imgtg.com/2023/02/09/c1WyS.webp
 ![clang](https://img.gejiba.com/images/bd47e082f63aaf3872ad8daefd045e36.png)
 ## 正片开始！！
 ### 一、下载termux安装包并安装
-[下载地址](https://mirrors.tuna.tsinghua.edu.cn/fdroid/repo/com.termux_118.apk)
+[下载地址](https://mirrors.tuna.tsinghua.edu.cn/fdroid/archive/com.termux_118.apk)
 ### 二、申请存储权限
 输入如下内容并回车
 ```termux-setup-storage```
